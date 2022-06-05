@@ -154,7 +154,7 @@ p {
   margin: auto;
   padding: 0px;
   font-size: 18px;
-  font-family: "Century Gothic";
+  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
   text-align: left;
 }
 button {
