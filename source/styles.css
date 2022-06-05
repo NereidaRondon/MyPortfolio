@@ -147,6 +147,7 @@ h1 {
 h2 {
   margin: auto;
   font-family: "Zilla Slab", "Century Gothic", serif;
+  font-size: xx-large;
   color: #011431;
 }
 p {
@@ -186,14 +187,17 @@ a {
 
 .grid-container {
   display: grid;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
   grid-template-columns: auto auto auto;
+
   padding: 0;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 5px;
+  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
   font-size: 20px;
   text-align: center;
 }
