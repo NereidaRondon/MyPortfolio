@@ -146,6 +146,7 @@ h1 {
 
 h2 {
   margin: auto;
+  padding: 20px, 0px, 100px 0px;
   font-family: "Zilla Slab", "Century Gothic", serif;
   font-size: xx-large;
   color: #011431;
@@ -169,9 +170,8 @@ button {
   background-color: #022c43;
   border-color: #011431;
   box-shadow: 2px 4px 2px 0px #273c5c;
-  display: flex;
   text-decoration: none;
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 button:hover {
   background-color: #19d15c;
