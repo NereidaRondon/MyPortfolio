@@ -166,9 +166,9 @@ button {
   padding: 15px 25px;
   margin: 20px auto;
   border: 1px solid #011431;
-  border-radius: 5px;
+  border-radius: 50px;
   background-color: #022c43;
-  border-color: #011431;
+  border: none;
   box-shadow: 2px 4px 2px 0px #273c5c;
   text-decoration: none;
   transition: 0.3s ease-in-out;
@@ -177,6 +177,20 @@ button:hover {
   background-color: #19d15c;
   color: #011431;
   border-color: #011431;
+}
+.scrolly {
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  font-size: x-large;
+  font-weight: bold;
+  color: #a7f09f;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border-radius: 50px;
+  background-color: #022c43;
+  border: none;
+  box-shadow: 0px 10px 10px 10px #273c5c;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 a {
   text-decoration: none;
