@@ -10,10 +10,10 @@ html {
   color: rgb(0, 0, 0);
   margin: auto;
   background: linear-gradient(
-    60deg,
+    75deg,
     #011431,
-    #273c5c,
-    #204d70,
+    #0f3970,
+    #194d75,
     #0d5f82,
     #007291,
     #00859d,
@@ -154,8 +154,9 @@ td{
 }
 
 td:hover {
-  filter: drop-shadow(5px 5px 3px #19d15c);
+  filter: drop-shadow(5px 5px 3px #3d05a5);
   max-width: 110%;
+  background-position: right center;
 }
 
 h1 {
@@ -180,39 +181,7 @@ p {
   font-family: "Barlow Condensed", "Century Gothic", sans-serif;
   text-align: left;
 }
-button {
-  font-family: "Zilla Slab", "Century Gothic", serif;
-  font-size: medium;
-  color: #a7f09f;
-  padding: 15px 25px;
-  margin: 20px auto;
-  border: 1px solid #011431;
-  border-radius: 50px;
-  background-color: #022c43;
-  border: none;
-  box-shadow: 2px 4px 2px 0px #273c5c;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-button:hover {
-  background-color: #19d15c;
-  color: #011431;
-  border-color: #011431;
-}
-.scrolly {
-  font-family: "Zilla Slab", "Century Gothic", serif;
-  font-size: medium;
-  font-weight: bold;
-  color: #a7f09f;
-  padding: 10px 20px;
-  margin: 20px auto;
-  border-radius: 50px;
-  background-color: #022c43;
-  border: none;
-  box-shadow: 0px 10px 10px 10px #273c5c;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
+
 a {
   text-decoration: none;
 }

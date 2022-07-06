@@ -1,0 +1,100 @@
+
+
+html {
+  width: 100%;
+  min-width: 500px;
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  background: linear-gradient(
+    75deg,
+    #011431,
+    #0f3970,
+    #194d75,
+    #0d5f82,
+    #007291,
+    #00859d,
+    #0098a4,
+    #00aba9,
+    #2fbea9,
+    #58cfa7,
+    #7fe0a3,
+    #a7f09f,
+    #d1ff9c
+  );
+}
+
+
+button {
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  font-size: medium;
+  color: #a7f09f;
+  padding: 15px 25px;
+  margin: 20px auto;
+  border: 1px solid #011431;
+  border-radius: 50px;
+  background-color: #011431;
+  border: none;
+  box-shadow: 2px 4px 2px 0px #273c5c;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #19d15c;
+  color: #011431;
+  border-color: #011431;
+}
+
+
+.gradient-button {
+  font-family: font-family: "Zilla Slab", "Century Gothic", serif;
+  font-size: 15px;
+  color: #0f3970;
+  text-align: center;
+  padding: 15px 25px;
+  margin: 10px;
+  border-radius: 10px;
+  border-radius: 25px;
+  background-size: 300% auto;
+  transition: 0.5s;
+  box-shadow: 3px 5px 3px 1px rgba(0, 0, 0, 0.3);
+  /* width: 100px; */
+  transition: all 0.6s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  display: inline-block;
+}
+.gradient-button:hover{
+
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25),  0 6px 6px rgba(0,0,0,0.25);
+    margin: 8px 10px 12px;
+}
+
+.gradient-button-1 {
+  background-image: linear-gradient(
+    to right, 
+    #a7f09f 0%, 
+    #00859d 51%, 
+    #250264 100%
+    ) 
+}
+
+.gradient-button-1:hover {
+  background-position: right center;
+  color: #a7f09f; 
+}
+
+/*to Top button */
+.scrolly {
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  font-size: medium;
+  font-weight: bold;
+  color: #a7f09f;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border-radius: 50px;
+  background-color: #011431;
+  border: none;
+  box-shadow: 2px 4px 2px 0px #273c5c;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
