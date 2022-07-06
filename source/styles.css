@@ -106,10 +106,6 @@ nav ul li a:hover {
   'opsz' 48
 }
 
-
-
-
-
 .intro {
   display: flex;
   text-align: left;
@@ -138,7 +134,7 @@ nav ul li a:hover {
   text-align: center;
   width: 100%;
 }
-img {
+#portrait {
   width: 30%;
   height: auto;
   min-width: 130px;
@@ -146,9 +142,20 @@ img {
   filter: drop-shadow(10px 10px 5px #273c5c);
   transition: 200ms ease-in-out;
 }
-img:hover {
+#portrait:hover {
   width: 40%;
   border: 3px solid #273c5c;
+}
+
+td{
+  padding: 40px;
+  filter: drop-shadow(10px 10px 5px #273c5c);
+  transition: 200ms ease-in-out;
+}
+
+td:hover {
+  filter: drop-shadow(10px 10px 5px #039238);
+  max-width: 110%;
 }
 
 h1 {
@@ -194,7 +201,7 @@ button:hover {
 }
 .scrolly {
   font-family: "Zilla Slab", "Century Gothic", serif;
-  font-size: x-large;
+  font-size: medium;
   font-weight: bold;
   color: #a7f09f;
   padding: 10px 20px;
@@ -263,6 +270,7 @@ footer {
     border-color: #0d5f82;
   }
 }
+
 
 .first-color {
   background: #022c43 rgb(2, 44, 67);
