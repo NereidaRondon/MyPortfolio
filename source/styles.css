@@ -135,7 +135,7 @@ nav ul li a:hover {
   width: 100%;
 }
 #portrait {
-  width: 30%;
+  width: 50px;
   height: auto;
   min-width: 130px;
   border-radius: 10px;
@@ -143,18 +143,18 @@ nav ul li a:hover {
   transition: 200ms ease-in-out;
 }
 #portrait:hover {
-  width: 40%;
+  width: 20%;
   border: 3px solid #273c5c;
 }
 
 td{
   padding: 40px;
   filter: drop-shadow(10px 10px 5px #273c5c);
-  transition: 200ms ease-in-out;
+  transition: 100ms ease-in-out;
 }
 
 td:hover {
-  filter: drop-shadow(10px 10px 5px #039238);
+  filter: drop-shadow(5px 5px 3px #19d15c);
   max-width: 110%;
 }
 
