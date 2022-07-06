@@ -96,6 +96,20 @@ nav ul li a:hover {
   color: #19d15c;
   text-shadow: 0 0 4px #011431;
 }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+
+
+
 .intro {
   display: flex;
   text-align: left;
