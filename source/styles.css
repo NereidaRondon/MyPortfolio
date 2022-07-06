@@ -3,32 +3,42 @@
   font-family: "Zilla Slab", "Century Gothic", serif;
 }
 
+/* color palette{
+headings purple rgb(26, 6, 83);
+hover purple rgb(61, 5, 165);
+hover lime green rgb(9, 240, 93);
+button lime green rgb(167, 240, 159);
+
+Dark navy rgb(1, 20, 49);
+Light navy rgb(15, 57, 112);
+Dark Teal rgb(11, 90, 128);
+Light Teal rgb(0, 114, 145);
+
+} */
+
 html {
   width: 100%;
-  min-width: 500px;
+  min-width: 300px;
+  max-height: fit-content;
   font-family: "Zilla Slab", "Century Gothic", serif;
   color: rgb(0, 0, 0);
-  margin: auto;
+  
   background: linear-gradient(
     75deg,
     #011431,
     #0f3970,
-    #194d75,
-    #0d5f82,
+    #0b5a80,
     #007291,
-    #00859d,
     #0098a4,
-    #00aba9,
     #2fbea9,
     #58cfa7,
     #7fe0a3,
     #a7f09f,
-    #d1ff9c
+    #98fd5d
   );
 }
-
-body {
-  margin: 10px 20px;
+body{
+  margin: 0;
 }
 
 .homeLink {
@@ -36,11 +46,11 @@ body {
   font-weight: bold;
   font-size: 30px;
   text-decoration: none;
-  color: #022c43;
+  color: rgb(26, 6, 83);
   transition: 0.1s ease-in-out;
 }
 .homeLink:hover {
-  color: #19d15c;
+  color: rgb(9, 240, 93);
   text-shadow: 0 0 3px #03293a;
 }
 div ul {
@@ -57,11 +67,11 @@ div ul li {
 }
 div ul li a {
   text-decoration: none;
-  color: #022c43;
+  color: rgb(26, 6, 83);
   transition: 0.1s ease-in-out;
 }
 div ul li a:hover {
-  color: #19d15c;
+  color: rgb(9, 240, 93);
   text-shadow: 0 0 4px #03293a;
 }
 
@@ -89,11 +99,11 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #022c43;
+  color: rgb(26, 6, 83);
   transition: 0.1s ease-in-out;
 }
 nav ul li a:hover {
-  color: #19d15c;
+  color: rgb(9, 240, 93);
   text-shadow: 0 0 4px #011431;
 }
 
@@ -134,17 +144,18 @@ nav ul li a:hover {
   text-align: center;
   width: 100%;
 }
-#portrait {
-  width: 50px;
-  height: auto;
-  min-width: 130px;
+img{
   border-radius: 10px;
+}
+
+#portrait {
+  width: 200px;
+  height: auto;
   filter: drop-shadow(10px 10px 5px #273c5c);
   transition: 200ms ease-in-out;
 }
 #portrait:hover {
-  width: 20%;
-  border: 3px solid #273c5c;
+  filter: drop-shadow(5px 5px 5px  #3d05a5);
 }
 
 td{
@@ -159,11 +170,12 @@ td:hover {
   background-position: right center;
 }
 
+
 h1 {
   margin: 0px;
   font-family: "Zilla Slab", "Century Gothic", serif;
   text-align: left;
-  color: #011431;
+  color: rgb(26, 6, 83);
 }
 
 h2 {
@@ -171,7 +183,7 @@ h2 {
   padding: 20px, 0px, 100px 0px;
   font-family: "Zilla Slab", "Century Gothic", serif;
   font-size: xx-large;
-  color: #011431;
+  color: rgb(26, 6, 83);
 }
 p {
   border: 0;
@@ -184,6 +196,7 @@ p {
 
 a {
   text-decoration: none;
+  cursor:pointer;
 }
 .secGroup {
   padding-top: 20px;
@@ -194,7 +207,6 @@ a {
   justify-content: center;
   gap: 30px;
   grid-template-columns: auto auto auto;
-
   padding: 0;
 }
 
@@ -206,8 +218,22 @@ a {
   text-align: center;
 }
 footer {
-  padding: 20px;
+  display:block;
+  text-align:center;
+  margin: auto;
+  padding-top: 100px;
+  color: rgb(167, 240, 159);
 }
+.footer{
+  background-color: #011431;
+  width: 100%;
+  height:200px;
+}
+
+
+
+
+
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -243,24 +269,3 @@ footer {
 
 
 
-.first-color {
-  background: #022c43 rgb(2, 44, 67);
-}
-.second-color {
-  background: #053f5e rgb(5, 63, 94);
-}
-.third-color {
-  background: #115173 rgb(17, 81, 115);
-}
-.fourth-color {
-  background: #ffd700 rgb(255, 215, 0);
-}
-.fifth-color {
-  background: #b5ff60 rgb(181, 255, 96);
-}
-.sixth-color {
-  background: rgb(0, 128, 128);
-}
-.seventh-color {
-  background: #19d15c rgb(25, 209, 102);
-}
