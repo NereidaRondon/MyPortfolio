@@ -242,12 +242,12 @@ footer {
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  max-width: 200px;
+  max-width: 192px;
   border-right: 0.15em solid #011431; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.05em; /* Adjust as needed */
-  animation: typing 9s steps(40, end), blink-caret 0.7s step-end infinite;
+  animation: typing 12s steps(100, end), blink-caret 0.8s step-end infinite;
 }
 
 /* The typing effect */
@@ -271,6 +271,30 @@ footer {
   }
 }
 
+
+/* Particles */
+.particle {
+	position: absolute;
+ 	border-radius: 50%;
+}
+@for $i from 1 through 30 {
+	@keyframes particle-animation-#{$i} {
+		100% {
+			transform: translate3d((random(200) * 1vw), (random(150) * 1vh), (random(100) * 1px));
+		}
+	}
+	
+	.particle:nth-child(#{$i}){
+		animation: particle-animation-#{$i} 60s infinite;
+		$size: random(5) + 5 + px;
+		opacity: random(100)/100;
+		height: $size;
+		width: $size;
+		/* animation-delay: -$i * .2s; */
+		transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+		background: rgb(random(10), random(130), random(270));
+	}
+}
 
 .first-color {
   background: #022c43 rgb(2, 44, 67);
