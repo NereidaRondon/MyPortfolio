@@ -106,15 +106,15 @@ button:hover {
 
 .form-btn {
   font-family: "Zilla Slab", "Century Gothic", serif;
-  font-size: 15px;
+  font-size: 20px;
   font-weight:bold;
   color: rgb(3, 43, 119);
   display: block;
   text-align: center;
   text-align: center;
   text-decoration: none;
-  width: 350px;
-  margin:20px 0px;
+  width: 353px;
+  margin: 5px 0px;
   padding:10px 0px;
   background-size: 300% auto;
   transition: all 0.6s cubic-bezier(.25,.8,.25,1);
