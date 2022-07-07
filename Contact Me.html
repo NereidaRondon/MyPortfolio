@@ -7,6 +7,7 @@
     <title>Nereida Rondon Portfolio</title>
 
 	<link rel="stylesheet" href="source/styles.css">
+    <link rel="stylesheet" href="source/style-pages.css">
 	<link rel="stylesheet" href="source/buttons.css">
 	
 	
@@ -26,26 +27,33 @@
                 <li><a href="contact me.html">Contact Me</li><a></li>	
             </ul>	                  
         </nav>
-<h2>Contact Me</h2>             
-    <form method="POST" action="mail.php">
+<section>
+    <h2 class="page">Contact Me</h2>  
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="your name ex:Jane Smith" required>
-        <br>
-        <br>      
-        <label for="email" >Email Address:</label>
-        <input type="email" id="email" name="email" placeholder="your email address" required>
-        <br>
-        <br>
-        <label for="message">Your Message:</label><br>
-        <textarea id="message" name="message" placeholder="type your message here" rows="10" cols="75" required></textarea><br><br>
+        <div class="contact-form">
+            <form method="POST" action="mail.php">
+                <!-- <label for="name">Name:</label> -->
+                <input type="text" id="name" name="name" placeholder="Name:" autofocus required>
+                
+                      
+                <!-- <label for="email" >Email Address:</label> -->
+                <input type="email" id="email" name="email" placeholder="Email address:" required>
+                
+                
+                <!-- <label for="message">Your Message:</label> -->
+                
+                <textarea id="message" name="message" rows="10" cols="52" placeholder="Message:" spellcheck="true" required></textarea>
 
-        <input type="submit" value="Send"><input type="reset" value="Clear">
-    </form> 
+                <input class="form-btn" type="submit" value="SEND">
+                <input class="form-btn" type="reset" value="CLEAR">
+            </form> 
+        </div>
+</section>
     
 </body>
 </html>
-<br>
-<br>
-<hr>
-<footer>Created by Nereida Rondon ©️2022</footer>
+
+
+	<div class="footer">
+		<footer>Created by Nereida Rondon ©️2022</footer>
+	</div>

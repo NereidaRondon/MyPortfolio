@@ -1,8 +1,3 @@
- {
-  border: 1px solid red;
-  font-family: "Zilla Slab", "Century Gothic", serif;
-}
-
 /* color palette{
 headings purple rgb(26, 6, 83);
 hover purple rgb(61, 5, 165);
@@ -38,9 +33,12 @@ html {
   );
 }
 body{
-  margin: 0;
+  margin: 0px;
 }
 
+section{
+  margin: 0px 20px;
+}
 .homeLink {
   font-family: "Zilla Slab", "Century Gothic", serif;
   font-weight: bold;
@@ -107,8 +105,9 @@ nav ul li a:hover {
   text-shadow: 0 0 4px #011431;
 }
 
-
 .material-symbols-outlined {
+  font-variant: none;
+  text-decoration: none;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -121,31 +120,20 @@ nav ul li a:hover {
   text-align: left;
 }
 
-.box {
-  margin: auto;
-  position: center;
-}
-.row {
-  display: flex;
-  float: center;
-}
-.col-5 {
-  display: flex;
-  margin: 0 50px 0 0;
-  justify-content: right;
-  align-items: center;
-  height: 300px;
-  width: 40%;
-}
-.col-7 .container {
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  text-align: center;
-  width: 100%;
-}
 img{
   border-radius: 10px;
+}
+
+.container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card{
+  width: 300px;
+  padding: 20px 10px;
+  border-radius: 20px;
 }
 
 #portrait {
@@ -170,7 +158,9 @@ td:hover {
   background-position: right center;
 }
 
-
+.intro{
+  font-size: 30px;
+}
 h1 {
   margin: 0px;
   font-family: "Zilla Slab", "Century Gothic", serif;
@@ -198,25 +188,8 @@ a {
   text-decoration: none;
   cursor:pointer;
 }
-.secGroup {
-  padding-top: 20px;
-}
 
-.grid-container {
-  display: grid;
-  justify-content: center;
-  gap: 30px;
-  grid-template-columns: auto auto auto;
-  padding: 0;
-}
 
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 5px;
-  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
-  font-size: 20px;
-  text-align: center;
-}
 footer {
   display:block;
   text-align:center;
@@ -236,13 +209,14 @@ footer {
 
 
 .typewriter {
+  font-size: 35px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  max-width: 192px;
-  border-right: 0.15em solid #011431; /* The typwriter cursor */
+  max-width: 280px;
+  border-right: 0.10em solid #011431; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.05em; /* Adjust as needed */
-  animation: typing 12s steps(100, end), blink-caret 0.8s step-end infinite;
+  animation: typing 12s steps(100, end), blink-caret 0.9s step-end infinite;
 }
 
 /* The typing effect */
@@ -262,7 +236,7 @@ footer {
     border-color: transparent;
   }
   50% {
-    border-color: #0d5f82;
+    border-color: #034470;
   }
 }
 

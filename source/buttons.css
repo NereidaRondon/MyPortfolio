@@ -103,3 +103,29 @@ button:hover {
   background-position: right center;
   color: #a7f09f; 
 }
+
+.form-btn {
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  font-size: 15px;
+  font-weight:bold;
+  color: rgb(3, 43, 119);
+  display: block;
+  text-align: center;
+  text-align: center;
+  text-decoration: none;
+  width: 350px;
+  margin:20px 0px;
+  padding:10px 0px;
+  background-size: 300% auto;
+  transition: all 0.6s cubic-bezier(.25,.8,.25,1);
+  background-image: linear-gradient(
+    to right, 
+    #a7f09f 0%, 
+    #2bd3fd 51%, 
+    #250264 100%
+  )
+}
+.form-btn:hover {
+  background-position: right center;
+  color: #a7f09f; 
+}

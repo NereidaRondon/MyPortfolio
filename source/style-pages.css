@@ -1,0 +1,65 @@
+/* color palette{
+headings purple rgb(26, 6, 83);
+hover purple rgb(61, 5, 165);
+hover lime green rgb(9, 240, 93);
+button lime green rgb(167, 240, 159);
+
+Dark navy rgb(1, 20, 49);
+Light navy rgb(15, 57, 112);
+Dark Teal rgb(11, 90, 128);
+Light Teal rgb(0, 114, 145);
+
+} */
+h2.page{
+  margin: auto;
+  padding: 10px 0px 50px 0px;
+  text-align: center;
+}
+
+.contact-form{
+  display:flex;
+  justify-content: center;
+  margin: auto;
+  font-size: large;
+}
+
+form{
+margin-bottom: 50px;
+}
+
+label{
+  padding: 10px 0px;
+  display:block;
+}
+input{
+  margin:20px 0px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(142, 252, 182);
+  display:block;
+}
+
+textarea{
+  margin:20px 0px;
+  background-color: rgb(142, 252, 182);
+  display:block;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="text"] {
+  width: 350px;
+  height: 30px;
+}
+input[type="email"] {
+  width: 350px;
+  height: 30px;
+}
+
+::placeholder{
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  font-size: x-large;
+}
+
+
+
