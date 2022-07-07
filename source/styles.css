@@ -1,5 +1,6 @@
 /* color palette{
 headings purple rgb(26, 6, 83);
+headers navy blue rgb(2, 20, 68);
 hover purple rgb(61, 5, 165);
 hover lime green rgb(9, 240, 93);
 button lime green rgb(167, 240, 159);
@@ -13,14 +14,13 @@ Light Teal rgb(0, 114, 145);
 
 html {
   width: 100%;
-  min-width: 300px;
   max-height: fit-content;
   font-family: "Zilla Slab", "Century Gothic", serif;
-  color: rgb(0, 0, 0);
   
-  background: linear-gradient(
+  /* background: linear-gradient(
     75deg,
     #011431,
+    #021444,
     #0f3970,
     #0b5a80,
     #007291,
@@ -30,22 +30,38 @@ html {
     #7fe0a3,
     #a7f09f,
     #98fd5d
+  ); */
+background: linear-gradient(
+  330deg,
+  #011431,
+  #011431, 
+  #021444, 
+  #002052, 
+  #003f73, 
+  #006b94, 
+  #009ca3, 
+  #39c7a2, 
+  #8be59f, 
+  #a7f09f,
+  #a8f87a
   );
+
 }
 body{
   margin: 0px;
 }
 
 section{
-  margin: 0px 20px;
+  margin: 20px 40px;
 }
 .homeLink {
   font-family: "Zilla Slab", "Century Gothic", serif;
   font-weight: bold;
   font-size: 30px;
   text-decoration: none;
-  color: rgb(26, 6, 83);
+  color: rgb(2, 20, 68);
   transition: 0.1s ease-in-out;
+  margin: 10px 0px 0px 10px;
 }
 .homeLink:hover {
   color: rgb(9, 240, 93);
@@ -65,7 +81,7 @@ div ul li {
 }
 div ul li a {
   text-decoration: none;
-  color: rgb(26, 6, 83);
+  color: rgb(2, 20, 68);
   transition: 0.1s ease-in-out;
 }
 div ul li a:hover {
@@ -74,36 +90,36 @@ div ul li a:hover {
 }
 
 nav {
-  margin: 50px 0;
-  width: 100%;
+  margin: 50px 60px;
   font-family: "Zilla Slab", "Century Gothic", serif;
   font-weight: bold;
   float: center;
-  text-align: center;
 }
+
 
 nav ul {
   display: flex;
-  padding: 5px 10px;
-  justify-content: center;
-  align-items: space-between;
+  padding: 0px;
+  justify-content: space-between;
   font-size: 20px;
   list-style: none;
 }
 
 nav ul li {
-  width: 10%;
-  padding: 0 30px;
+  width: 15%;
+  padding: 0px 5px;
+  text-align: center;
 }
 nav ul li a {
+  color: rgb(2, 20, 68);
   text-decoration: none;
-  color: rgb(26, 6, 83);
   transition: 0.1s ease-in-out;
 }
 nav ul li a:hover {
   color: rgb(9, 240, 93);
   text-shadow: 0 0 4px #011431;
 }
+
 
 .material-symbols-outlined {
   font-variant: none;
@@ -120,8 +136,10 @@ nav ul li a:hover {
   text-align: left;
 }
 
-img{
-  border-radius: 10px;
+.reason {
+  font-size: 18px;
+  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
+  text-align: left;
 }
 
 .container{
@@ -132,8 +150,7 @@ img{
 }
 .card{
   width: 300px;
-  padding: 20px 10px;
-  border-radius: 20px;
+  padding: 10px 10px;
 }
 
 #portrait {
@@ -143,7 +160,7 @@ img{
   transition: 200ms ease-in-out;
 }
 #portrait:hover {
-  filter: drop-shadow(5px 5px 5px  #3d05a5);
+  filter: drop-shadow(5px 5px 5px  #1a0444);
 }
 
 td{
@@ -165,7 +182,7 @@ h1 {
   margin: 0px;
   font-family: "Zilla Slab", "Century Gothic", serif;
   text-align: left;
-  color: rgb(26, 6, 83);
+  color: rgb(2, 20, 68);
 }
 
 h2 {
@@ -173,9 +190,17 @@ h2 {
   padding: 20px, 0px, 100px 0px;
   font-family: "Zilla Slab", "Century Gothic", serif;
   font-size: xx-large;
-  color: rgb(26, 6, 83);
+  color: rgb(2, 20, 68);
 }
+
+h1.page, h2.page{
+  margin: auto;
+  padding: 10px 0px 50px 0px;
+  text-align: center;
+}
+
 p {
+  color: rgb(0, 0, 0);
   border: 0;
   margin: auto;
   padding: 0px;

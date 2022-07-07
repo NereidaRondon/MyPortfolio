@@ -10,11 +10,7 @@ Dark Teal rgb(11, 90, 128);
 Light Teal rgb(0, 114, 145);
 
 } */
-h2.page{
-  margin: auto;
-  padding: 10px 0px 50px 0px;
-  text-align: center;
-}
+
 
 .contact-form{
   display:flex;
@@ -33,7 +29,6 @@ label{
 }
 input{
   margin:5px 0px;
-  /* border-radius: 3px; */
   border: none;
   background-color: rgb(142, 252, 182);
   display:block;
@@ -43,7 +38,6 @@ textarea{
   margin:5px 0px;
   background-color: rgb(142, 252, 182);
   display:block;
-  /* border-radius: 3px; */
   border: none;
   width: 350px;
   height: 200px;
