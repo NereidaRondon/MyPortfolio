@@ -264,6 +264,10 @@ footer {
   animation: typing 12s steps(100, end), blink-caret 0.9s step-end infinite;
 }
 
+
+.space{
+  padding-bottom: 200px;
+}
 /* The typing effect */
 @keyframes typing {
   from {
