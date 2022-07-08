@@ -54,6 +54,7 @@ body{
 section{
   margin: 20px 40px;
 }
+
 .homeLink {
   font-family: "Zilla Slab", "Century Gothic", serif;
   font-weight: bold;
@@ -163,6 +164,28 @@ nav ul li a:hover {
   filter: drop-shadow(5px 5px 5px  #1a0444);
 }
 
+#intro{
+  font-size: 30px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid .item {
+  position: relative;
+  padding: 1vw;
+  background-position:  left bottom;
+  background-size: 150% 100%;
+  transition: background 500ms, outline 500ms;
+  background-position: top left;
+  outline: transparent;
+}
+
+
 td{
   padding: 40px;
   filter: drop-shadow(10px 10px 5px #273c5c);
@@ -175,9 +198,6 @@ td:hover {
   background-position: right center;
 }
 
-.intro{
-  font-size: 30px;
-}
 h1 {
   margin: 0px;
   font-family: "Zilla Slab", "Century Gothic", serif;
@@ -189,7 +209,7 @@ h2 {
   margin: auto;
   padding: 20px, 0px, 100px 0px;
   font-family: "Zilla Slab", "Century Gothic", serif;
-  font-size: xx-large;
+  font-size: 25px;
   color: rgb(2, 20, 68);
 }
 
