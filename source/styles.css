@@ -241,10 +241,6 @@ nav ul li a:hover {
 
 
 /* Section 3 */
-table, tr, td{
-  border: 1px solid yellow;
- 
-}
 
 .skill-icon{
  font-size: 70px;
@@ -262,7 +258,7 @@ table, tr, td{
   
 }
 
-td{
+/* td{
   padding: 0px;
   filter: drop-shadow(5px 5px 2px #011027);
   transition: 100ms ease-in-out;
@@ -272,7 +268,7 @@ td:hover {
   filter: drop-shadow(4px 4px 2px rgb(40, 1, 109));
   max-width: 110%;
   background-position: right center;
-}
+} */
 
 
 /* Section 4 style for project card tiles on home page */
@@ -375,17 +371,64 @@ footer {
   border:5px ridge #021444;
   background: linear-gradient(
   180deg,
-   #81fcf6,
-   #72fcf5,
-   #72fcf5,
-   #72fcf5,
-   #72fcf5,
-   #72fcf5,
-   #81fcf6
+   rgb(101, 215, 230),
+   rgb(114, 252, 245),
+   rgb(114, 252, 245),
+   rgb(114, 252, 245),
+   rgb(114, 252, 245),
+   rgb(114, 252, 245),
+   rgb(101, 215, 230)
   );
   padding: 20px;
 }
 
+table {
+  table-layout: fixed;
+  width: 100%;
+  border:5px inset rgb(2, 20, 68);
+  text-align: left;
+  color:#021444;
+}
+
+.col-1{
+  width: 370px;
+  font-weight: bold;
+  border: none;
+}
+.col-2{
+  width: 370px;
+  font-weight: bold;
+  border: none;
+}
+.col-3{
+  width: 120px;
+  font-weight: bold;
+  border: none;
+}
+
+.row-1{
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+}
+.cert{
+  font-size: 20px;
+}
+.cert:hover{
+  color: rgb(13, 206, 84);
+  text-shadow: 3px 3px 2px #03293a;
+  
+}
+td{
+  padding: 10px 0px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(114, 252, 245);
+}
+tr:nth-child(even) {
+  background-color: rgba(101, 215, 230, 0.3);
+}
 /* Style for Project Pages */
 .space{
   padding-bottom: 100px;
