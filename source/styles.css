@@ -1,9 +1,11 @@
 /* color palette{
-headings purple rgb(26, 6, 83);
 headers navy blue rgb(2, 20, 68);
-hover purple rgb(61, 5, 165);
+
+button font lime green rgb(167, 240, 159);
+
+dark drop shadow rgb(1, 16, 39);
+hover purple rgb(40, 1, 109); 
 hover lime green rgb(9, 240, 93);
-button lime green rgb(167, 240, 159);
 
 Dark navy rgb(1, 20, 49);
 Light navy rgb(2, 20, 68);
@@ -162,7 +164,7 @@ nav ul li a:hover {
   transition: 200ms ease-in-out;
 }
 #portrait:hover {
-  filter: drop-shadow( 10px 10px 7px #28016d);
+  filter: drop-shadow( 10px 10px 7px rgb(40, 1, 109));
   width: 190px;
   
 }
@@ -246,7 +248,7 @@ td{
 }
 
 td:hover {
-  filter: drop-shadow(5px 5px 3px #3d05a5);
+  filter: drop-shadow(5px 5px 3px rgb(40, 1, 109));
   max-width: 110%;
   background-position: right center;
 }
@@ -345,6 +347,9 @@ footer {
 
 
 /* Style for About me Page */
+.resume{
+  margin-bottom: 50px;
+}
 .reason {
   font-size: 18px;
   font-family: "Barlow Condensed", "Century Gothic", sans-serif;
@@ -368,5 +373,5 @@ footer {
 
 /* Style for Project Pages */
 .space{
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
