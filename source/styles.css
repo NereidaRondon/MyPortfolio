@@ -203,14 +203,14 @@ nav ul li a:hover {
 }
 
 .typewriter {
-  font-size: 30px;
+  font-size: 39px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  max-width: 230px;
-  border-right: 0.10em solid #011431; /* The typwriter cursor */
+  max-width: 300px;
+  border-right: 0.08em solid rgb(1, 20, 49); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.05em; /* Adjust as needed */
-  animation: typing 4s steps(11, end), blink-caret 0.9s step-end infinite;
+  letter-spacing: 0.04em; /* Adjust as needed */
+  animation: typing 4s steps(17, end), blink-caret 0.9s step-end infinite;
 }
 
 /* The typing effect */
@@ -230,7 +230,7 @@ nav ul li a:hover {
     border-color: transparent;
   }
   50% {
-    border-color: #034470;
+    border-color: rgb(3, 68, 112);
   }
 }
 
@@ -241,14 +241,35 @@ nav ul li a:hover {
 
 
 /* Section 3 */
+table, tr, td{
+  border: 1px solid yellow;
+ 
+}
+
+.skill-icon{
+ font-size: 70px;
+ color: rgb(68, 233, 255);
+  /* color: rgb(2, 20, 68); */
+  
+}
+
+.skill{
+  display: felx;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  
+}
+
 td{
-  padding: 40px;
-  filter: drop-shadow(8px 8px 5px #011027);
+  padding: 0px;
+  filter: drop-shadow(5px 5px 2px #011027);
   transition: 100ms ease-in-out;
 }
 
 td:hover {
-  filter: drop-shadow(5px 5px 3px rgb(40, 1, 109));
+  filter: drop-shadow(4px 4px 2px rgb(40, 1, 109));
   max-width: 110%;
   background-position: right center;
 }
@@ -259,7 +280,7 @@ td:hover {
 .project-container {
   display: grid;
   margin: 10px 50px 50px 50px;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid-element {
@@ -267,19 +288,19 @@ td:hover {
 }
 
 .card-1{
-  grid-column: 1/1;
+  grid-column: 1/2;
   grid-row: 1;
 }
 .card-2{
-  grid-column: 2/2;
+  grid-column: 2/3;
   grid-row: 1;
 }
 .card-3{
-  grid-column: 3/3;
+  grid-column: 3/4;
   grid-row: 1;
 }
 .card{
-  width:275px;
+  width:250px;
   padding: 10px;
   filter: drop-shadow(6px 6px 4px #011027);
   transition: 200ms ease-in-out;
@@ -300,9 +321,9 @@ h1, h2, h3{
   color: rgb(2, 20, 68);
 }
 
-h1.page, h2.page{
+/* For h1 on other pages */
+.page{
   margin: auto;
-  padding: 10px 0px 50px 0px;
   text-align: center;
 }
 
@@ -313,13 +334,7 @@ h4{
   text-align: center;
   color: rgb(2, 20, 68);
 }
-h5, h6{
-  margin: 0;
-  font-size: large;
-  font-family: "Zilla Slab", "Century Gothic", serif;
-  text-align: center;
-  color: rgb(2, 20, 68);
-}
+
 p {
   color: rgb(0, 0, 0);
   border: 0;
