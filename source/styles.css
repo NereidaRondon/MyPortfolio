@@ -6,9 +6,16 @@ hover lime green rgb(9, 240, 93);
 button lime green rgb(167, 240, 159);
 
 Dark navy rgb(1, 20, 49);
-Light navy rgb(15, 57, 112);
+Light navy rgb(2, 20, 68);
+Lightest navy rgb(2, 38, 95);
+
 Dark Teal rgb(11, 90, 128);
 Light Teal rgb(0, 114, 145);
+Lightest Teal rgb(0, 156, 163);
+
+Sage mint green rgb(57, 199, 162);
+Lime green rgb(126, 209, 116);
+yellow green rgb(186, 252, 101);
 
 } */
 
@@ -16,34 +23,18 @@ html {
   width: 100%;
   max-height: fit-content;
   font-family: "Zilla Slab", "Century Gothic", serif;
-  
-  /* background: linear-gradient(
-    75deg,
-    #011431,
-    #021444,
-    #0f3970,
-    #0b5a80,
-    #007291,
-    #0098a4,
-    #2fbea9,
-    #58cfa7,
-    #7fe0a3,
-    #a7f09f,
-    #98fd5d
-  ); */
+
 background: linear-gradient(
   330deg,
   #011431,
-  #011431, 
   #021444, 
-  #002052, 
+  #02265f, 
   #003f73, 
   #006b94, 
   #009ca3, 
   #39c7a2, 
-  #8be59f, 
-  #a7f09f,
-  #a8f87a
+  #7ed174,
+  #bafc65
   );
 
 }
@@ -54,6 +45,47 @@ body{
 section{
   margin: 20px 40px;
 }
+.project-page{
+ margin: 100px;  
+}
+video{
+  margin: 0px;
+  width: 100%; 
+  height:auto;
+}
+
+/* ALL anchor tags */
+a {
+  text-decoration: none;
+  cursor:pointer;
+  color: rgb(2, 20, 68);
+  transition: 0.1s ease-in-out;
+}
+
+/* Banner styles */
+.banner{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 10px 30x 10px;
+  grid-template-rows: 50px;
+  grid-auto-flow: column;
+}
+.item1{
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.item2{
+  grid-column: 2/12;
+  grid-row: 1;
+}
+.item3{
+  grid-column: 12/13;
+  grid-row: 1;
+}  
+
+.fa-beat{
+  --fa-animation-duration: 7s;
+}
 
 .homeLink {
   font-family: "Zilla Slab", "Century Gothic", serif;
@@ -62,33 +94,34 @@ section{
   text-decoration: none;
   color: rgb(2, 20, 68);
   transition: 0.1s ease-in-out;
-  margin: 10px 0px 0px 10px;
+  margin: 20px 0px 0px 10px;
 }
+
 .homeLink:hover {
   color: rgb(9, 240, 93);
-  text-shadow: 0 0 3px #03293a;
+  text-shadow: 2px 2px 4px #03293a;
 }
+
 div ul {
   display: flex;
+  margin: 0;
   padding: 0;
   float: right;
-  align-items: space-between;
-  font-size: 20px;
+  font-size: 25px;
   list-style: none;
 }
 
 div ul li {
-  padding: 0 10px;
+  padding: 0px 20px;
 }
-div ul li a {
-  text-decoration: none;
-  color: rgb(2, 20, 68);
-  transition: 0.1s ease-in-out;
-}
+
 div ul li a:hover {
   color: rgb(9, 240, 93);
-  text-shadow: 0 0 4px #03293a;
+  text-shadow: 3px 3px 3px #03293a;
+  
 }
+/* End of banner styles */
+
 
 nav {
   margin: 50px 60px;
@@ -118,156 +151,66 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: rgb(9, 240, 93);
-  text-shadow: 0 0 4px #011431;
+  filter: drop-shadow(4px 3px 2px #03293a);
 }
 
-
-.material-symbols-outlined {
-  font-variant: none;
-  text-decoration: none;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-
-.intro {
-  display: flex;
-  text-align: left;
-}
-
-.reason {
-  font-size: 18px;
-  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
-  text-align: left;
-}
-
-.container{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.card{
-  width: 300px;
-  padding: 10px 10px;
-}
-
+/* Section 1 */
 #portrait {
-  width: 200px;
+  width: 160px;
   height: auto;
-  filter: drop-shadow(10px 10px 5px #273c5c);
+  filter: drop-shadow(8px 8px 5px rgb(1, 16, 39));
   transition: 200ms ease-in-out;
 }
 #portrait:hover {
-  filter: drop-shadow(5px 5px 5px  #1a0444);
+  filter: drop-shadow( 10px 10px 7px #28016d);
+  width: 190px;
+  
 }
 
-#intro{
-  font-size: 30px;
+/* Grid container style */
+.grid {
+  border:1px solid rgb(9, 240, 93);
 }
 
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.container {
+  display: grid;
+  /* grid-template-columns: 80px 250px;
+  grid-template-rows: 50px 90px 90px; */
+  justify-content: center;  
+}
+.box-1 {
+  grid-column: 1;
+  grid-row: 1 / 4;
+}
+.box-2 {
+  grid-column: 2;
+  grid-row: 1 / 2;
 }
 
-.grid .item {
-  position: relative;
-  padding: 1vw;
-  background-position:  left bottom;
-  background-size: 150% 100%;
-  transition: background 500ms, outline 500ms;
-  background-position: top left;
-  outline: transparent;
+.box-3 {
+  grid-column: 2;
+  grid-row: 2 / 3;
 }
-
-
-td{
-  padding: 40px;
-  filter: drop-shadow(10px 10px 5px #273c5c);
-  transition: 100ms ease-in-out;
+.box-4 {
+  grid-column: 2;
+  grid-row: 3 / 4;
 }
-
-td:hover {
-  filter: drop-shadow(5px 5px 3px #3d05a5);
-  max-width: 110%;
-  background-position: right center;
+.box-5 {
+  grid-column: 3;
+  grid-row: 4 / 5;
 }
-
-h1 {
-  margin: 0px;
-  font-family: "Zilla Slab", "Century Gothic", serif;
-  text-align: left;
-  color: rgb(2, 20, 68);
-}
-
-h2 {
-  margin: auto;
-  padding: 20px, 0px, 100px 0px;
-  font-family: "Zilla Slab", "Century Gothic", serif;
-  font-size: 25px;
-  color: rgb(2, 20, 68);
-}
-
-h1.page, h2.page{
-  margin: auto;
-  padding: 10px 0px 50px 0px;
-  text-align: center;
-}
-
-p {
-  color: rgb(0, 0, 0);
-  border: 0;
-  margin: auto;
-  padding: 0px;
-  font-size: 18px;
-  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
-  text-align: left;
-}
-
-a {
-  text-decoration: none;
-  cursor:pointer;
-}
-
-
-footer {
-  display:block;
-  text-align:center;
-  margin: auto;
-  padding-top: 100px;
-  color: rgb(167, 240, 159);
-}
-.footer{
-  background-color: #011431;
-  width: 100%;
-  height:200px;
-}
-
-
-
-
-
 
 .typewriter {
-  font-size: 35px;
+  font-size: 30px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  max-width: 280px;
+  max-width: 230px;
   border-right: 0.10em solid #011431; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.05em; /* Adjust as needed */
-  animation: typing 12s steps(100, end), blink-caret 0.9s step-end infinite;
+  animation: typing 4s steps(11, end), blink-caret 0.9s step-end infinite;
 }
 
-
-.space{
-  padding-bottom: 200px;
-}
 /* The typing effect */
 @keyframes typing {
   from {
@@ -289,6 +232,141 @@ footer {
   }
 }
 
+/* end of grid container style */
+
+/* Section 2 */
 
 
 
+/* Section 3 */
+td{
+  padding: 40px;
+  filter: drop-shadow(8px 8px 5px #011027);
+  transition: 100ms ease-in-out;
+}
+
+td:hover {
+  filter: drop-shadow(5px 5px 3px #3d05a5);
+  max-width: 110%;
+  background-position: right center;
+}
+
+
+/* Section 4 style for project card tiles on home page */
+
+.project-container {
+  display: grid;
+  margin: 10px 50px 50px 50px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.grid-element {
+  justify-self: center;
+}
+
+.card-1{
+  grid-column: 1/1;
+  grid-row: 1;
+}
+.card-2{
+  grid-column: 2/2;
+  grid-row: 1;
+}
+.card-3{
+  grid-column: 3/3;
+  grid-row: 1;
+}
+.card{
+  width:275px;
+  padding: 10px;
+  filter: drop-shadow(6px 6px 4px #011027);
+  transition: 200ms ease-in-out;
+}
+.card:hover{
+  filter: drop-shadow(7px 7px 4px rgb(9, 240, 93));
+}
+/*end of style for project card tiles on home page */
+
+
+/* ALL */
+
+h1, h2, h3{
+  margin: 0px;
+  padding: 10px 0px 20px 0px;
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  text-align: left;
+  color: rgb(2, 20, 68);
+}
+
+h1.page, h2.page{
+  margin: auto;
+  padding: 10px 0px 50px 0px;
+  text-align: center;
+}
+
+h4{
+  margin: 0;
+  font-size: x-large;
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  text-align: center;
+  color: rgb(2, 20, 68);
+}
+h5, h6{
+  margin: 0;
+  font-size: large;
+  font-family: "Zilla Slab", "Century Gothic", serif;
+  text-align: center;
+  color: rgb(2, 20, 68);
+}
+p {
+  color: rgb(0, 0, 0);
+  border: 0;
+  margin: auto;
+  padding: 0px 0px 10px 0px;
+  font-size: 18px;
+  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
+  text-align: left;
+}
+
+
+footer {
+  display:block;
+  text-align:center;
+  margin: auto;
+  padding-top: 100px;
+  color: rgb(167, 240, 159);
+}
+.footer{
+  background-color: #011431;
+  width: 100%;
+  height:200px;
+}
+
+
+
+/* Style for About me Page */
+.reason {
+  font-size: 18px;
+  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
+  text-align: left;
+}
+
+.reason-section{
+  border:5px ridge #021444;
+  background: linear-gradient(
+  180deg,
+   #81fcf6,
+   #72fcf5,
+   #72fcf5,
+   #72fcf5,
+   #72fcf5,
+   #72fcf5,
+   #81fcf6
+  );
+  padding: 20px;
+}
+
+/* Style for Project Pages */
+.space{
+  padding-bottom: 200px;
+}
