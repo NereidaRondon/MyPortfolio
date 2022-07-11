@@ -65,7 +65,7 @@ a {
 }
 
 /* Banner styles */
-.banner{
+.banner-container{
   margin-top: 10px;
   display: grid;
   grid-template-columns: 10px 30x 10px;
@@ -126,24 +126,22 @@ div ul li a:hover {
 
 
 nav {
-  margin: 50px 60px;
+  margin: 100px auto;
   font-family: "Zilla Slab", "Century Gothic", serif;
   font-weight: bold;
-  float: center;
+  
 }
 
 
 nav ul {
   display: flex;
-  padding: 0px;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 20px;
   list-style: none;
 }
 
 nav ul li {
-  width: 15%;
-  padding: 0px 5px;
+  padding: 40px;
   text-align: center;
 }
 nav ul li a {
@@ -158,6 +156,8 @@ nav ul li a:hover {
 
 /* Section 1 */
 #portrait {
+  margin: 20px;
+  
   width: 160px;
   height: auto;
   filter: drop-shadow(8px 8px 5px rgb(1, 16, 39));
@@ -242,35 +242,96 @@ nav ul li a:hover {
 
 /* Section 3 */
 
+.skill-container{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 120px);
+  grid-template-rows: 60px 60px;
+  grid-auto-flow: column;
+}
+.sk-grid-1{
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.sk-grid-1a{
+  grid-column: 1/2;
+  grid-row: 2;
+}
+.sk-grid-2{
+  grid-column: 2/3;
+  grid-row: 1;
+}
+.sk-grid-2a{
+  grid-column: 2/3;
+  grid-row: 2;
+}
+.sk-grid-3{
+  grid-column: 3/4;
+  grid-row: 1;
+} 
+.sk-grid-3a{
+  grid-column: 3/4;
+  grid-row: 2;
+} 
+.sk-grid-4{
+  grid-column: 4/5;
+  grid-row: 1;
+} 
+.sk-grid-4a{
+  grid-column: 4/5;
+  grid-row: 2;
+} 
+.sk-grid-5{
+  grid-column: 1/2;
+  grid-row: 3;
+} 
+.sk-grid-5a{
+  grid-column: 1/2;
+  grid-row: 4;
+} 
+.sk-grid-6{
+  grid-column: 2/3;
+  grid-row:3;
+} 
+.sk-grid-6a{
+  grid-column: 2/3;
+  grid-row:4;
+} 
+.sk-grid-7{
+  grid-column: 3/4;
+  grid-row: 3;
+} 
+.sk-grid-7a{
+  grid-column: 3/4;
+  grid-row: 4;
+} 
+.sk-grid-8{
+  grid-column: 4/5;
+  grid-row: 3;
+}
+.sk-grid-8a{
+  grid-column: 4/5;
+  grid-row: 4;
+}  
+
 .skill-icon{
- font-size: 70px;
- color: rgb(68, 233, 255);
-  /* color: rgb(2, 20, 68); */
+  font-size: 70px;
+  /* color: rgb(119, 246, 255); */
+  /* color: rgb(87, 221, 255); */
+  color: rgb(1, 20, 49);
   
 }
 
-.skill{
-  display: felx;
-  font-size: 16px;
-  margin: 0px;
-  padding: 0px;
+.grid-label{
+  display:flex;
+  margin: auto;
+  justify-content: center;
+  border: 0;
+  padding: 05px 0px 5px 0px;
+  font-size: 15px;
+  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
   text-align: center;
-  
 }
-
-/* td{
-  padding: 0px;
-  filter: drop-shadow(5px 5px 2px #011027);
-  transition: 100ms ease-in-out;
-}
-
-td:hover {
-  filter: drop-shadow(4px 4px 2px rgb(40, 1, 109));
-  max-width: 110%;
-  background-position: right center;
-} */
-
-
 /* Section 4 style for project card tiles on home page */
 
 .project-container {
@@ -325,7 +386,7 @@ h1, h2, h3{
 
 h4{
   margin: 0;
-  font-size: x-large;
+  font-size: 20px;
   font-family: "Zilla Slab", "Century Gothic", serif;
   text-align: center;
   color: rgb(2, 20, 68);
@@ -391,28 +452,29 @@ table {
 }
 
 .col-1{
-  width: 370px;
+  width: 40%;
   font-weight: bold;
   border: none;
 }
 .col-2{
-  width: 370px;
+  width: 40%;
   font-weight: bold;
   border: none;
 }
 .col-3{
-  width: 120px;
+  width: 20%;
   font-weight: bold;
   border: none;
 }
 
 .row-1{
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
+  padding: 10px 0px;
 }
 .cert{
-  font-size: 20px;
+  font-size: 15px;
 }
 .cert:hover{
   color: rgb(13, 206, 84);
@@ -420,14 +482,14 @@ table {
   
 }
 td{
-  padding: 10px 0px;
+  padding: 10px 5px;
 }
 
 tr:nth-child(odd) {
   background-color: rgb(114, 252, 245);
 }
 tr:nth-child(even) {
-  background-color: rgba(101, 215, 230, 0.3);
+  background-color: rgba(101, 215, 230, 0.4);
 }
 /* Style for Project Pages */
 .space{
