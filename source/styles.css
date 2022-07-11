@@ -21,6 +21,9 @@ yellow green rgb(186, 252, 101);
 
 } */
 
+{
+  border: 1px solid black;
+}
 html {
   width: 100%;
   max-height: fit-content;
@@ -126,7 +129,7 @@ div ul li a:hover {
 
 
 nav {
-  margin: 100px auto;
+  margin: 50px auto;
   font-family: "Zilla Slab", "Century Gothic", serif;
   font-weight: bold;
   
@@ -156,9 +159,8 @@ nav ul li a:hover {
 
 /* Section 1 */
 #portrait {
-  margin: 20px;
-  
-  width: 160px;
+  margin: auto;
+  width: 150px;
   height: auto;
   filter: drop-shadow(8px 8px 5px rgb(1, 16, 39));
   transition: 200ms ease-in-out;
@@ -176,8 +178,8 @@ nav ul li a:hover {
 
 .container {
   display: grid;
-  /* grid-template-columns: 80px 250px;
-  grid-template-rows: 50px 90px 90px; */
+  grid-template-columns: 50px 250px 50px;
+  grid-template-rows: 50px 80px 90px;
   justify-content: center;  
 }
 .box-1 {
@@ -199,7 +201,7 @@ nav ul li a:hover {
 }
 .box-5 {
   grid-column: 3;
-  grid-row: 4 / 5;
+  grid-row: 1 / 5;
 }
 
 .typewriter {
@@ -243,10 +245,10 @@ nav ul li a:hover {
 /* Section 3 */
 
 .skill-container{
-  margin-top: 30px;
+  margin-top: auto;
   display: grid;
-  grid-template-columns: repeat(5, 120px);
-  grid-template-rows: 60px 60px;
+  grid-template-columns: repeat(5, 110px);
+  grid-template-rows: 70px 50px 70px 50px;
   grid-auto-flow: column;
 }
 .sk-grid-1{
@@ -315,23 +317,27 @@ nav ul li a:hover {
 }  
 
 .skill-icon{
+  display: flex;
+  justify-content: center;
   font-size: 70px;
-  /* color: rgb(119, 246, 255); */
-  /* color: rgb(87, 221, 255); */
-  color: rgb(1, 20, 49);
-  
+  align-items: center;
+  color: rgb(119, 246, 255);
+  /* color: rgb(1, 20, 49); */
+  filter: drop-shadow(6px 6px 1px #03293a);
 }
 
+.skill-icon:hover{
+  filter: drop-shadow( 6px 6px 1px rgb(40, 1, 109));
+}
 .grid-label{
   display:flex;
   margin: auto;
-  justify-content: center;
-  border: 0;
-  padding: 05px 0px 5px 0px;
+  padding: 5px 0px 20px 0px;
   font-size: 15px;
   font-family: "Barlow Condensed", "Century Gothic", sans-serif;
   text-align: center;
 }
+
 /* Section 4 style for project card tiles on home page */
 
 .project-container {
@@ -415,8 +421,6 @@ footer {
   width: 100%;
   height:200px;
 }
-
-
 
 /* Style for About me Page */
 .resume{
