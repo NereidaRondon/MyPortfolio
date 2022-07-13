@@ -109,7 +109,12 @@ header{
   );
 }
 
-
+.signature{
+  z-index: 11;
+  width:190px;
+  padding: 0;
+  margin: auto;
+}
 .item1{
   grid-column: 1/2;
   grid-row: 1;
@@ -165,17 +170,17 @@ nav {
 
 /* Navigation Menu */
 nav ul {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
   font-size: 18px;
-  margin: 0px;
+  margin: 0px 100px 50px;
   padding:0px;
   list-style: none;
 }
 
 nav ul li {
-  /* margin: 0px; */
-  padding: 10px 30px;
+  padding-top: 10px;
   text-align: center;
 }
 nav ul li a {
@@ -196,8 +201,6 @@ nav ul li a {
 }
 #portrait:hover {
   filter: drop-shadow( 10px 10px 7px rgb(40, 1, 109));
-  
-  
 }
 
 /* Grid container style */
@@ -387,13 +390,12 @@ nav ul li a {
   grid-row: 1;
 }
 .card{
-  width:250px;
   padding: 10px;
   filter: drop-shadow(6px 6px 4px #010a18);
   transition: 200ms ease-in-out;
+  margin:auto;
 }
 .card:hover{
- 
   filter: drop-shadow( 8px 8px 6px rgb(40, 1, 109));
 }
 /*end of style for project card tiles on home page */
@@ -458,8 +460,11 @@ footer {
 }
 
 /* Style for About me Page */
-.resume{
-  margin-bottom: 50px;
+
+.resume-card{
+  width:100%;
+  max-width: 800px;
+  padding: 20px 0px 30px 0px;
 }
 .reason {
   font-size: 18px;
