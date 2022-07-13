@@ -20,7 +20,7 @@
 </head>
   
 <body>
-		<div class="banner" role="banner">
+	<header class="banner-container" role="banner">
 		<div class="item1"><a class= "homeLink" href="index.html">{ NR }</a></div>
 		<div class="item2"></div>
 		<div class="item3">
@@ -32,8 +32,9 @@
 				<li><a href="https://github.com/NereidaRondon" target="_blank"><abbr title="Github"><i class="fa-brands fa-github fa-beat"></i></abbr></a></li>
    	  		</ul>
 		</div>
-	</div>
-
+	</header>
+	<div class="banner-div"></div>
+	
 
 	<nav>
    	    <ul>
@@ -43,41 +44,48 @@
 			<li><a href="contact me.html">Contact Me</a>></li>	
 	    </ul>	                  
     </nav>
-	<h1 class="page">Projects</h1>	
-   	<section>
-		<div >
-			<a href="project1.html" target="_blank"><img src="images/chrome-extension.png" width="350" alt="This tile links to video of chrome extension in use to bank URL links."></a>
-
-			<div>
-			<h2>My Resource Bank</h2>
-			<p>Created a chrome extension that banks the tab URL and stores the imformation in the browser's local storage until deleted. Includes an input field to label URL before banking. Used HTML, CSS, and JavaScript.</p>
-			<br>
-			<p><small><b>Music from Uppbeat (free for Creators!):</b> https://uppbeat.io/t/arend/let-the-light-in  &nbsp; <b>License code:</b> 0UHOJVDN8J72T6UT</small></p>
-			</div>
-		</div>
-<br>
-<hr>
-<br>
-   		<div>
-			<a href="project2.html" target="_blank"><img src="images/weather-app.png" width="350" alt="This tile links to My Weather App."></a> 
-			<div>
-			<h2>My Weather App</h2>
-			<p>Created a weather app that accurately provides the weather of any city that is searched by using an API. Used HTML, CSS, and JavaScript, and the Bootstrap library.</p>
-			</div>
-		</div>
-<br>
-<hr>
-<br>	
-   		<div >
-			<a href="project3.html" target="_blank"><img src="images/todo-list.png" width="350" alt="This tile links to a To Do app."></a> 
-			<div>
-			<h2>To Do do App</h2>
-			<p>Created a CRUD To do app using HTML, CSS, JavaScript, and the Bootstrap library. To do app let's user create, read, update and delete items.</p>
+	<h1 class="page">Projects</h1>
+	<section>
+		<div class="proj-container">
+			<div class="proj-grid grid">
+				<div class="proj-card">
+					<a href="project1.html" target="_blank"><img class="proj-img" src="images/chrome-ext.webp" alt="This tile links to a video of my chrome extension in action."></a>
+					<div class="card-content grid">
+						<h2 class="card-title">My Resource Bank</h2>
+						<p>Created a chrome extension that banks the tab URL and stores the imformation in the browser's local storage until deleted. Includes an input field to label URL before banking. Used HTML, CSS, and JavaScript.</p>
+						<p><small><b>Music from Uppbeat (free for Creators!):</b> https://uppbeat.io/t/arend/let-the-light-in  &nbsp; <b>License code:</b> 0UHOJVDN8J72T6UT</small></p>	
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div class="space"></div>
-	</section>	
+		<div class="proj-container">
+			<div class="proj-grid grid">
+				<div class="proj-card">
+					<a href="project2.html" target="_blank"><img class="proj-img" src="images/weather.webp" alt="This tile links to My Weather App."></a>
+					<div class="card-content grid">
+						<h2 class="card-title">My Weather App</h2>
+						<p>Created a weather app that accurately provides the weather of any city that is searched by using an API. Used HTML, CSS, and JavaScript, and the Bootstrap library.</p>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="proj-container">
+			<div class="proj-grid grid">
+				<div class="proj-card">
+					<a href="project3.html" target="_blank"><img  class="proj-img" src="images/todo.webp" alt="This tile links to a To Do app."></a>
+					<div class="card-content grid">
+						<h2 class="card-title">To Do App</h2>
+						<p>Created a CRUD To do app using HTML, CSS, JavaScript, and the Bootstrap library. To do app let's user create, read, update and delete items.</p>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
 </body>
 </html>
 	<br>

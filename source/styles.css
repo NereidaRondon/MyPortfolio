@@ -28,31 +28,30 @@ html {
   width: 100%;
   max-height: fit-content;
   font-family: "Zilla Slab", "Century Gothic", serif;
-
-background: linear-gradient(
-  330deg,
-  #011431,
-  #021444, 
-  #02265f, 
-  #003f73, 
-  #006b94, 
-  #009ca3, 
-  #39c7a2, 
-  #7ed174,
-  #bafc65
-  );
-
-}
-body{
-  margin: 0px;
+  
+  background: linear-gradient(
+    330deg,
+    #011431,
+    #021444, 
+    #02265f, 
+    #003f73, 
+    #006b94, 
+    #009ca3, 
+    #39c7a2, 
+    #7ed174,
+    #bafc65
+    );
+    
+  }
+  body{
+    margin: 0px;
+    padding: 70px 0px 0px 0px;
 }
 
 section{
   margin: 20px 40px;
 }
-.project-page{
- margin: 100px;  
-}
+
 video{
   margin: 0px;
   width: 100%; 
@@ -64,27 +63,63 @@ a {
   text-decoration: none;
   cursor:pointer;
   color: rgb(2, 20, 68);
-  transition: 0.1s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+a:hover {
+  color: rgb(9, 240, 93);
+  text-shadow: 2px 2px 4px rgb(157, 100, 255);
+  filter: drop-shadow(4px 4px 3px #03205e);
+   /* filter: drop-shadow(2px 2px 3px rgb(157, 100, 255)); */
+}
+/* Banner styles */
+header{
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 50px;
+  padding: 10px 10px 0px 10px;
+  margin: 0px;
+  z-index: 10;
 }
 
-/* Banner styles */
 .banner-container{
-  margin-top: 10px;
   display: grid;
-  grid-template-columns: 10px 30x 10px;
-  grid-template-rows: 50px;
+  grid-template-columns: 15% 55% 30%;
+  grid-template-rows: 40px;
   grid-auto-flow: column;
+  background-color: rgb(1, 20, 49);
 }
+.banner-div{
+  position: fixed;
+  width: 100%;
+  margin: 0px;
+  padding:0px;
+  display: grid;
+  z-index: 10;
+  top:60px;
+  height: 10px;    
+  background: linear-gradient(
+    70deg,
+    rgb(157, 100, 255),
+    rgb(40, 1, 109),
+    rgb(4, 48, 119), 
+    rgb(6, 134, 185),
+    rgb(50, 231, 183), 
+    rgb(186, 252, 101) 
+  );
+}
+
+
 .item1{
   grid-column: 1/2;
   grid-row: 1;
 }
 .item2{
-  grid-column: 2/12;
+  grid-column: 2/3;
   grid-row: 1;
 }
 .item3{
-  grid-column: 12/13;
+  grid-column: 3/4;
   grid-row: 1;
 }  
 
@@ -94,72 +129,66 @@ a {
 
 .homeLink {
   font-family: "Zilla Slab", "Century Gothic", serif;
-  font-weight: bold;
   font-size: 30px;
   text-decoration: none;
-  color: rgb(2, 20, 68);
+  color: rgb(57, 212, 255);
+  margin: 0px;
+  padding-top: 20px;
   transition: 0.1s ease-in-out;
-  margin: 20px 0px 0px 10px;
 }
 
-.homeLink:hover {
-  color: rgb(9, 240, 93);
-  text-shadow: 2px 2px 4px #03293a;
-}
 
 div ul {
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 0 20px 0 0;
   float: right;
-  font-size: 25px;
+  font-size: 22px;
   list-style: none;
 }
 
-div ul li {
-  padding: 0px 20px;
+div ul li a{
+  padding: 0px 13px;
+  color: rgb(57, 212, 255);
 }
 
-div ul li a:hover {
-  color: rgb(9, 240, 93);
-  text-shadow: 3px 3px 3px #03293a;
-  
-}
 /* End of banner styles */
 
 
 nav {
-  margin: 50px auto;
+  /* margin: 0px; */
+  width:auto;
   font-family: "Zilla Slab", "Century Gothic", serif;
   font-weight: bold;
   
 }
 
-
+/* Navigation Menu */
 nav ul {
   display: flex;
   justify-content: center;
-  font-size: 20px;
+  font-size: 18px;
+  margin: 0px;
+  padding:0px;
   list-style: none;
 }
 
 nav ul li {
-  padding: 40px;
+  /* margin: 0px; */
+  padding: 10px 30px;
   text-align: center;
 }
 nav ul li a {
   color: rgb(2, 20, 68);
   text-decoration: none;
-  transition: 0.1s ease-in-out;
 }
-nav ul li a:hover {
-  color: rgb(9, 240, 93);
-  filter: drop-shadow(4px 3px 2px #03293a);
-}
+
 
 /* Section 1 */
 #portrait {
   margin: auto;
+  display: grid;
+  align-items: center;
   width: 150px;
   height: auto;
   filter: drop-shadow(8px 8px 5px rgb(1, 16, 39));
@@ -167,19 +196,16 @@ nav ul li a:hover {
 }
 #portrait:hover {
   filter: drop-shadow( 10px 10px 7px rgb(40, 1, 109));
-  width: 190px;
+  
   
 }
 
 /* Grid container style */
-.grid {
-  border:1px solid rgb(9, 240, 93);
-}
 
 .container {
   display: grid;
-  grid-template-columns: 50px 250px 50px;
-  grid-template-rows: 50px 80px 90px;
+  grid-template-columns: 150px 300px 100px;
+  grid-template-rows: 50px 90px 90px;
   justify-content: center;  
 }
 .box-1 {
@@ -201,7 +227,7 @@ nav ul li a:hover {
 }
 .box-5 {
   grid-column: 3;
-  grid-row: 1 / 5;
+  grid-row: 1 / 4;
 }
 
 .typewriter {
@@ -235,15 +261,14 @@ nav ul li a:hover {
     border-color: rgb(3, 68, 112);
   }
 }
-
 /* end of grid container style */
+
 
 /* Section 2 */
 
 
 
 /* Section 3 */
-
 .skill-container{
   margin-top: auto;
   display: grid;
@@ -322,7 +347,6 @@ nav ul li a:hover {
   font-size: 70px;
   align-items: center;
   color: rgb(119, 246, 255);
-  /* color: rgb(1, 20, 49); */
   filter: drop-shadow(6px 6px 1px #03293a);
 }
 
@@ -342,8 +366,8 @@ nav ul li a:hover {
 
 .project-container {
   display: grid;
-  margin: 10px 50px 50px 50px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* margin: 10px 50px 50px 50px; */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .grid-element {
@@ -365,11 +389,12 @@ nav ul li a:hover {
 .card{
   width:250px;
   padding: 10px;
-  filter: drop-shadow(6px 6px 4px #011027);
+  filter: drop-shadow(6px 6px 4px #010a18);
   transition: 200ms ease-in-out;
 }
 .card:hover{
-  filter: drop-shadow(7px 7px 4px rgb(9, 240, 93));
+ 
+  filter: drop-shadow( 8px 8px 6px rgb(40, 1, 109));
 }
 /*end of style for project card tiles on home page */
 
@@ -378,24 +403,34 @@ nav ul li a:hover {
 
 h1, h2, h3{
   margin: 0px;
-  padding: 10px 0px 20px 0px;
+  padding: 10px 0px 10px 0px;
   font-family: "Zilla Slab", "Century Gothic", serif;
   text-align: left;
   color: rgb(2, 20, 68);
 }
 
-/* For h1 on other pages */
-.page{
-  margin: auto;
-  text-align: center;
-}
-
-h4{
-  margin: 0;
+h1.intro-txt{
+  padding: 0px;
   font-size: 20px;
   font-family: "Zilla Slab", "Century Gothic", serif;
   text-align: center;
-  color: rgb(2, 20, 68);
+  
+}
+
+/* For h1 on other pages */
+.page{
+  margin: auto;
+  padding: 50px 0px 10px 0px;
+  text-align: center;
+}
+.page-par{
+  margin: auto;
+  /* padding: 10px 0px; */
+  text-align: center;
+}
+
+.project-page{
+ margin: 100px;  
 }
 
 p {
@@ -499,3 +534,22 @@ tr:nth-child(even) {
 .space{
   padding-bottom: 100px;
 }
+.proj-img{
+  width: 300px;
+}
+
+.proj-container {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+.proj-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.proj-card{
+  border: 1px solid red;
+  
+}
+

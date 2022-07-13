@@ -55,6 +55,8 @@ button:hover {
 .gradient-button-1:hover {
   background-position: right center;
   color: #a7f09f; 
+  text-shadow: none;
+  
 }
 
 /*to Top button */
@@ -79,7 +81,10 @@ button:hover {
 .scrolly:hover {
   background-position: right center;
   color: #a7f09f; 
+  text-shadow: none;
+  
 }
+
 
 .form-btn {
   font-family: "Zilla Slab", "Century Gothic", serif;
