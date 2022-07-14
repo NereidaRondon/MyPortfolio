@@ -46,9 +46,10 @@ button:hover {
 .gradient-button-1 {
   background-image: linear-gradient(
     to right, 
-    #a7f09f 0%, 
-    #2bd3fd 51%, 
-    #250264 100%
+    rgb(131, 243, 119) 0%,
+    rgb(114, 252, 245) 20%, 
+    rgb(43, 211, 253) 60%, 
+    rgb(37, 2, 100) 100%
     ) 
 }
 

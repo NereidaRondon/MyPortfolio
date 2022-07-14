@@ -1,5 +1,6 @@
 /* color palette{
-headers navy blue rgb(2, 20, 68);
+banner and footer bg color rgb(1, 20, 49);
+  header text navy blue rgb(2, 20, 68);
 
 button font lime green rgb(167, 240, 159);
 
@@ -19,27 +20,25 @@ Sage mint green rgb(57, 199, 162);
 Lime green rgb(126, 209, 116);
 yellow green rgb(186, 252, 101);
 
+icons blue rgb(114, 252, 245);
 } */
 
-{
-  border: 1px solid black;
-}
 html {
   width: 100%;
-  max-height: fit-content;
+  /* max-height: fit-content; */
   font-family: "Zilla Slab", "Century Gothic", serif;
   
   background: linear-gradient(
     330deg,
-    #011431,
-    #021444, 
-    #02265f, 
-    #003f73, 
-    #006b94, 
-    #009ca3, 
-    #39c7a2, 
-    #7ed174,
-    #bafc65
+    rgb(1, 20, 49),
+    rgb(2, 20, 68), 
+    rgb(2, 38, 95), 
+    rgb(11, 90, 128), 
+    rgb(0, 114, 145),
+    rgb(0, 156, 163), 
+    rgb(57, 199, 162), 
+    rgb(126, 209, 116),
+    rgb(186, 252, 101)
     );
     
   }
@@ -84,7 +83,7 @@ header{
 
 .banner-container{
   display: grid;
-  grid-template-columns: 15% 55% 30%;
+  grid-template-columns: 15% 60% 25%;
   grid-template-rows: 40px;
   grid-auto-flow: column;
   background-color: rgb(1, 20, 49);
@@ -104,18 +103,15 @@ header{
     rgb(40, 1, 109),
     rgb(4, 48, 119), 
     rgb(6, 134, 185),
-    rgb(50, 231, 183), 
-    rgb(186, 252, 101) 
+    rgb(114, 252, 245),
+    rgb(50, 231, 183),
+    rgb(157, 243, 76), 
+    rgb(167, 240, 159)
   );
 }
 
-.signature{
-  z-index: 11;
-  width:190px;
-  padding: 0;
-  margin: auto;
-}
 .item1{
+  width: 200px;
   grid-column: 1/2;
   grid-row: 1;
 }
@@ -126,23 +122,15 @@ header{
 .item3{
   grid-column: 3/4;
   grid-row: 1;
+  justify-items: end;
 }  
-
 .fa-beat{
   --fa-animation-duration: 7s;
 }
-
 .homeLink {
-  font-family: "Zilla Slab", "Century Gothic", serif;
-  font-size: 30px;
-  text-decoration: none;
-  color: rgb(57, 212, 255);
-  margin: 0px;
-  padding-top: 20px;
+  width:200px;
   transition: 0.1s ease-in-out;
 }
-
-
 div ul {
   display: flex;
   margin: 0;
@@ -151,21 +139,18 @@ div ul {
   font-size: 22px;
   list-style: none;
 }
-
 div ul li a{
-  padding: 0px 13px;
-  color: rgb(57, 212, 255);
+  padding: 0px 15px;
+  color: rgb(74, 213, 252);
 }
 
 /* End of banner styles */
 
 
 nav {
-  /* margin: 0px; */
   width:auto;
   font-family: "Zilla Slab", "Century Gothic", serif;
   font-weight: bold;
-  
 }
 
 /* Navigation Menu */
@@ -174,15 +159,12 @@ nav ul {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
   font-size: 18px;
-  margin: 0px 100px 50px;
-  padding:0px;
+  margin: 0px 100px;
+  padding:10px;
   list-style: none;
-}
-
-nav ul li {
-  padding-top: 10px;
   text-align: center;
 }
+
 nav ul li a {
   color: rgb(2, 20, 68);
   text-decoration: none;
@@ -192,7 +174,7 @@ nav ul li a {
 /* Section 1 */
 #portrait {
   margin: auto;
-  display: grid;
+  /* display: grid; */
   align-items: center;
   width: 150px;
   height: auto;
@@ -207,6 +189,7 @@ nav ul li a {
 
 .container {
   display: grid;
+  margin: 100px 45px 0px 0px;
   grid-template-columns: 150px 300px 100px;
   grid-template-rows: 50px 90px 90px;
   justify-content: center;  
@@ -365,8 +348,12 @@ nav ul li a {
   text-align: center;
 }
 
-/* Section 4 style for project card tiles on home page */
+/* Section 4 style for project cards*/
 
+#project-section{
+  padding: 30px 0;
+
+}
 .project-container {
   display: grid;
   /* margin: 10px 50px 50px 50px; */
@@ -390,10 +377,9 @@ nav ul li a {
   grid-row: 1;
 }
 .card{
-  padding: 10px;
   filter: drop-shadow(6px 6px 4px #010a18);
   transition: 200ms ease-in-out;
-  margin:auto;
+  
 }
 .card:hover{
   filter: drop-shadow( 8px 8px 6px rgb(40, 1, 109));
@@ -419,6 +405,34 @@ h1.intro-txt{
   
 }
 
+
+p {
+  color: rgb(0, 0, 0);
+  border: 0;
+  margin: auto;
+  padding: 0px 0px 10px 0px;
+  font-size: 18px;
+  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
+  text-align: left;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+footer {
+  display:block;
+  text-align:center;
+  margin: auto;
+  padding-top: 100px;
+  color: rgb(167, 240, 159);
+}
+.footer{
+  background-color: #011431;
+  width: 100%;
+  height:200px;
+}
+
 /* For h1 on other pages */
 .page{
   margin: auto;
@@ -435,30 +449,6 @@ h1.intro-txt{
  margin: 100px;  
 }
 
-p {
-  color: rgb(0, 0, 0);
-  border: 0;
-  margin: auto;
-  padding: 0px 0px 10px 0px;
-  font-size: 18px;
-  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
-  text-align: left;
-}
-
-
-footer {
-  display:block;
-  text-align:center;
-  margin: auto;
-  padding-top: 100px;
-  color: rgb(167, 240, 159);
-}
-.footer{
-  background-color: #011431;
-  width: 100%;
-  height:200px;
-}
-
 /* Style for About me Page */
 
 .resume-card{
@@ -466,7 +456,7 @@ footer {
   max-width: 800px;
   padding: 20px 0px 30px 0px;
 }
-.reason {
+.reason{
   font-size: 18px;
   font-family: "Barlow Condensed", "Century Gothic", sans-serif;
   text-align: left;
@@ -539,22 +529,48 @@ tr:nth-child(even) {
 .space{
   padding-bottom: 100px;
 }
-.proj-img{
-  width: 300px;
+
+
+.card-container{
+  display:grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+  justify-items: center; 
+}
+.card-box{
+  display:flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-between;
+  background-color: rgb(114, 252, 245);
+}
+.card-img{
+  aspect-ratio: 3/2;
+  filter: drop-shadow(5px 5px 3px #021635);
+  transition: 200ms ease-in-out;
+}
+.card-img:hover{
+  filter: drop-shadow( 6px 6px 4px rgb(40, 1, 109));
+}
+.card-title{
+  margin:5px auto;
 }
 
-.proj-container {
-  max-width: 100rem;
-  margin-inline: auto;
-  padding-inline: 2rem;
-}
-.proj-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-    
-}
-.proj-card{
-  border: 1px solid red;
-  
+@media only screen and (max-width: 600px){
+  .card-container{
+    display:grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    height: auto;
+    justify-items: center; 
 }
 
+}
+
+
+
+
+
+
+/
