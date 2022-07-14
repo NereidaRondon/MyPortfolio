@@ -49,7 +49,7 @@ section{
 }
 @media only screen and (max-width: 600px){
   section{
-    margin: 10px 10px;
+    margin: 20px 15px;
   }
 } 
 
@@ -134,6 +134,14 @@ header{
 .homeLink:hover{
   filter: drop-shadow(2px 2px 1px rgb(157, 100, 255));
 }
+.signature{
+  width: 200px;
+}
+@media only screen and (max-width:600px){
+  .signature {
+  width:175px;
+  }
+}
 div ul {
   display: flex;
   margin: 0;
@@ -159,7 +167,7 @@ nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0px 100px;
   padding:10px;
   list-style: none;
@@ -169,6 +177,8 @@ nav ul li a {
   color: rgb(2, 20, 68);
   text-decoration: none;
 }
+
+
 @media only screen and (max-width: 600px){
   nav ul {
     gap: .5rem;
@@ -176,9 +186,9 @@ nav ul li a {
     margin: auto; 
   }
   nav ul li{
-    padding:10px 50px;
     font-size: 25px;
-    margin: 0px 20x;  
+    padding:10px 50px;
+    margin: 0px 20x;
     border: 1px solid rgba(1, 20, 49, .5);
     transition: 100ms ease-in-out;
     box-shadow: 3px 5px 3px 1px rgb(3, 41, 58);
@@ -197,16 +207,13 @@ nav ul li a {
     box-shadow: 3px 5px 3px 1px rgb(3, 41, 58);
     filter: drop-shadow(2px 2px 1px rgb(157, 100, 255));
   }
+ 
 }
 /* --------------Section 1 --------------*/
-#one{
-  padding: 5rem;
-}
 
 #portrait {
   margin: auto;
   display: grid;
-  /* align-items: center; */
   width: 140px;
   height: auto;
   filter: drop-shadow(7px 7px 5px rgb(1, 16, 39));
@@ -216,25 +223,14 @@ nav ul li a {
   filter: drop-shadow( 9px 9px 6px rgb(40, 1, 109));
 }
 
-  .intro-container {
+.intro-container {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto;
-  /* height: auto; */
   justify-content: center;
-  }
+}
 
-/* @media only screen and (max-width: 600px){
-  .intro-container {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: auto;
-  height: auto;
-  justify-content: space-between;
-  }
-}  */
 
 .box-1 {
   grid-column: 1;
@@ -250,16 +246,16 @@ nav ul li a {
 }
 
 .typewriter {
-  font-size: 36px;
+  font-size: 34px;
   margin: 0;
   padding: 0;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  max-width: 270px;
+  max-width: 252px;
   border-right: 0.08em solid rgb(1, 20, 49); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.04em; /* Adjust as needed */
-  animation: typing 4s steps(17, end), blink-caret 0.9s step-end infinite;
+  letter-spacing: 0.03em; /* Adjust as needed */
+  animation: typing 4s steps(15, end), blink-caret 1s step-end infinite;
 }
 /* The typing effect */
 @keyframes typing {
@@ -520,6 +516,7 @@ footer {
 .resume-card{
   width:100%;
   max-width: 800px;
+  margin: auto;
   padding: 20px 0px 30px 0px;
 }
 .reason{
@@ -587,4 +584,75 @@ tr:nth-child(odd) {
 }
 tr:nth-child(even) {
   background-color: rgba(101, 215, 230, 0.4);
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------------- */
+/* --------------------------BUTTONS----------------------------- */
+/* -------------------------------------------------------------- */
+
+
+.gradient-button {
+  padding: 10px 15px;
+  margin: auto;
+  font-size: 15px;
+  font-weight:bold;
+  color: rgb(3, 43, 119);
+  border-radius: 5px;
+  background-size: 300% auto;
+  transition: 0.5s;
+  box-shadow: 3px 5px 3px 1px rgb(3, 41, 58);
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+.gradient-button:hover{
+  box-shadow: 4px 5px 4px 1px rgb(3, 41, 58);
+  margin: auto;
+}
+.gradient-button-1 {
+  background-image: linear-gradient(
+    to right, 
+    rgb(131, 243, 119) 0%,
+    rgb(114, 252, 245) 20%, 
+    rgb(43, 211, 253) 60%, 
+    rgb(37, 2, 100) 100%
+  ) 
+}
+.gradient-button-1:hover {
+  background-position: right center;
+  color: #9af391; 
+  text-shadow: none;
+  
+}
+
+/*to Top button */
+.scrolly {
+  font-size: 15px;
+  font-weight:bold;
+  color: rgb(3, 43, 119);
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding:10px 0;
+  background-size: 200% auto;
+  transition: all 0.6s cubic-bezier(.25,.8,.25,1);
+  background-image: linear-gradient(
+    to right, 
+    #a7f09f 8%, 
+    #2bd3fd 51%, 
+    #250264 100%
+  )
+}
+.scrolly:hover {
+  background-position: right center;
+  color: #a7f09f; 
+  text-shadow: none;
+  
 }
