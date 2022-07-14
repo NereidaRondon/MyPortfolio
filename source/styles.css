@@ -53,7 +53,7 @@ video{
   height:auto;
 }
 
-/* ALL anchor tags */
+/*-------------- ALL anchor tags-------------- */
 a {
   text-decoration: none;
   cursor:pointer;
@@ -66,7 +66,7 @@ a:hover {
   filter: drop-shadow(4px 4px 3px #03205e);
    /* filter: drop-shadow(2px 2px 3px rgb(157, 100, 255)); */
 }
-/* Banner styles */
+/*-------------- Banner styles-------------- */
 header{
   position: fixed;
   top:0;
@@ -148,7 +148,7 @@ nav {
   font-weight: bold;
 }
 
-/* Navigation Menu */
+/*--------------- Navigation Menu----------------- */
 nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -164,7 +164,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* Section 1 */
+/* --------------Section 1 --------------*/
 #portrait {
   margin: auto;
   /* display: grid; */
@@ -179,12 +179,13 @@ nav ul li a {
 }
 
 /* Grid container style */
-.container {
+.intro-container {
   display: grid;
   margin: 100px 45px 0px 0px;
   grid-template-columns: 150px 300px 100px;
   grid-template-rows: 50px 90px 90px;
-  justify-content: center;  
+  justify-content: center;
+  border: 1px solid red;  
 }
 .box-1 {
   grid-column: 1;
@@ -237,9 +238,9 @@ nav ul li a {
 }
 /* end of grid container style */
 
-/* Section 2 */
+/* --------------Section 2 --------------*/
 
-/* Section 3 */
+/*-------------- Section 3-------------- */
 .skill-container{
   display: grid;
   grid-template-columns: repeat( 4, 6rem);
@@ -327,7 +328,7 @@ nav ul li a {
   font-family: "Barlow Condensed", "Century Gothic", sans-serif;
 }
 
-/* Section 4 Project cards*/
+/* --------------Section 4 Project cards--------------*/
 #projects-section{
   padding: 50px 0;
 
@@ -368,7 +369,7 @@ nav ul li a {
 }
 /*end of style for Project cards*/
 
-/* ALL */
+/*-------------- ALL --------------*/
 h1, h2, h3{
   margin: 0px;
   padding: 30px 0px 30px 0px;
@@ -416,7 +417,7 @@ footer {
   
 }
 
-/* Style for About me Page */
+/* --------------Style for About me Page-------------- */
 .resume-card{
   width:100%;
   max-width: 800px;
