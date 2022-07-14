@@ -285,9 +285,7 @@ nav ul li a {
 /* --------------Section 2 --------------*/
 
 /*-------------- Section 3-------------- */
-#three{
-  padding-bottom: 50px;
-}
+
 .skill-container{
   display: grid;
   grid-template-columns: repeat(4, 6rem);
@@ -426,7 +424,7 @@ nav ul li a {
 
 /* --------------Section 4 Project cards--------------*/
 #projects-section{
-  padding: 50px 0;
+  padding: 100px 0;
 
 }
 .card-container{
