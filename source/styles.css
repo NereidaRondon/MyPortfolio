@@ -285,6 +285,9 @@ nav ul li a {
 /* --------------Section 2 --------------*/
 
 /*-------------- Section 3-------------- */
+#three{
+  padding-bottom: 50px;
+}
 .skill-container{
   display: grid;
   grid-template-columns: repeat(4, 6rem);
