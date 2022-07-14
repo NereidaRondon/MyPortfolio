@@ -47,6 +47,12 @@ body{
 section{
   margin: 20px 40px;
 }
+@media only screen and (max-width: 600px){
+  section{
+    margin: 10px 10px;
+  }
+} 
+
 video{
   margin: 0px;
   width: 100%; 
@@ -64,7 +70,7 @@ a:hover {
   color: rgb(9, 240, 93);
   text-shadow: 2px 2px 4px rgb(157, 100, 255);
   filter: drop-shadow(4px 4px 3px #03205e);
-   /* filter: drop-shadow(2px 2px 3px rgb(157, 100, 255)); */
+  
 }
 /*-------------- Banner styles-------------- */
 header{
@@ -163,54 +169,92 @@ nav ul li a {
   color: rgb(2, 20, 68);
   text-decoration: none;
 }
-
+@media only screen and (max-width: 600px){
+  nav ul {
+    gap: .5rem;
+    grid-template-columns: 1fr;
+    margin: auto; 
+  }
+  nav ul li{
+    padding:10px 50px;
+    font-size: 25px;
+    margin: 0px 20x;  
+    border: 1px solid rgba(1, 20, 49, .5);
+    transition: 100ms ease-in-out;
+    box-shadow: 3px 5px 3px 1px rgb(3, 41, 58);
+    background: linear-gradient(
+    to right, 
+    rgb(177, 231, 132) 0%,
+    rgb(102, 228, 88) 30%,
+    rgb(43, 211, 253) 60%, 
+    rgb(3, 116, 182) 85%,
+    rgb(122, 11, 187) 105%
+    ); 
+  }
+ 
+  nav ul li:hover{
+    background-position: right center;
+    box-shadow: 3px 5px 3px 1px rgb(3, 41, 58);
+    filter: drop-shadow(2px 2px 1px rgb(157, 100, 255));
+  }
+}
 /* --------------Section 1 --------------*/
+#one{
+  padding: 5rem;
+}
+
 #portrait {
   margin: auto;
-  /* display: grid; */
-  align-items: center;
-  width: 150px;
+  display: grid;
+  /* align-items: center; */
+  width: 140px;
   height: auto;
-  filter: drop-shadow(8px 8px 5px rgb(1, 16, 39));
+  filter: drop-shadow(7px 7px 5px rgb(1, 16, 39));
   transition: 200ms ease-in-out;
 }
 #portrait:hover {
-  filter: drop-shadow( 10px 10px 7px rgb(40, 1, 109));
+  filter: drop-shadow( 9px 9px 6px rgb(40, 1, 109));
 }
 
-/* Grid container style */
-.intro-container {
+  .intro-container {
   display: grid;
-  margin: 100px 45px 0px 0px;
-  grid-template-columns: 150px 300px 100px;
-  grid-template-rows: 50px 90px 90px;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  /* height: auto; */
   justify-content: center;
-  border: 1px solid red;  
-}
+  }
+
+/* @media only screen and (max-width: 600px){
+  .intro-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  height: auto;
+  justify-content: space-between;
+  }
+}  */
+
 .box-1 {
   grid-column: 1;
-  grid-row: 1 / 4;
+  grid-row: 1;
 }
 .box-2 {
-  grid-column: 2;
-  grid-row: 1 / 2;
+  grid-column: 1;
+  grid-row: 2;
 }
 .box-3 {
-  grid-column: 2;
-  grid-row: 2 / 3;
+  grid-column: 1;
+  grid-row: 3;
 }
-.box-4 {
-  grid-column: 2;
-  grid-row: 3 / 4;
-}
-.box-5 {
-  grid-column: 3;
-  grid-row: 1 / 4;
-}
+
 .typewriter {
-  font-size: 39px;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  max-width: 300px;
+  max-width: 270px;
   border-right: 0.08em solid rgb(1, 20, 49); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
@@ -233,7 +277,7 @@ nav ul li a {
     border-color: transparent;
   }
   50% {
-    border-color: rgb(3, 68, 112);
+    border-color: rgb(2, 56, 92);
   }
 }
 /* end of grid container style */
@@ -243,74 +287,108 @@ nav ul li a {
 /*-------------- Section 3-------------- */
 .skill-container{
   display: grid;
-  grid-template-columns: repeat( 4, 6rem);
-  grid-template-rows: 75px 30px 75px 30px;
-  grid-gap: .5rem;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: 75px 30px;
+  row-gap: .5rem;
+  column-gap: 1rem;
 }
 .sk-grid-1{
-  grid-column: 1/2;
+  grid-column: 1;
   grid-row: 1;
 }
 .sk-grid-1a{
-  grid-column: 1/2;
+  grid-column: 1;
   grid-row: 2;
 }
 .sk-grid-2{
-  grid-column: 2/3;
+  grid-column: 2;
   grid-row: 1;
 }
 .sk-grid-2a{
-  grid-column: 2/3;
+  grid-column: 2;
   grid-row: 2;
 }
 .sk-grid-3{
-  grid-column: 3/4;
+  grid-column: 3;
   grid-row: 1;
 } 
 .sk-grid-3a{
-  grid-column: 3/4;
+  grid-column: 3;
   grid-row: 2;
 } 
 .sk-grid-4{
-  grid-column: 4/5;
+  grid-column: 4;
   grid-row: 1;
 } 
 .sk-grid-4a{
-  grid-column: 4/5;
+  grid-column: 4;
   grid-row: 2;
 } 
 .sk-grid-5{
-  grid-column: 1/2;
+  grid-column: 1;
   grid-row: 3;
 } 
 .sk-grid-5a{
-  grid-column: 1/2;
+  grid-column: 1;
   grid-row: 4;
 } 
 .sk-grid-6{
-  grid-column: 2/3;
+  grid-column: 2;
   grid-row:3;
 } 
 .sk-grid-6a{
-  grid-column: 2/3;
+  grid-column: 2;
   grid-row:4;
 } 
 .sk-grid-7{
-  grid-column: 3/4;
+  grid-column: 3;
   grid-row: 3;
 } 
 .sk-grid-7a{
-  grid-column: 3/4;
+  grid-column: 3;
   grid-row: 4;
 } 
 .sk-grid-8{
-  grid-column: 4/5;
+  grid-column: 4;
   grid-row: 3;
 }
 .sk-grid-8a{
-  grid-column: 4/5;
+  grid-column: 4;
   grid-row: 4;
 }  
+.sk-grid-9{
+  grid-column: 1;
+  grid-row: 5;
+}
+.sk-grid-9a{
+  grid-column: 1;
+  grid-row: 6;
+}  
+.sk-grid-10{
+  grid-column: 2;
+  grid-row: 5;
+}
+.sk-grid-10a{
+  grid-column: 2;
+  grid-row: 6;
+}  
+.sk-grid-11{
+  grid-column: 3;
+  grid-row: 5;
+}
+.sk-grid-11a{
+  grid-column: 3;
+  grid-row: 6;
+}  
+.sk-grid-12{
+  grid-column: 4;
+  grid-row: 5;
+}
+.sk-grid-12a{
+  grid-column: 4;
+  grid-row: 6;
+}  
+
 .skill-icon{
   display: flex;
   justify-content: center;
@@ -322,11 +400,26 @@ nav ul li a {
 .skill-icon:hover{
   filter: drop-shadow( 6px 6px 2px rgb(40, 1, 109));
 }
+
 .grid-label{
   margin: 0 auto;
-  font-size: 15px;
+  font-size: 18px;
+  padding-bottom: 30px;
   font-family: "Barlow Condensed", "Century Gothic", sans-serif;
 }
+
+@media only screen and (max-width: 600px){
+  .skill-icon{
+    font-size: 50px;
+  } 
+
+  .skill-container{
+    display: grid;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: 60px 30px 60px 30px;
+    row-gap: .25rem;
+  }
+}   
 
 /* --------------Section 4 Project cards--------------*/
 #projects-section{
@@ -335,7 +428,7 @@ nav ul li a {
 }
 .card-container{
   display:grid;
-  grid-gap: 2rem;
+  grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   height: auto;
   
@@ -344,10 +437,11 @@ nav ul li a {
   display:flex;
   flex-direction: column;
   padding: 1rem;
-  justify-content:space-between;
+  justify-content:start;
   background-color: rgb(114, 252, 245);
 }
 .card-img{
+  margin: 1rem;
   aspect-ratio: 3/2;
   filter: drop-shadow(5px 5px 3px #021635);
   transition: 200ms ease-in-out;
@@ -358,14 +452,18 @@ nav ul li a {
 .card-title{
   margin: 5px auto;
 }
+.card-p{
+  margin: 0;
+}
 @media only screen and (max-width: 600px){
   .card-container{
     display:grid;
     grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     height: auto;
     justify-items: center; 
   }
+
 }
 /*end of style for Project cards*/
 
