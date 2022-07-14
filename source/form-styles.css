@@ -30,13 +30,13 @@ label{
 input{
   margin:5px 0px;
   border: none;
-  background-color: rgb(142, 252, 182);
+  background-color: rgb(100, 255, 236);
   display:block;
 }
 
 textarea{
   margin:5px 0px;
-  background-color: rgb(142, 252, 182);
+  background-color: rgb(100, 255, 236);
   display:block;
   border: none;
   width: 350px;

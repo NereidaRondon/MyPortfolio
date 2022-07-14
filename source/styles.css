@@ -1,6 +1,6 @@
 /* color palette{
 banner and footer bg color rgb(1, 20, 49);
-  header text navy blue rgb(2, 20, 68);
+header text navy blue rgb(2, 20, 68);
 
 button font lime green rgb(167, 240, 159);
 
@@ -27,7 +27,6 @@ html {
   width: 100%;
   /* max-height: fit-content; */
   font-family: "Zilla Slab", "Century Gothic", serif;
-  
   background: linear-gradient(
     330deg,
     rgb(1, 20, 49),
@@ -40,17 +39,14 @@ html {
     rgb(126, 209, 116),
     rgb(186, 252, 101)
     );
-    
   }
-  body{
-    margin: 0px;
-    padding: 70px 0px 0px 0px;
+body{
+  margin: 0px;
+  padding: 70px 0px 0px 0px;
 }
-
 section{
   margin: 20px 40px;
 }
-
 video{
   margin: 0px;
   width: 100%; 
@@ -80,7 +76,6 @@ header{
   margin: 0px;
   z-index: 10;
 }
-
 .banner-container{
   display: grid;
   grid-template-columns: 15% 60% 25%;
@@ -109,7 +104,6 @@ header{
     rgb(167, 240, 159)
   );
 }
-
 .item1{
   width: 200px;
   grid-column: 1/2;
@@ -129,7 +123,10 @@ header{
 }
 .homeLink {
   width:200px;
-  transition: 0.1s ease-in-out;
+  transition: 100ms ease-in-out;
+}
+.homeLink:hover{
+  filter: drop-shadow(2px 2px 1px rgb(157, 100, 255));
 }
 div ul {
   display: flex;
@@ -143,9 +140,7 @@ div ul li a{
   padding: 0px 15px;
   color: rgb(74, 213, 252);
 }
-
 /* End of banner styles */
-
 
 nav {
   width:auto;
@@ -164,12 +159,10 @@ nav ul {
   list-style: none;
   text-align: center;
 }
-
 nav ul li a {
   color: rgb(2, 20, 68);
   text-decoration: none;
 }
-
 
 /* Section 1 */
 #portrait {
@@ -186,7 +179,6 @@ nav ul li a {
 }
 
 /* Grid container style */
-
 .container {
   display: grid;
   margin: 100px 45px 0px 0px;
@@ -202,7 +194,6 @@ nav ul li a {
   grid-column: 2;
   grid-row: 1 / 2;
 }
-
 .box-3 {
   grid-column: 2;
   grid-row: 2 / 3;
@@ -215,7 +206,6 @@ nav ul li a {
   grid-column: 3;
   grid-row: 1 / 4;
 }
-
 .typewriter {
   font-size: 39px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -226,7 +216,6 @@ nav ul li a {
   letter-spacing: 0.04em; /* Adjust as needed */
   animation: typing 4s steps(17, end), blink-caret 0.9s step-end infinite;
 }
-
 /* The typing effect */
 @keyframes typing {
   from {
@@ -236,7 +225,6 @@ nav ul li a {
     width: 100%;
   }
 }
-
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from,
@@ -249,18 +237,14 @@ nav ul li a {
 }
 /* end of grid container style */
 
-
 /* Section 2 */
-
-
 
 /* Section 3 */
 .skill-container{
-  margin-top: auto;
   display: grid;
-  grid-template-columns: repeat(5, 110px);
-  grid-template-rows: 70px 50px 70px 50px;
-  grid-auto-flow: column;
+  grid-template-columns: repeat( 4, 6rem);
+  grid-template-rows: 75px 30px 75px 30px;
+  grid-gap: .5rem;
 }
 .sk-grid-1{
   grid-column: 1/2;
@@ -326,52 +310,40 @@ nav ul li a {
   grid-column: 4/5;
   grid-row: 4;
 }  
-
 .skill-icon{
   display: flex;
   justify-content: center;
   font-size: 70px;
-  align-items: center;
+  margin: auto;
   color: rgb(119, 246, 255);
-  filter: drop-shadow(6px 6px 1px #03293a);
+  filter: drop-shadow(6px 6px 1px rgb(3, 41, 58));
 }
-
 .skill-icon:hover{
-  filter: drop-shadow( 6px 6px 1px rgb(40, 1, 109));
+  filter: drop-shadow( 6px 6px 2px rgb(40, 1, 109));
 }
 .grid-label{
-  display:flex;
-  margin: auto;
-  padding: 5px 0px 20px 0px;
+  margin: 0 auto;
   font-size: 15px;
   font-family: "Barlow Condensed", "Century Gothic", sans-serif;
-  text-align: center;
 }
 
-/* Section 4 style for project cards*/
-
+/* Section 4 Project cards*/
 #projects-section{
   padding: 50px 0;
 
 }
-/* Style for Project */
-.space{
-  padding-bottom: 100px;
-}
-
-
 .card-container{
   display:grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   height: auto;
-  justify-items: center; 
+  
 }
 .card-box{
   display:flex;
   flex-direction: column;
   padding: 1rem;
-  justify-content: space-between;
+  justify-content:space-between;
   background-color: rgb(114, 252, 245);
 }
 .card-img{
@@ -383,9 +355,8 @@ nav ul li a {
   filter: drop-shadow( 6px 6px 4px rgb(40, 1, 109));
 }
 .card-title{
-  margin:5px auto;
+  margin: 5px auto;
 }
-
 @media only screen and (max-width: 600px){
   .card-container{
     display:grid;
@@ -393,24 +364,11 @@ nav ul li a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     height: auto;
     justify-items: center; 
+  }
 }
-
-}
-
-
-.card{
-  filter: drop-shadow(6px 6px 4px #010a18);
-  transition: 200ms ease-in-out;
-  
-}
-.card:hover{
-  filter: drop-shadow( 8px 8px 6px rgb(40, 1, 109));
-}
-/*end of style for project card tiles on home page */
-
+/*end of style for Project cards*/
 
 /* ALL */
-
 h1, h2, h3{
   margin: 0px;
   padding: 30px 0px 30px 0px;
@@ -418,16 +376,12 @@ h1, h2, h3{
   text-align: left;
   color: rgb(2, 20, 68);
 }
-
 h1.intro-txt{
   padding: 0px;
   font-size: 20px;
   font-family: "Zilla Slab", "Century Gothic", serif;
   text-align: center;
-  
 }
-
-
 p {
   color: rgb(0, 0, 0);
   border: 0;
@@ -437,7 +391,6 @@ p {
   font-family: "Barlow Condensed", "Century Gothic", sans-serif;
   text-align: left;
 }
-
 img{
   max-width:100%;
   display:block;
@@ -456,23 +409,14 @@ footer {
 }
 
 /* For h1 on other pages */
-.page{
+.title{
   margin: auto;
   padding: 50px 0px 10px 0px;
   text-align: center;
-}
-.page-par{
-  margin: auto;
-  /* padding: 10px 0px; */
-  text-align: center;
-}
-
-.project-page{
- margin: 100px;  
+  
 }
 
 /* Style for About me Page */
-
 .resume-card{
   width:100%;
   max-width: 800px;
@@ -483,22 +427,23 @@ footer {
   font-family: "Barlow Condensed", "Century Gothic", sans-serif;
   text-align: left;
 }
-
+h2.reason{
+  padding: 10px 0px;
+  margin: 0px;
+  font-family: "Zilla Slab", "Century Gothic", serif;
+}
 .reason-section{
   border:5px ridge #021444;
   background: linear-gradient(
-  180deg,
-   rgb(101, 215, 230),
-   rgb(114, 252, 245),
-   rgb(114, 252, 245),
-   rgb(114, 252, 245),
-   rgb(114, 252, 245),
-   rgb(114, 252, 245),
-   rgb(101, 215, 230)
+  120deg,
+  rgb(213, 252, 178) 10%,
+  rgb(127, 247, 207) 40%,
+  rgb(100, 255, 236)60%,
+  rgb(54, 201, 238)80%,
+  rgb(4, 157, 218)100%
   );
   padding: 20px;
 }
-
 table {
   table-layout: fixed;
   width: 100%;
@@ -506,7 +451,6 @@ table {
   text-align: left;
   color:#021444;
 }
-
 .col-1{
   width: 40%;
   font-weight: bold;
@@ -522,7 +466,6 @@ table {
   font-weight: bold;
   border: none;
 }
-
 .row-1{
   font-weight: bolder;
   font-size: 15px;
@@ -535,23 +478,13 @@ table {
 .cert:hover{
   color: rgb(13, 206, 84);
   text-shadow: 3px 3px 2px #03293a;
-  
 }
 td{
   padding: 10px 5px;
 }
-
 tr:nth-child(odd) {
   background-color: rgb(114, 252, 245);
 }
 tr:nth-child(even) {
   background-color: rgba(101, 215, 230, 0.4);
 }
-
-
-
-
-
-
-
-
