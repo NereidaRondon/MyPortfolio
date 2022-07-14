@@ -8,3 +8,4 @@ $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 echo "Thank you for getting in touch! I'll get back to you soon.";
 ?>
+
