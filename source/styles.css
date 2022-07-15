@@ -136,6 +136,8 @@ header{
 }
 .signature{
   width: 200px;
+  height: auto;
+  aspect-ratio: 5/2;
 }
 @media only screen and (max-width:600px){
   .signature {
@@ -289,7 +291,6 @@ nav ul li a {
 }
 
 }
-/* end of grid container style */
 
 /* --------------Section 2 --------------*/
 #two{
@@ -300,11 +301,11 @@ nav ul li a {
 /*-------------- Section 3---------------------------- */
 /* --------------------------------------------------- */
 #three{
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 .tool-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
   grid-template-rows: auto;
   gap: 2rem;
 }
@@ -336,18 +337,6 @@ nav ul li a {
   text-align: center;
 }
 
-/* @media only screen and (max-width: 600px){
-  .tool-icon{
-    font-size: 50px;
-  } 
-
-  .tool-container{
-    display: grid;
-    grid-template-columns: repeat(4, 5rem);
-    grid-template-rows: 60px 30px 60px 30px;
-    row-gap: .25rem;
-  }
-}    */
 
 /* --------------------------------------------------- */
 /* --------------Section 4 Project cards--------------*/
@@ -372,11 +361,17 @@ nav ul li a {
 }
 .card-img{
   margin: 2rem 2rem 0.5rem 2rem;
-  aspect-ratio: 3/2;
   align-self: center;
   filter: drop-shadow(5px 5px 3px #021635);
   transition: 200ms ease-in-out;
+  /* aspect-ratio: 3/2;
+  height: auto; */
 }
+.ratio{
+  aspect-ratio: 3/2;
+  height: auto;
+}
+
 .card-img:hover{
   filter: drop-shadow( 6px 6px 4px rgb(40, 1, 109));
 }
