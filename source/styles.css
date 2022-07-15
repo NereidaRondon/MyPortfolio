@@ -220,6 +220,7 @@ nav ul li a {
   padding: 0 0 10px 0;
   display: grid;
   width: 150px;
+  height: auto;
   filter: drop-shadow(7px 7px 5px rgb(1, 16, 39));
   transition: 200ms ease-in-out;
 }
