@@ -211,7 +211,7 @@ nav ul li a {
 }
 /* --------------Section 1 --------------*/
 #one{
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 }
 #portrait {
   margin: auto;
@@ -259,6 +259,13 @@ nav ul li a {
   letter-spacing: 0.03em; /* Adjust as needed */
   animation: typing 4s steps(15, end), blink-caret 1s step-end infinite;
 }
+@media only screens and (max-width: 600px){
+  .typewriter {
+  font-size: 28px;
+  max-width: 230px;
+  }
+}
+
 /* The typing effect */
 @keyframes typing {
   from {
