@@ -252,11 +252,11 @@ nav ul li a {
   margin: 0;
   padding: 0;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  max-width: 210px;
+  max-width: 207px;
   border-right: 0.08em solid rgb(1, 20, 49); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.03em; /* Adjust as needed */
+  letter-spacing: 0.025em; /* Adjust as needed */
   animation: typing 5s steps(28, end), blink-caret 1s step-end infinite;
 }
 @media only screens and (max-width: 600px){
@@ -265,7 +265,7 @@ nav ul li a {
   max-width: 180px;
   border-right: none;
   overflow:visible;
-  animation: typing 5s steps(25, end), blink-caret 1s step-end infinite;
+  animation:none;
   }
 }
 
