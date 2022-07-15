@@ -445,6 +445,7 @@ footer {
 /* --------------Style for ABOUT Page-------------- */
 .resume-card{
   aspect-ratio:3/2;
+  height:auto;
   margin: auto;
   padding: 20px 0px 30px 0px;
 }
