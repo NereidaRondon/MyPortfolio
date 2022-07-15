@@ -248,21 +248,22 @@ nav ul li a {
 }
 
 .typewriter {
-  font-size: 34px;
+  font-size: 30px;
   margin: 0;
   padding: 0;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  max-width: 252px;
+  max-width: 225px;
   border-right: 0.08em solid rgb(1, 20, 49); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.03em; /* Adjust as needed */
-  animation: typing 4s steps(15, end), blink-caret 1s step-end infinite;
+  animation: typing 5s steps(30, end), blink-caret 1s step-end infinite;
 }
 @media only screens and (max-width: 600px){
   .typewriter {
-  font-size: 28px;
-  max-width: 230px;
+  font-size: 25px;
+  max-width: 190px;
+  animation: typing 5s steps(25, end), blink-caret 1s step-end infinite;
   }
 }
 
