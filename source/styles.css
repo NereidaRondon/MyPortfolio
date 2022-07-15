@@ -235,6 +235,46 @@ nav ul li a {
 }
 
 .typewriter {
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(2, 20, 68);
+  margin: 0;
+  padding: 0;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.03em; /* Adjust as needed */
+}
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgba(2, 56, 92, 0);
+    }
+  }
+@media screen and (min-width:700px) {
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(2, 56, 92);
+    }
+  }
+  .typewriter {
   font-size: 28px;
   font-weight: bold;
   color: rgb(2, 20, 68);
@@ -249,24 +289,6 @@ nav ul li a {
   animation: typing 5s steps(28, end), blink-caret 1s step-end infinite;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: rgb(2, 56, 92);
-  }
 }
 /* end of grid container style */
 
