@@ -218,7 +218,6 @@ nav ul li a {
   padding: 0 0 10px 0;
   display: grid;
   width: 150px;
-  height: auto;
   filter: drop-shadow(7px 7px 5px rgb(1, 16, 39));
   transition: 200ms ease-in-out;
 }
@@ -367,12 +366,14 @@ nav ul li a {
   display:flex;
   flex-direction: column;
   padding: 1rem;
-  justify-content:start;
+  justify-self: center;
+  max-width: 600px;
   background-color: rgb(114, 252, 245);
 }
 .card-img{
-  margin: 2rem 2rem 0 2rem;
+  margin: 2rem 2rem 0.5rem 2rem;
   aspect-ratio: 3/2;
+  align-self: center;
   filter: drop-shadow(5px 5px 3px #021635);
   transition: 200ms ease-in-out;
 }
@@ -448,8 +449,7 @@ footer {
 /* --------------------------------------------------- */
 /* --------------Style for ABOUT Page-------------- */
 .resume-card{
-  width:100%;
-  max-width: 800px;
+  aspect-ratio:3/2;
   margin: auto;
   padding: 20px 0px 30px 0px;
 }
