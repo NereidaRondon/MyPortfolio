@@ -216,7 +216,7 @@ nav ul li a {
 #portrait {
   margin: auto;
   display: grid;
-  width: 140px;
+  width: 150px;
   height: auto;
   filter: drop-shadow(7px 7px 5px rgb(1, 16, 39));
   transition: 200ms ease-in-out;
@@ -227,24 +227,10 @@ nav ul li a {
 
 .intro-container {
   display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(1fr);
   grid-template-rows: auto;
   justify-content: center;
-}
-
-
-.box-1 {
-  grid-column: 1;
-  grid-row: 1;
-}
-.box-2 {
-  grid-column: 1;
-  grid-row: 2;
-}
-.box-3 {
-  grid-column: 1;
-  grid-row: 3;
 }
 
 .typewriter {
@@ -259,14 +245,34 @@ nav ul li a {
   letter-spacing: 0.025em; /* Adjust as needed */
   animation: typing 5s steps(28, end), blink-caret 1s step-end infinite;
 }
+
 @media only screens and (max-width: 600px){
   .typewriter {
   font-size: 20px;
-  max-width: 200px;
+  max-width: 220px;
   border-right: none;
   overflow:visible;
   animation:none;
   }
+  @keyframes typing {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(2, 56, 92);
+  }
+}
+  
 }
 
 /* The typing effect */
@@ -439,8 +445,8 @@ nav ul li a {
 
 /* --------------------------------------------------- */
 /* --------------Section 4 Project cards--------------*/
-#projects-section{
-  padding: 100px 0;
+.projects-section{
+  padding-top:100px;
 
 }
 .card-container{
@@ -487,7 +493,7 @@ nav ul li a {
 /*-------------- ALL --------------*/
 h1, h2, h3{
   margin: 0px;
-  padding: 30px 0px 30px 0px;
+  padding: 10px 0px 10px 0px;
   font-family: "Zilla Slab", "Century Gothic", serif;
   text-align: left;
   color: rgb(2, 20, 68);
