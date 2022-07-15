@@ -210,7 +210,9 @@ nav ul li a {
  
 }
 /* --------------Section 1 --------------*/
-
+#one{
+  padding-bottom: 100px;
+}
 #portrait {
   margin: auto;
   display: grid;
@@ -226,7 +228,7 @@ nav ul li a {
 .intro-container {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-template-rows: auto;
   justify-content: center;
 }
@@ -279,15 +281,22 @@ nav ul li a {
 /* end of grid container style */
 
 /* --------------Section 2 --------------*/
+#two{
+  padding-bottom: 75px;
+}
 
-/*-------------- Section 3-------------- */
-
+/* --------------------------------------------------- */
+/*-------------- Section 3---------------------------- */
+/* --------------------------------------------------- */
+#three{
+  padding-bottom: 100px;
+}
 .skill-container{
   display: grid;
   grid-template-columns: repeat(4, 6rem);
-  grid-template-rows: 75px 30px;
+  grid-template-rows: 80px 30px;
   row-gap: .5rem;
-  column-gap: 1rem;
+  column-gap: 2rem;
 }
 .sk-grid-1{
   grid-column: 1;
@@ -418,6 +427,7 @@ nav ul li a {
   }
 }   
 
+/* --------------------------------------------------- */
 /* --------------Section 4 Project cards--------------*/
 #projects-section{
   padding: 100px 0;
@@ -425,7 +435,7 @@ nav ul li a {
 }
 .card-container{
   display:grid;
-  grid-gap: 4rem;
+  grid-gap: 5rem;
   grid-template-columns: repeat(2, 1fr);
   height: auto;
   
@@ -438,7 +448,7 @@ nav ul li a {
   background-color: rgb(114, 252, 245);
 }
 .card-img{
-  margin: 1rem;
+  margin: 2rem 2rem 0 2rem;
   aspect-ratio: 3/2;
   filter: drop-shadow(5px 5px 3px #021635);
   transition: 200ms ease-in-out;
@@ -447,16 +457,16 @@ nav ul li a {
   filter: drop-shadow( 6px 6px 4px rgb(40, 1, 109));
 }
 .card-title{
-  margin: 5px auto;
+  margin: 0 auto;
 }
 .card-p{
   margin: 0;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
   .card-container{
     display:grid;
     grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     height: auto;
     justify-items: center; 
   }
@@ -472,7 +482,7 @@ h1, h2, h3{
   text-align: left;
   color: rgb(2, 20, 68);
 }
-h1.intro-txt{
+.intro-txt{
   padding: 0px;
   font-size: 20px;
   font-family: "Zilla Slab", "Century Gothic", serif;
@@ -512,7 +522,8 @@ footer {
   
 }
 
-/* --------------Style for About me Page-------------- */
+/* --------------------------------------------------- */
+/* --------------Style for ABOUT Page-------------- */
 .resume-card{
   width:100%;
   max-width: 800px;
@@ -541,25 +552,35 @@ h2.reason{
   );
   padding: 20px;
 }
+@media only screen and (max-width: 400px){
+  table {
+    font-size: 12px;
+  }
+  .row-1{
+    font-size: 12px;
+  } 
+} 
+
 table {
   table-layout: fixed;
   width: 100%;
   border:5px inset rgb(2, 20, 68);
   text-align: left;
   color:#021444;
+  
 }
 .col-1{
-  width: 40%;
+  width: 35%;
   font-weight: bold;
   border: none;
 }
 .col-2{
-  width: 40%;
+  width: 35%;
   font-weight: bold;
   border: none;
 }
 .col-3{
-  width: 20%;
+  width: 30%;
   font-weight: bold;
   border: none;
 }
@@ -577,7 +598,7 @@ table {
   text-shadow: 3px 3px 2px #03293a;
 }
 td{
-  padding: 10px 5px;
+  padding: 10px 3px;
 }
 tr:nth-child(odd) {
   background-color: rgb(114, 252, 245);
@@ -592,13 +613,15 @@ tr:nth-child(even) {
 
 
 
+
+
 /* -------------------------------------------------------------- */
 /* --------------------------BUTTONS----------------------------- */
 /* -------------------------------------------------------------- */
 
 
 .gradient-button {
-  padding: 10px 15px;
+  padding: 15px 20px;
   margin: auto;
   font-size: 15px;
   font-weight:bold;
