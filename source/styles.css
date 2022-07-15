@@ -28,7 +28,7 @@ html {
   /* max-height: fit-content; */
   font-family: "Zilla Slab", "Century Gothic", serif;
   background: linear-gradient(
-    330deg,
+    300deg,
     rgb(1, 20, 49),
     rgb(2, 20, 68), 
     rgb(2, 38, 95), 
@@ -215,6 +215,7 @@ nav ul li a {
 }
 #portrait {
   margin: auto;
+  padding: 0 0 10px 0;
   display: grid;
   width: 150px;
   height: auto;
@@ -246,35 +247,6 @@ nav ul li a {
   animation: typing 5s steps(28, end), blink-caret 1s step-end infinite;
 }
 
-@media only screens and (max-width: 600px){
-  .typewriter {
-  font-size: 20px;
-  max-width: 220px;
-  border-right: none;
-  overflow:visible;
-  animation:none;
-  }
-  @keyframes typing {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 100%;
-  }
-}
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: rgb(2, 56, 92);
-  }
-}
-  
-}
-
 /* The typing effect */
 @keyframes typing {
   from {
@@ -298,14 +270,14 @@ nav ul li a {
 
 /* --------------Section 2 --------------*/
 #two{
-  padding-bottom: 75px;
+  padding-bottom: 50px;
 }
 
 /* --------------------------------------------------- */
 /*-------------- Section 3---------------------------- */
 /* --------------------------------------------------- */
 #three{
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 .skill-container{
   display: grid;
@@ -446,7 +418,7 @@ nav ul li a {
 /* --------------------------------------------------- */
 /* --------------Section 4 Project cards--------------*/
 .projects-section{
-  padding-top:100px;
+  padding-top:50px;
 
 }
 .card-container{
