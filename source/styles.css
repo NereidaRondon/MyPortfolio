@@ -29,14 +29,15 @@ html {
   font-family: "Zilla Slab", "Century Gothic", serif;
   background: linear-gradient(
     300deg,
-    rgb(1, 20, 49),
-    rgb(2, 20, 68), 
-    rgb(2, 38, 95), 
+    /* rgb(1, 20, 49), */
+       
+    rgb(2, 42, 105), 
     rgb(11, 90, 128), 
     rgb(0, 114, 145),
     rgb(0, 156, 163), 
-    rgb(57, 199, 162), 
-    rgb(126, 209, 116),
+    rgb(57, 199, 162),
+    #48d29c, 
+    rgb(134, 243, 122),
     rgb(186, 252, 101)
     );
   }
@@ -320,10 +321,7 @@ nav ul li a {
 .tool-icon{
   margin: auto;
   font-size: 60px;
-  color: rgb(119, 246, 255);
-  justify-content: center;
-   align-items: center;
-  align-content: center;
+  color: rgb(144, 248, 255); 
   filter: drop-shadow(6px 6px 1px rgb(3, 41, 58));
 }
 .tool-icon:hover{
@@ -392,7 +390,18 @@ nav ul li a {
   }
 
 }
-/*end of style for Project cards*/
+/*-------------- PROJECT PAGES --------------*/
+.project-page{
+  margin: 0px 50px 100px 50px;
+}
+video{
+  display:flex;
+  max-width: 900px;
+  aspect-ratio: 3/2;
+  height: auto;
+  margin:auto;
+}
+
 
 /*-------------- ALL --------------*/
 h1, h2, h3{
@@ -526,11 +535,6 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
   background-color: rgba(101, 215, 230, 0.4);
 }
-
-
-
-
-
 
 
 
