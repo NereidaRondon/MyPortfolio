@@ -73,6 +73,10 @@ a:hover {
   filter: drop-shadow(4px 4px 3px #03205e);
   
 }
+.disabeled{
+  pointer-events: none;
+}
+
 /*-------------- Banner styles-------------- */
 header{
   position: fixed;
@@ -136,13 +140,14 @@ header{
   filter: drop-shadow(2px 2px 1px rgb(157, 100, 255));
 }
 .signature{
-  width: 200px;
+  width: 180px;
   height: auto;
-  aspect-ratio: 5/2;
+  aspect-ratio: 7/2;
+  z-index: 10;
 }
 @media only screen and (max-width:500px){
   .signature {
-  width:150px;
+  width:160px;
   }
 }
 div ul {
