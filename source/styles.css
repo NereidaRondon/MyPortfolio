@@ -28,9 +28,7 @@ html {
   /* max-height: fit-content; */
   font-family: "Zilla Slab", "Century Gothic", serif;
   background: linear-gradient(
-    300deg,
-    /* rgb(1, 20, 49), */
-       
+    300deg,      
     rgb(2, 42, 105), 
     rgb(11, 90, 128), 
     rgb(0, 114, 145),
@@ -39,8 +37,11 @@ html {
     #48d29c, 
     rgb(134, 243, 122),
     rgb(186, 252, 101)
-    );
-  }
+    ); 
+
+
+
+}
 body{
   margin: 0px;
   padding: 70px 0px 0px 0px;
