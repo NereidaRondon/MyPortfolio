@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nereida Rondon"> 
     <meta name="description" content="Nereida Rondon Frontend Developer Portfolio">
-	<meta name="keyword" content="Software Developer, Portfolio">
+	<meta name="keyword" content="Software Developer, Portfolio, teacher to software developer, frontend apprentice, pivot into tech">
     
 	<title>Nereida Rondon Portfolio</title>
     <link rel="icon" type="image" href="/images/icon2.webp">
 	<link rel="stylesheet" href="source/styles.css">
+	<link rel="stylesheet" href="source/layout.css">
 	<link rel="stylesheet" href="source/particles.css">
 	
 	<!-- Font Awesome Icons -->
@@ -25,23 +26,23 @@
 
 	
   </head>
-  <body>
+  <body id="top" class="gradient">
 	<!-------------------HEADER----------------------------------->	
 	<header class="banner-container" role="banner">
 		
 		<div class="item1">
-			<a class= "disabeled homeLink" href="index.html"><img class="signature" src="images/signature.webp" width="180" height="60" alt="Nereida Rondon Home link" aria-disabled="true"></a>
+			<a class= "disabeled homeLink" href="index.html"><img class="signature" src="images/signature.webp" width="180" height="60" alt="Nereida Rondon Home link" aria-disabled="true"><img class="signature-backup" src="images/icon2.webp" width="35" height="35" alt="Nereida Rondon Home link" aria-disabled="true"></a>
 		</div>
 			
 		<div class="item2"></div>
 
 		<div class="item3">
 			<ul>
-				<li><a href="mailto:Nereida.Rondon5@gmail.com" aria-label="Email icon"><i role="img" class="fa-regular fa-envelope fa-beat"></i></abbr></a></li>
+				<li><a class='icon-link' href="mailto:Nereida.Rondon5@gmail.com" aria-label="Email icon"><i role="img" class="fa-regular fa-envelope fa-beat"></i></abbr></a></li>
 
-				<li><a href="https://www.linkedin.com/in/nereida-rondon-65403a22b/" aria-label="Linked In icon" target="_blank"><i role="img" class="fa-brands fa-linkedin-in fa-beat"></i></a></li>
+				<li><a class='icon-link' href="https://www.linkedin.com/in/nereida-rondon-65403a22b/" aria-label="Linked In icon" target="_blank"><i role="img" class="fa-brands fa-linkedin-in fa-beat"></i></a></li>
 
-				<li><a href="https://github.com/NereidaRondon" aria-label="Github icon" target="_blank"><i role="img" class="fa-brands fa-github fa-beat"></i></abbr></a></li>
+				<li><a class='icon-link' href="https://github.com/NereidaRondon" aria-label="Github icon" target="_blank"><i role="img" class="fa-brands fa-github fa-beat"></i></abbr></a></li>
    	  		</ul>
 		</div>
 	</header>
@@ -74,126 +75,158 @@
 		<nav role="navigation">	
 			<ul>
 				<a class="disabeled" aria-disabled="true" href="index.html"><li>Home</li></a>
-				<a href="projects.html"><li>Projects</li></a>
-				<a href="about.html"><li>About</li></a>	
-				<a href="contact.html"><li>Contact</li></a>
+				<a class='link' href="projects.html"><li>Projects</li></a>
+				<a class='link' href="about.html"><li>About</li></a>	
+				<a class='link' href="contact.html"><li>Contact</li></a>
 			</ul>                 
 		</nav>
-	
+	<br>
 	<!--------------------------------------------------------->
-
-	<section id="one" >
-		<div class="intro-container">	
-			<div class="box-1">
-				<img id="portrait" src="images/portrait.webp" width="150" height="210" alt="Portrait of Nereida Rondon">
-			</div>
-
-			<div class="box-2 typewriter">Nereida Rondon</div>
-
-			<div class="box-3">
-				<h1 class="intro-txt">Software Developer, forever educator, and pizza enthusiast.</h1>
-			</div>
-		</div>
-	</section>
-
-	<section id="two">
-		
-		<div>
-			<h2>Who am I?</h2>
-				<p>A lifelong learner, with a knack for taking on challenges, and a moderate Coca-cola dependency.</p> 
-				
-				<p>My obsession for organization makes me rethink standard practices and processes to make them more efficient. Skilled in solving problems with HTML, CSS, and JavaScript.  I am looking forward to bringing value to a team of developers as I contribute to enhancing user experiences with designing the frontend interface, conduct software testing, and diagnosing development issues and their causes in order to create viable solutions. All this made possible by my exhaustive attention to detail and passion for making websites intuitive and pretty.</p>  
+		<div class="layout-container">
 			
-				<p>If anything is constant in the education field, it is <strong>CHANGE</strong>. I learn best by doing so I am always happy to jump straight in to get my hands dirty (so to speak) while learning new software or procedures... a transferable skill that will, no doubt, bring me success in the field of software development.</p>
-
-
-
-				<div><a class="gradient-button gradient-button-1" role="button" href="about.html">LEARN&nbsp;MORE</a>
+			<div class="aside1 margin">
+				
+				<div class="intro-container">	
+					<div class="box-1">
+						<img id="portrait" src="images/portrait.webp" width="150" height="210" alt="Portrait of Nereida Rondon">
+					</div>
 				</div>
-		</div>	
+				
+			</div>
+		<!--------------------------------------------------------->
+			<div class="aside2">
+				<div class="box-2 typewriter center">Nereida Rondon</div>
+				<h1 class="intro-txt">Software Developer</h1>
+			</div>
 
-	</section>
-	<br>
-	
-	<!----------------------TOOLKIT--------------------------------->
-	<section id="three">
-		<h1>My Toolkit <i class="fa-solid fa-toolbox"></i></h1>
-			<div>
-				<br>
-				<div class="tool-container">
-					<div class="tool-box">
-						<i class="fa-brands fa-html5 tool-icon"></i>
-						<p class="tool-label">HTML</p>
-					</div>
-
-					<div class="tool-box">
-						<i class="fa-brands fa-css3-alt tool-icon"></i>
-						<p class="tool-label">CSS</p>
-					</div>
-
-					<div class="tool-box">
-						<i class="fa-solid fa-border-all tool-icon"></i>
-						<p class="tool-label">CSS Grid</p>
-					</div>
-					
-					<div class="tool-box">
-						<i class="fa-brands fa-sass tool-icon"></i>
-						<p class="tool-label">Sass</p>
-					</div>
-
-					<div class="tool-box">
-						<i class="fa-brands fa-js tool-icon"></i>
-						<p class="tool-label">JavaScript</p>
-					</div>
-					
-					<div class="tool-box">
-						<i class="fa-brands fa-github tool-icon"></i>
-						<p class="tool-label">GitHub</p>
-					</div>
-					
-					<div class="tool-box">
-						<i class="fa-brands fa-git-alt tool-icon"></i>
-						<p class="tool-label">Git</p>
-					</div>
-					
-					<div class="tool-box">
-						<i class="fa-brands fa-react tool-icon"></i>
-						<p class="tool-label">React.js</p>
-					</div>
-					
-					<div class="tool-box">
-						<i class="fa-brands fa-bootstrap tool-icon"></i>
-						<p class="tool-label">Bootstrap</p>
-					</div>
-
-					<div class="tool-box">
-						<i class="fa-brands fa-node-js tool-icon"></i>
-						<p class="tool-label">Node.js</p>
-					</div>				
-
-
-					<div class="tool-box">
-						<i class="fa-solid fa-universal-access tool-icon"></i>
-						<p class="tool-label">Accessibility</p>
-					</div>
-
-					<div class="tool-box">
-						<p class="tool-label"></p>
-					</div>
+		<!--------------------------------------------------------->	
+			<div class="main margin">	
+				<section id="two">
+				<div>
+					<h2>Background</h2>
+						<p>A lifelong learner, with a knack for taking on challenges, a moderate Coca-cola dependency, and pizza enthusiast.</p>
 						
+						<p>As a first-generation American and first in my immediate family to earn a college degree, I hold a Bachelor of Science in Mathematics Education but the real world experience and skills I have accumulated in the last 11 years are just as, if not more, valuable. The transferable skills I bring to the table include: interpersonal skills, effective verbal and written communication, experience in leadership roles, project management, collaboration, researching, and solutions orientated thinking.</p>
+						
+						<p>This past year I expanded my skillset to include <em>HTML, CSS, JavaScript, Bootstrap, JQuery,</em> and <em>React</em>. I also have experience with <em>Canva, Figma, Slack,</em> and <em>Zoom</em> as well as <em>Mircosoft suite</em> and <em>Google Workspace</em>.  Currently pursuing an opportunity that will allow me to <strong>CREATE</strong>... whether its webpages, applications, digital content, software features or maintaining established websites and debugging existing code. I'm ready to jump in!</p> 
+					<div>
+						<a class="gradient-button gradient-button-1" role="button" href="about.html">READ MORE</a>
+					</div> 
+				  
+					
+				</div>	
+				</section>
+			</div>
+		<!--------------------------------------------------------->
+			<div class="div-1"></div>
+		
+		<!----------------------TOOLKIT---------------------------->
+			<div class="tools margin">
+				<section id="three">
+					<h1>My Toolkit <i class="fa-solid fa-toolbox"></i></h1>
+						<div>
+							<br>
+							<div class="tool-container">
+								<div class="tool-box">
+									<i class="fa-brands fa-html5 tool-icon"></i>
+									<p class="tool-label">HTML</p>
+								</div>
+
+								<div class="tool-box">
+									<i class="fa-brands fa-css3-alt tool-icon"></i>
+									<p class="tool-label">CSS</p>
+								</div>
+
+								<div class="tool-box">
+									<i class="fa-solid fa-border-all tool-icon"></i>
+									<p class="tool-label">CSS Grid</p>
+								</div>
+								
+								<div class="tool-box">
+									<i class="fa-brands fa-sass tool-icon"></i>
+									<p class="tool-label">Sass</p>
+								</div>
+
+								<div class="tool-box">
+									<i class="fa-brands fa-js tool-icon"></i>
+									<p class="tool-label">JavaScript</p>
+								</div>
+								
+								<div class="tool-box">
+									<i class="fa-brands fa-github tool-icon"></i>
+									<p class="tool-label">GitHub</p>
+								</div>
+								
+								<div class="tool-box">
+									<i class="fa-brands fa-git-alt tool-icon"></i>
+									<p class="tool-label">Git</p>
+								</div>
+								
+								<div class="tool-box">
+									<i class="fa-brands fa-react tool-icon"></i>
+									<p class="tool-label">React.js</p>
+								</div>
+								
+								<div class="tool-box">
+									<i class="fa-brands fa-bootstrap tool-icon"></i>
+									<p class="tool-label">Bootstrap</p>
+								</div>
+
+								<div class="tool-box">
+									<i class="fa-brands fa-node-js tool-icon"></i>
+									<p class="tool-label">Node.js</p>
+								</div>	
+								
+								<div class="tool-box">
+									<img class='tool-svg-icon' src='/images/jquery.svg' alt='jquery' width='60'/>
+									<p class="tool-label">JQuery</p>
+								</div>	
+
+
+								<div class="tool-box">
+									<i class="fa-solid fa-universal-access tool-icon"></i>
+									<p class="tool-label">Accessibility</p>
+								</div>
+
+								<div class="tool-box">
+									<p class="tool-label"></p>
+								</div>
+									
+							</div>
+						</div>
+				</section>
+			</div>
+			<br>
+		<!--------------------------------------------------------->
+			<div class="school1 margin intro-txt">
+				<a href="https://www.fsw.edu/" target="_blank"><div class="logo-frame"><img class="school-logo fsw" src="/images/fsw.webp" alt="FSW State College logo" width='180'/></div></a>
+				<figcaption>B. S. Secondary Math Education <br> Florida SouthWestern State College (FSW)</figcaption>
+			</div>
+		<!--------------------------------------------------------->
+			<div class="school2 margin intro-txt">
+				<a href="https://www.fsw.edu/corporatetraining" target="_blank"><div class="logo-frame"><img class="school-logo" src="/images/promineo.webp" alt="FSW State College logo" width='140'/></div></a>
+				<figcaption>Front-End Development Certificate <br> Promineo Tech with FSW</figcaption>
+			</div>
+			
+		<!--------------------------------------------------------->
+
+			<div class="school3 margin ">
+				<h5></h5>
+			</div>	
+		<!--------------------------------------------------------->
+
+			<div class="school4 margin ">
+				<h5></h5>
+			</div>				
+		<!--------------------------------------------------------->	
+			<div class="div-4">
+				<a href="#top" class="scrolly">BACK TO TOP</a>
+				<div class="footer">
+					<footer>Created by Nereida Rondon ©️2022</footer>
 				</div>
 			</div>
-	</section>
-	
-	<br>
-	<a href="index.html" class="scrolly">BACK TO TOP</a>   
-
-	<div class="footer">
-		<footer>Created by Nereida Rondon ©️2022</footer>
-	</div>
-
-	
-	
+		<!--------------------------------------------------------->	
+		</div>
   </body>
 </html>
 

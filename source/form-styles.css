@@ -1,3 +1,6 @@
+.contact-bg{
+  background-color:  rgb(155, 200, 255);
+}
 .contact-form{
   display:flex;
   justify-content: center;
@@ -70,4 +73,22 @@ input[type="email"] {
 .form-btn:hover {
   background-position: right center;
   color: #a7f09f; 
+}
+@media only screen and (max-width:400px){
+  input[type="text"] {
+    width: 240px;
+    height: 35px;
+  }
+  input[type="email"] {
+    width: 240px;
+    height: 35px;
+  }
+
+  textarea{
+    width: 240px;
+    height: 200px;
+  }
+  .form-btn {
+    width: 240px;
+  }  
 }
