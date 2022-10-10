@@ -1,15 +1,15 @@
 .layout-container{
     display:grid;
     grid-template: 
-    [row1-start] "aside1 . . " 50px [row1-end]
+    [row1-start] ". . . " 50px [row1-end]
     [row2-start] "aside1 main main" auto [row2-end]
     [row3-start] "aside2 main main" auto [row3-end]
-    [row4-start] "aside2 main main" 30px [row4-end]
-    [row5-start] "aside2 tools tools" auto [row5-end]
-    [row6-start] "aside2 tools tools" auto [row6-end]
-    [row7-start] "aside2 tools tools" auto [row7-end]
-    [row8-start] "aside2 school1 school2" auto [row8-end]
-    [row9-start] "aside2 school3 school4" auto [row9-end]
+    [row4-start] "aside2 main main" auto [row4-end]
+    [row5-start] "aside3 tools tools" 50px [row5-end]
+    [row6-start] "aside4 tools tools" 50px [row6-end]
+    [row7-start] "aside5 tools tools" auto [row7-end]
+    [row8-start] "aside6 school1 school2" auto [row8-end]
+    [row9-start] ". school3 school4" auto [row9-end]
     [row10-start] "div-4 div-4 div-4" auto [row10-end]
     / 300px auto auto;
 }
@@ -18,6 +18,18 @@
 }
 .aside2{
    grid-area: aside2;   
+}
+.aside3{
+   grid-area: aside3;   
+}
+.aside4{
+   grid-area: aside4;   
+}
+.aside5{
+   grid-area: aside5;   
+}
+.aside6{
+   grid-area: aside6;   
 }
 .school1{
    grid-area: school1;   
@@ -49,10 +61,8 @@
     grid-area:div-4;
 }
 
-
-
 /* ---------------------------- */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 800px){
 
     .layout-container{
        
@@ -60,14 +70,18 @@
         grid-template: 
         [row1-start] "aside1" auto [row1-end]
         [row2-start] "aside2" auto [row2-end]
-        [row3-start] "main" auto [row3-end]
-        [row4-start] "main" auto [row4-end]
-        [row5-start] "tools" auto [row5-end]
-        [row6-start] "school1" auto [row6-end]
-        [row7-start] "school2" auto [row7-end]
-        [row8-start] "school3" auto [row8-end]
-        [row9-start] "school4" auto [row9-end]
-        [row10-start] "div-4" auto [row10-end]
+        [row3-start] "aside3" auto [ro3-end]
+        [row4-start] "aside4" auto [row4-end]
+        [row5-start] "aside5" auto [row5-end]
+        [row6-start] "aside6" auto [row6-end]
+        [row7-start] "main" auto [row7-end]
+        [row8-start] "main" auto [row8-end]
+        [row9-start] "tools" auto [row9-end]
+        [row10-start] "school1" auto [row10-end]
+        [row11-start] "school2" auto [row11-end]
+        [row12-start] "school3" auto [row12-end]
+        [row13-start] "school4" auto [row13-end]
+        [row14-start] "div-4" auto [row14-end]
         
         / auto ;
     }

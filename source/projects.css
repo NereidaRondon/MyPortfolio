@@ -1,0 +1,133 @@
+/* --------------Project cards--------------*/
+.project-bg{
+  background-color: rgb(155, 200, 255);
+}
+.projects-section{
+  padding-top:0px;
+  margin:0 2rem;
+}
+.card-container{
+  display:grid;
+  grid-gap: 1rem;
+  margin:auto;
+  max-width: 1300px;
+  grid-template-columns: repeat(3, 1fr);
+  height: auto;
+}
+
+.card-box{
+  display:flex;
+  flex-direction: column;
+  margin:1rem;
+  justify-self: center;
+  min-width: 200px;
+  max-width: 500px;
+  background-color: rgb(196, 223, 255);
+  border-radius: 10px;
+  filter: drop-shadow(4px 4px 2px #021635);
+  transition: all .2s ease-in-out;
+  transition-timing-function: ease;
+}
+.card-box:hover{
+  transform: scale(1.05); 
+  filter: drop-shadow( 0px 0px 4px rgb(40, 1, 109));
+}
+.card-scrolly{
+  justify-items: end;
+  justify-content: end;
+  justify-self: end;
+  display:none;
+}
+.card-img{
+  margin: 0 0 0.5rem 0;
+  align-self: center;  
+}
+.card-link:hover{
+  margin: 0 0 0.5rem 0;
+  align-self: center;
+  filter:1px 1px 1px white;
+  
+}
+.ratio{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  aspect-ratio: 3/2;
+  height: auto;
+}
+
+.card-title{
+  margin: 0 auto;
+  text-align: center;
+}
+.card-p{
+  margin: 1rem;
+}
+.card-ul{
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+  list-style:disc;
+  border: 0;
+  margin: 0 2.5rem;
+  padding: 0px 0px 10px 0px;
+  font-size: 18px;
+  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
+  text-align: left;
+}
+@media only screen and (max-width: 1000px){
+  .card-container{
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+}
+@media only screen and (max-width: 800px){
+  .card-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    height: auto;
+    justify-items: center;
+  }
+  .card-box{
+    padding: 0;
+    margin: auto;
+  }
+}
+@media only screen and (max-width:600px){
+  .card-box{
+    overflow: hidden;
+    overflow-y: scroll;
+    height:330px;
+    width: 400px;
+  }
+  .card-box:hover{
+    transform: none;
+  }
+  .projects-section{
+    
+    margin:auto;
+  }
+}
+@media only screen and (max-width:400px){
+  .card-container{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .card-box{
+    height:230px;
+    width: 250px;
+  }
+  .card-title{
+    font-size: 20px;
+  }
+}
+/*-------------- PROJECT PAGES --------------*/
+.project-page{
+  margin: 0px 50px 100px 50px;
+}
+video{
+  display:flex;
+  max-width: 900px;
+  aspect-ratio: 3/2;
+  height: auto;
+  margin:auto;
+}
