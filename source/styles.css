@@ -251,7 +251,7 @@ figcaption{
   display: grid;
   width: 150px;
   height: 210px;
-  filter: drop-shadow(5px 5px 5px rgb(1, 16, 39));
+  filter: drop-shadow(3px 3px 3px rgb(1, 16, 39));
   transition: 200ms ease-in-out;
 }
 #portrait:hover {
@@ -319,22 +319,38 @@ figcaption{
   justify-self: center;
   margin:10px auto;
   background-color: rgb(29, 29, 31);
-  width:240px;
+  width:220px;
+  height:30px;
   padding:5px 10px;
   border-radius: 10px;
+  filter: drop-shadow(4px 4px 3px rgb(1, 16, 39));
+  transition: 200ms ease-in-out;
 }
 .codewars{
   padding:0 10px;
 }
-.leetcode{
+.leetcode--div{
   display:flex;
   justify-content: center;
   justify-self: center;
-  margin:auto;
-  background-color: white;
-  width:240px;
+  margin:10px auto;
+  background-color: rgb(143, 142, 142);
+  width:220px;
+  height:30px;
   padding:5px 10px;
   border-radius: 10px;
+  filter: drop-shadow(4px 5px 2px rgb(1, 16, 39));
+  transition: 200ms ease-in-out;
+}
+.codewars--div:hover{
+  transform: scale(1.05);
+}
+.leetcode--div:hover{
+  transform: scale(1.05);
+}
+.leetcode{
+  filter:drop-shadow(2px 2px 2px rgb(0, 0, 0));
+  
 }
 
 /*-------------- Section 3---------------------------- */
@@ -442,10 +458,7 @@ footer {
   text-align: center;
 }
 
-/* -------------------------------------------------------------- */
 /* --------------------------BUTTONS----------------------------- */
-/* -------------------------------------------------------------- */
-
 .gradient-button {
   padding: 15px 20px;
   margin: auto;

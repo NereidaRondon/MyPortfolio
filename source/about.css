@@ -11,6 +11,40 @@
 .streaming{
   border-radius: 15px;
 }
+
+.fade-in {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .about-container{
   display:grid;
   max-width: 800px;
@@ -88,6 +122,7 @@ h2.resume-title{
   height:80px;
   justify-self: center;
   align-self: center;
+  transition-timing-function: ease;
   background: linear-gradient(
     120deg, 
     rgb(181, 255, 117) 00%,
@@ -98,6 +133,9 @@ h2.resume-title{
     rgb(3, 116, 182)80%,
     rgb(122, 11, 187) 100%
     );
+}
+.resume-backup:hover{
+  transform: scale(1.05); 
 }
 .resume-backup-title{
   padding: 24px;
