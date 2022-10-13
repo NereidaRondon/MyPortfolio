@@ -225,12 +225,12 @@ nav ul li a {
   width:180px;
   height:140px;
   margin:auto;
-  filter: drop-shadow( 7px 7px 0px rgb(4, 48, 119));
+  filter: drop-shadow( 10px 10px 0px rgb(4, 48, 119));
   transition-timing-function: ease;
 }
 .logo-frame:hover{
   transform: scale(1.02);
-  filter: drop-shadow( 7px 7px 0px rgb(40, 1, 109));
+  filter: drop-shadow( 10px 10px 0px rgb(40, 1, 109));
 }
 .fsw{
   padding-top:20px;
@@ -326,7 +326,7 @@ figcaption{
   transition: 200ms ease-in-out;
 }
 .codewars--div:hover{
-  filter: drop-shadow(5px 5px 0px rgb(4, 48, 119));
+  filter: drop-shadow(6px 6px 0px rgb(4, 48, 119));
   transform: scale(1.05);
 }
 .leetcode--div:hover{
