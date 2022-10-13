@@ -66,11 +66,34 @@
 
     .layout-container{
        
+      gap: 0;
+      grid-template: 
+      [row1-start] "aside1 aside1" auto [row1-end]
+      [row2-start] "aside2 aside2" auto [row2-end]
+      [row3-start] "aside3 aside3" auto [row3-end]
+      [row4-start] "aside4 aside4" auto [row4-end]
+      [row5-start] "aside5 aside5" auto [row5-end]
+      [row6-start] "aside6 aside6" auto [row6-end]
+      [row7-start] "main main" auto [row7-end]
+      [row8-start] "main main" auto [row8-end]
+      [row9-start] "tools tools" auto [row9-end]
+      [row10-start] "school1 school2" auto [row10-end]
+      [row11-start] "school3 school4" auto [row11-end]
+      [row12-start] "div-4 div-4" auto [row12-end]
+      / auto auto;
+   }
+
+}    
+/* ---------------------------- */
+@media only screen and (max-width: 700px){
+
+    .layout-container{
+       
         gap: 0;
         grid-template: 
         [row1-start] "aside1" auto [row1-end]
         [row2-start] "aside2" auto [row2-end]
-        [row3-start] "aside3" auto [ro3-end]
+        [row3-start] "aside3" auto [row3-end]
         [row4-start] "aside4" auto [row4-end]
         [row5-start] "aside5" auto [row5-end]
         [row6-start] "aside6" auto [row6-end]
@@ -82,7 +105,6 @@
         [row12-start] "school3" auto [row12-end]
         [row13-start] "school4" auto [row13-end]
         [row14-start] "div-4" auto [row14-end]
-        
         / auto ;
     }
     .div-1{

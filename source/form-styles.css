@@ -1,5 +1,5 @@
 .contact-bg{
-  background-color:  rgb(155, 200, 255);
+  background-color:  rgb(144, 255, 240);
 }
 .contact-form{
   display:flex;
@@ -17,21 +17,31 @@ label{
   display:block;
 }
 input{
-  margin:5px 0px;
+  margin:15px 0px;
   padding:0;
-  border: none;
+  border: 1px solid black;
   background-color: rgb(100, 255, 236);
   display:block;
+  transition-timing-function: ease;
 }
-
+input:hover{
+  transform: scale(1.02);
+  filter:drop-shadow(7px 7px 0 rgb(4, 113, 121));
+}
 textarea{
-  margin:5px 0px;
+  margin:15px 0px;
   padding:0;
   background-color: rgb(100, 255, 236);
   display:block;
-  border: none;
+  border: 1px solid black;
   width: 350px;
   height: 200px;
+  transition-timing-function: ease;
+}
+
+textarea:hover{
+  transform: scale(1.02);
+  filter:drop-shadow(7px 7px 0 rgb(4, 113, 121));
 }
 
 input[type="text"] {
@@ -44,22 +54,23 @@ input[type="email"] {
 }
 
 ::placeholder{
-  font-family: "Zilla Slab", "Century Gothic", serif;
-  font-size: x-large;
+  font-family: monospace, "Century Gothic", serif;
+  font-size: large;
+  padding-left: 3px;
 }
 
 
 /* ----------------BUTTONS----------------- */
 
 .form-btn {
-  font-family: "Zilla Slab", "Century Gothic", serif;
+  font-family: "Barlow Condensed", "Century Gothic", serif;
   font-size: 20px;
   font-weight:bold;
   color: rgb(3, 43, 119);
   text-align: center;
   text-decoration: none;
   width: 350px;
-  margin: 5px 0px;
+  margin: 15px 0px;
   padding:10px 0px;
   background-size: 150% auto;
   transition: all 0.6s cubic-bezier(.25,.8,.25,1);
@@ -72,6 +83,8 @@ input[type="email"] {
 }
 .form-btn:hover {
   background-position: right center;
+  transform: scale(1.02);
+  filter:drop-shadow(7px 7px 0 rgb(4, 113, 121));
   color: #a7f09f; 
 }
 @media only screen and (max-width:400px){

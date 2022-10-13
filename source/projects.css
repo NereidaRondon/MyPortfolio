@@ -1,6 +1,6 @@
 /* --------------Project cards--------------*/
 .project-bg{
-  background-color: rgb(155, 200, 255);
+  background-color: rgb(195, 198, 235);
 }
 .projects-section{
   padding-top:0px;
@@ -18,19 +18,18 @@
 .card-box{
   display:flex;
   flex-direction: column;
-  margin:1rem;
+  margin:1.25rem 1rem;
   justify-self: center;
   min-width: 200px;
   max-width: 500px;
-  background-color: rgb(196, 223, 255);
-  border-radius: 10px;
-  filter: drop-shadow(4px 4px 2px #021635);
+  border:1px solid black;
+  background-color: rgb(192, 202, 214);
   transition: all .2s ease-in-out;
   transition-timing-function: ease;
 }
 .card-box:hover{
   transform: scale(1.05); 
-  filter: drop-shadow( 0px 0px 4px rgb(40, 1, 109));
+  filter: drop-shadow( 15px 15px 0px rgb(82, 36, 161));
 }
 .card-scrolly{
   justify-items: end;
@@ -49,8 +48,6 @@
   
 }
 .ratio{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   aspect-ratio: 3/2;
   height: auto;
 }
@@ -70,8 +67,8 @@
   border: 0;
   margin: 0 2.5rem;
   padding: 0px 0px 10px 0px;
-  font-size: 18px;
-  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
+  font-size: 16px;
+  font-family: monospace,"Century Gothic", sans-serif;
   text-align: left;
 }
 @media only screen and (max-width: 1000px){
@@ -90,7 +87,7 @@
   }
   .card-box{
     padding: 0;
-    margin: auto;
+    margin: 1rem auto;
   }
 }
 @media only screen and (max-width:600px){

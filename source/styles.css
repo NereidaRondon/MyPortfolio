@@ -1,11 +1,10 @@
 html{
   scroll-behavior: smooth;
-  font-family: "Zilla Slab", "Century Gothic", serif;
+  font-family: monospace, "Century Gothic", serif;
 }  
 .gradient {
   width: 100%;
   scroll-behavior: smooth;
-  font-family: "Zilla Slab", "Century Gothic", serif;
   background: linear-gradient(
     300deg,      
     rgb(2, 42, 105), 
@@ -43,8 +42,8 @@ a {
 }
 .link:hover {
   color: rgb(9, 240, 93);
-  text-shadow: 2px 2px 4px rgb(157, 100, 255);
-  filter: drop-shadow(4px 4px 3px #03205e);
+  text-shadow: 3px 2px 0px rgb(157, 100, 255);
+  filter: drop-shadow(2px 2px 3px #03205e);
   
 }
 .disabeled{
@@ -153,6 +152,7 @@ div ul {
   list-style: none;
   padding: 0;
 }
+
 div ul li a{
   padding: 0px 15px;
   color: rgb(74, 213, 252);
@@ -161,8 +161,8 @@ div ul li a{
 
 nav {
   width:auto;
-  font-family: "Zilla Slab", "Century Gothic", serif;
   font-weight: bold;
+  font-family: "Barlow Condensed", "Century Gothic", monospace, sans-serif;
 }
 
 /*--------------- Navigation Menu----------------- */
@@ -207,7 +207,7 @@ nav ul li a {
   nav ul li:hover{
     background-position: right center;
     box-shadow: 3px 5px 3px 1px rgb(3, 41, 58);
-    filter: drop-shadow(2px 2px 1px rgb(157, 100, 255));
+    filter: drop-shadow(2px 0px 1px rgb(157, 100, 255));
   }
 }
 /* --------------Section 1 --------------*/
@@ -221,17 +221,16 @@ nav ul li a {
 }
 .logo-frame{
   justify-self: center;
-  border-radius: 10px;
   background-color: rgb(255, 255, 255);
   width:180px;
   height:140px;
   margin:auto;
+  filter: drop-shadow( 7px 7px 0px rgb(4, 48, 119));
   transition-timing-function: ease;
 }
 .logo-frame:hover{
-  transform: scale(1.05);
-  filter: drop-shadow( 1px 1px 6px rgb(40, 1, 109));
-  
+  transform: scale(1.02);
+  filter: drop-shadow( 7px 7px 0px rgb(40, 1, 109));
 }
 .fsw{
   padding-top:20px;
@@ -251,24 +250,10 @@ figcaption{
   display: grid;
   width: 150px;
   height: 210px;
-  filter: drop-shadow(3px 3px 3px rgb(1, 16, 39));
+  border: 5px solid rgb(0, 0, 0);
+  box-shadow:15px 15px 0px rgb(4, 48, 119);
   transition: 200ms ease-in-out;
 }
-#portrait:hover {
-  filter: drop-shadow( 5px 5px 6px rgb(40, 1, 109));
-  transform: scale(1.05);
-}
-
-.typewriter {
-  font-size: 26px;
-  font-weight: bold;
-  color: rgb(2, 20, 68);
-  margin: 0;
-  padding: 0;
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.03em; /* Adjust as needed */
-}
-
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from,
@@ -300,7 +285,7 @@ figcaption{
     }
   }
   .typewriter {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     color: rgb(2, 20, 68);
     padding: 0;
@@ -318,12 +303,11 @@ figcaption{
   justify-content: center;
   justify-self: center;
   margin:10px auto;
-  background-color: rgb(29, 29, 31);
+  background-color: rgb(30, 30, 32);
   width:220px;
   height:30px;
   padding:5px 10px;
-  border-radius: 10px;
-  filter: drop-shadow(4px 4px 3px rgb(1, 16, 39));
+  border: 1px solid black;
   transition: 200ms ease-in-out;
 }
 .codewars{
@@ -338,14 +322,15 @@ figcaption{
   width:220px;
   height:30px;
   padding:5px 10px;
-  border-radius: 10px;
-  filter: drop-shadow(4px 5px 2px rgb(1, 16, 39));
+  border: 1px solid black;
   transition: 200ms ease-in-out;
 }
 .codewars--div:hover{
+  filter: drop-shadow(5px 5px 0px rgb(4, 48, 119));
   transform: scale(1.05);
 }
 .leetcode--div:hover{
+  filter: drop-shadow(6px 6px 0px rgb(4, 48, 119));
   transform: scale(1.05);
 }
 .leetcode{
@@ -379,8 +364,8 @@ figcaption{
   transition-timing-function: ease;
 }
 .tool-icon:hover{
-  filter: drop-shadow( 6px 6px 2px rgb(40, 1, 109));
-  transform: scale(1.05); 
+  filter: drop-shadow( 6px 6px 0px rgb(4, 48, 119));
+  transform: scale(1.03); 
 }
 .tool-svg-icon{
   margin: auto;
@@ -415,14 +400,14 @@ figcaption{
 h1, h2, h3{
   margin: 0px;
   padding: 10px 0px 10px 0px;
-  font-family: "Zilla Slab", "Century Gothic", serif;
+  font-family: "Barlow Condensed", "Century Gothic", monospace, sans-serif;
   text-align: left;
   color: rgb(2, 20, 68);
 }
 .intro-txt{
   padding: 0px;
   font-size: 20px;
-  font-family: "Zilla Slab", "Century Gothic", serif;
+  font-family: "Barlow Condensed", "Century Gothic", monospace, sans-serif;
   text-align: center;
 }
 p {
@@ -430,25 +415,12 @@ p {
   border: 0;
   margin: auto;
   padding: 0px 0px 10px 0px;
-  font-size: 18px;
-  font-family: "Barlow Condensed", "Century Gothic", sans-serif;
+  font-family: monospace, "Century Gothic", sans-serif;
   text-align: left;
 }
 img{
   max-width:100%;
   display:block;
-}
-footer {
-  display:block;
-  text-align:center;
-  margin: auto;
-  padding-top: 100px;
-  color: rgb(167, 240, 159);
-}
-.footer{
-  background-color: #011431;
-  width: 100%;
-  height:200px;
 }
 
 /* For h1 on other pages */
@@ -465,17 +437,16 @@ footer {
   font-size: 15px;
   font-weight:bold;
   color: rgb(3, 43, 119);
-  border-radius: 5px;
   background-size: 300% auto;
   transition: 0.5s;
-  box-shadow: 3px 5px 3px 1px rgb(3, 41, 58);
+  border: 1px solid black;
   width: 100px;
   display: flex;
   justify-content: center;
 }
 .gradient-button:hover{
-  box-shadow: 4px 5px 4px 1px rgb(3, 41, 58);
-  margin: auto;
+  box-shadow: 6px 6px 0 rgb(4, 48, 119);
+  
 }
 .gradient-button-1 {
   background-image: linear-gradient(
@@ -515,4 +486,26 @@ footer {
   background-position: right center;
   color: #a7f09f; 
   text-shadow: none;
+}
+.to-top{
+  padding:0;
+  margin:0;
+  filter:invert(15%) sepia(36%) saturate(4353%) hue-rotate(210deg) brightness(93%) contrast(107%);
+}
+.scrolly > button{
+  background-color: transparent;
+  border:none;
+}
+/* ------------------------------------------- */
+footer {
+  display:block;
+  text-align:center;
+  margin: auto;
+  padding-top: 100px;
+  color: rgb(167, 240, 159);
+}
+.footer{
+  background-color: #011431;
+  width: 100%;
+  height:200px;
 }
