@@ -68,7 +68,7 @@
   margin: 0 2.5rem;
   padding: 0px 0px 10px 0px;
   font-size: 16px;
-  font-family: monospace,"Century Gothic", sans-serif;
+  font-family:'Century Gothic','Segoe UI', Geneva, sans-serif; 
   text-align: left;
 }
 @media only screen and (max-width: 1000px){
@@ -101,8 +101,15 @@
     transform: none;
   }
   .projects-section{
-    
     margin:auto;
+  }
+    ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
   }
 }
 @media only screen and (max-width:400px){
