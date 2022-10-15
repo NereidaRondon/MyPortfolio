@@ -4,9 +4,8 @@
 
 
 <h1 align="center">My Portfolio</h1>
-<h3 align="center">Showcase of my skills and experience as a software developer</h3>
 
-<p align="left">Fully responsive static website, made with HTML and CSS, only.<p>
+<p align="left">Fully responsive static website, made with HTML and CSS, only. View my projects, a showcase of my skills and experience as a software developer.<p>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
