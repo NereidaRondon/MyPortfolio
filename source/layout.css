@@ -3,33 +3,34 @@
     grid-template: 
     [row1-start] ". . . " 50px [row1-end]
     [row2-start] "aside1 main main" auto [row2-end]
-    [row3-start] "aside2 main main" auto [row3-end]
-    [row4-start] "aside2 main main" auto [row4-end]
-    [row5-start] "aside3 tools tools" 50px [row5-end]
-    [row6-start] "aside4 tools tools" 50px [row6-end]
-    [row7-start] "aside5 tools tools" auto [row7-end]
-    [row8-start] "aside6 school1 school2" auto [row8-end]
-    [row9-start] ". school3 school4" auto [row9-end]
-    [row10-start] "div-4 div-4 div-4" auto [row10-end]
-    / 300px auto auto;
+    [row3-start] "aside2 main main" 50px [row3-end]
+    [row4-start] "aside2 main main" 100px [row4-end]
+    [row5-start] "edu main main" 50px [row5-end]
+    [row6-start] "edu main main " 20px [row6-end]
+    [row7-start] "school1 tools tools " auto [row7-end]
+    [row8-start] "school1 tools tools" 100px [row8-end]
+    [row9-start] ".       tools tools" 50px [row9-end]
+    [row10-start] "school2 tools tools" 100px [row10-end]
+    [row11-start] "school2 tools tools" 100px [row11-end]
+    [row12-start] ".      tools tools" 50px [row12-end]
+    [row13-start] "school3 tools tools" 10px [row13-end]
+    [row14-start] "school3 tools tools" 10px [row14-end]
+    [row15-start] ".       tools tools" 10px [row15-end]
+    [row16-start] "school4 tools tools" 10px [row16-end]
+    [row17-start] ".       tools tools" 50px [row17-end]
+    [row18-start] "div-4 div-4 div-4" auto [row18-end]
+    / 400px auto auto;
 }
 .aside1{
-   grid-area: aside1;   
+   grid-area: aside1;  
 }
 .aside2{
    grid-area: aside2;   
 }
-.aside3{
-   grid-area: aside3;   
-}
-.aside4{
-   grid-area: aside4;   
-}
-.aside5{
-   grid-area: aside5;   
-}
-.aside6{
-   grid-area: aside6;   
+.edu-title{
+   grid-area:edu;
+   justify-content: center;
+   margin:1rem auto;
 }
 .school1{
    grid-area: school1;   
@@ -45,6 +46,8 @@
 }
 .main{
     grid-area: main;
+    padding:0 4rem;
+    max-width:1000px;
 }
 .div-1{
     grid-area:div-1;
@@ -53,6 +56,8 @@
 }
 .tools{
     grid-area:tools;
+    padding:0 4rem;
+    max-width:1000px;
 }
 .div-3{
     grid-area:div-3;
@@ -62,30 +67,64 @@
 }
 
 /* ---------------------------- */
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1100px){
+   .layout-container{
+      display:grid;
+      grid-template: 
+      [row1-start] ". . . " 50px [row1-end]
+      [row2-start] "aside1 main main" auto [row2-end]
+      [row3-start] "aside2 main main" auto [row3-end]
+      [row4-start] "aside2 main main" 120px [row4-end]
+      [row5-start] "edu main main" 50px [row5-end]
+      [row6-start] "school1 main main " auto [row6-end]
+      [row7-start] "school1 tools tools" 100px [row7-end]
+      [row8-start] ".       tools tools" 50px [row8-end]
+      [row9-start] "school2 tools tools" 100px [row9-end]
+      [row10-start] "school2 tools tools" 100px [row10-end]
+      [row11-start] ".      tools tools" 50px [row11-end]
+      [row12-start] "school3 tools tools" 10px [row12-end]
+      [row13-start] "school3 tools tools" 10px [row13-end]
+      [row14-start] ".       tools tools" 50px [row14-end]
+      [row15-start] "school4 tools tools" auto [row15-end]
+      [row16-start] ".       tools tools" 50px [row16-end]
+      [row17-start] "div-4 div-4 div-4" auto [row17-end]
+      / 300px auto auto;
+   }
+   .tools{
+    padding:0 2rem;
+   }
+   .main{
+    padding:0 2rem;
+   }
+}   
+/* ---------------------------------------- */ 
+@media only screen and (max-width: 900px){
 
     .layout-container{
-       
+      display:grid;   
       gap: 0;
       grid-template: 
       [row1-start] "aside1 aside1" auto [row1-end]
       [row2-start] "aside2 aside2" auto [row2-end]
-      [row3-start] "aside3 aside3" auto [row3-end]
-      [row4-start] "aside4 aside4" auto [row4-end]
-      [row5-start] "aside5 aside5" auto [row5-end]
-      [row6-start] "aside6 aside6" auto [row6-end]
-      [row7-start] "main main" auto [row7-end]
-      [row8-start] "main main" auto [row8-end]
-      [row9-start] "tools tools" auto [row9-end]
+      [row3-start] "edu     .  " 100px [row3-end]
       [row10-start] "school1 school2" auto [row10-end]
-      [row11-start] "school3 school4" auto [row11-end]
+      [row11-start] "school3 school4" 20px [row11-end]
+      [row4-start] ".     .  " 20px [row4-end]
+      [row5-start] "main main" auto [row5-end]
+      [row6-start] "main main" auto [row6-end]
+      [row7-start] ". ." 50px [row7-end]
+      [row8-start] "tools tools" auto [row8-end]
+      [row9-start] "tools tools" auto [row9-end]
       [row12-start] "div-4 div-4" auto [row12-end]
       / auto auto;
    }
-
+   .edu-title{
+      justify-content: flex-start;
+      margin:4rem 3rem 0 3rem;
+   }
 }    
-/* ---------------------------- */
-@media only screen and (max-width: 700px){
+/* ----------------------------------------- */
+@media only screen and (max-width: 500px){
 
     .layout-container{
        
@@ -93,21 +132,30 @@
         grid-template: 
         [row1-start] "aside1" auto [row1-end]
         [row2-start] "aside2" auto [row2-end]
-        [row3-start] "aside3" auto [row3-end]
-        [row4-start] "aside4" auto [row4-end]
-        [row5-start] "aside5" auto [row5-end]
-        [row6-start] "aside6" auto [row6-end]
-        [row7-start] "main" auto [row7-end]
-        [row8-start] "main" auto [row8-end]
-        [row9-start] "tools" auto [row9-end]
-        [row10-start] "school1" auto [row10-end]
-        [row11-start] "school2" auto [row11-end]
-        [row12-start] "school3" auto [row12-end]
-        [row13-start] "school4" auto [row13-end]
+        [row3-start] "  .  " 50px [row3-end]
+        [row4-start] "edu" auto [row4-end]
+        [row5-start] "school1" auto [row5-end]
+        [row6-start] "school2" auto [row6-end]
+        [row7-start] "school3" 10px [row7-end]
+        [row8-start] "school4" 10px [row8-end]
+        [row9-start] "   .   " auto [row9-end]
+        [row10-start] "main" auto [row10-end]
+        [row11-start] "  .  " auto [row11-end]
+        [ro12-start] "tools" auto [row12-end]
+        [row13-start] "  .  " 50px [row13-end]
         [row14-start] "div-4" auto [row14-end]
         / auto ;
-    }
-    .div-1{
-        justify-self: center;
-    }
+   }
+   .tools{
+    padding:0 .5rem;
+   }
+   .main{
+    padding:0 .5rem;
+   }
+   .edu-title{
+    margin:2rem 0 0 2rem;
+   }
+   .div-1{
+    justify-self: center;
+   }
 }
