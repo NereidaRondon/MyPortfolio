@@ -2,30 +2,22 @@
     display:grid;
     grid-template: 
     [row1-start] ". . . " 50px [row1-end]
-    [row2-start] "aside1 main main" auto [row2-end]
-    [row3-start] "aside2 main main" 50px [row3-end]
-    [row4-start] "aside2 main main" 100px [row4-end]
-    [row5-start] "edu main main" 50px [row5-end]
-    [row6-start] "edu main main " 20px [row6-end]
-    [row7-start] "school1 tools tools " auto [row7-end]
-    [row8-start] "school1 tools tools" 100px [row8-end]
-    [row9-start] ".       tools tools" 50px [row9-end]
-    [row10-start] "school2 tools tools" 100px [row10-end]
-    [row11-start] "school2 tools tools" 100px [row11-end]
-    [row12-start] ".      tools tools" 50px [row12-end]
-    [row13-start] "school3 tools tools" 10px [row13-end]
-    [row14-start] "school3 tools tools" 10px [row14-end]
-    [row15-start] ".       tools tools" 10px [row15-end]
-    [row16-start] "school4 tools tools" 10px [row16-end]
-    [row17-start] ".       tools tools" 50px [row17-end]
+    [row2-start] "main main main" auto [row2-end]
+    [row3-start] "main main main" 50px [row3-end]
+    [row4-start] "main main main" 100px [row4-end]
+    [row5-start] ".    .    .   " 50px [row5-end]
+    [row6-start] "edu      tools tools " 50px [row6-end]
+    [row7-start] "school1  tools tools" auto [row7-end]
+    [row8-start] "school1  tools tools" 50px [row8-end]
+    [row9-start] ".        tools tools" 20px [row9-end]
+    [row11-start] "school2  tools tools" auto [row11-end]
+    [row12-start] "school2  tools tools" 50px [row12-end]
+    [row13-start] ".        tools tools" 10px [row13-end]
+    [row14-start] "school3  tools tools" 10px [row14-end]
+    [row15-start] "school4  tools tools" 10px [row15-end]
+    [row16-start] ".  .  ." 10px [row16-end]
     [row18-start] "div-4 div-4 div-4" auto [row18-end]
     / 400px auto auto;
-}
-.aside1{
-   grid-area: aside1;  
-}
-.aside2{
-   grid-area: aside2;   
 }
 .edu-title{
    grid-area:edu;
@@ -46,8 +38,32 @@
 }
 .main{
     grid-area: main;
-    padding:0 4rem;
+    display:grid;
+    grid-template: auto / 300px auto ;
+    gap:1rem;
+    padding:2rem;
+    margin:auto;
     max-width:1000px;
+    background-color: rgb(1, 20, 49);
+    color: rgb(74, 213, 252);
+    border-radius: 15px;
+    filter:drop-shadow(5px 4px 3px rgb(0, 0, 0, 0.8));
+}
+.box-1 {
+  grid-column: 1 / 2;
+  grid-row:1 / 2;
+}
+.box-2 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.box-3 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
+.main > h2, p {
+    color:rgb(180, 255, 255);
+    
 }
 .div-1{
     grid-area:div-1;
@@ -67,26 +83,26 @@
 }
 
 /* ---------------------------- */
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 900px){
    .layout-container{
       display:grid;
       grid-template: 
-      [row1-start] ". . . " 50px [row1-end]
-      [row2-start] "aside1 main main" auto [row2-end]
-      [row3-start] "aside2 main main" auto [row3-end]
-      [row4-start] "aside2 main main" 120px [row4-end]
-      [row5-start] "edu main main" 50px [row5-end]
-      [row6-start] "school1 main main " auto [row6-end]
-      [row7-start] "school1 tools tools" 100px [row7-end]
-      [row8-start] ".       tools tools" 50px [row8-end]
-      [row9-start] "school2 tools tools" 100px [row9-end]
-      [row10-start] "school2 tools tools" 100px [row10-end]
-      [row11-start] ".      tools tools" 50px [row11-end]
-      [row12-start] "school3 tools tools" 10px [row12-end]
-      [row13-start] "school3 tools tools" 10px [row13-end]
-      [row14-start] ".       tools tools" 50px [row14-end]
-      [row15-start] "school4 tools tools" auto [row15-end]
-      [row16-start] ".       tools tools" 50px [row16-end]
+      [row1-start] ".      .    . " 50px [row1-end]
+      [row2-start] "main main main" auto [row2-end]
+      [row3-start] "main main main" auto [row3-end]
+      [row4-start] "main main main" 120px [row4-end]
+      [row5-start] ".      edu      .  " 50px [row5-end]
+      [row6-start] "school1  . school2 " auto [row6-end]
+      [row7-start] "school1  . school2" 100px [row7-end]
+      [row8-start] ".        .      . " 50px [row8-end]
+      [row9-start] "school3  . school4" 10px [row9-end]
+      [row10-start] "school3 . school4" 10px [row10-end]
+      [row11-start] ".       .      . " 50px [row11-end]
+      [row12-start] "tools tools tools" 10px [row12-end]
+      [row13-start] "tools tools tools" 10px [row13-end]
+      [row14-start] "tools tools tools" 50px [row14-end]
+      [row15-start] "tools tools tools" auto [row15-end]
+      [row16-start] "tools tools tools" 50px [row16-end]
       [row17-start] "div-4 div-4 div-4" auto [row17-end]
       / 300px auto auto;
    }
@@ -94,24 +110,24 @@
     padding:0 2rem;
    }
    .main{
-    padding:0 2rem;
+    padding:2rem;
    }
 }   
 /* ---------------------------------------- */ 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 700px){
 
     .layout-container{
       display:grid;   
       gap: 0;
       grid-template: 
-      [row1-start] "aside1 aside1" auto [row1-end]
-      [row2-start] "aside2 aside2" auto [row2-end]
-      [row3-start] "edu     .  " 100px [row3-end]
-      [row10-start] "school1 school2" auto [row10-end]
-      [row11-start] "school3 school4" 20px [row11-end]
-      [row4-start] ".     .  " 20px [row4-end]
-      [row5-start] "main main" auto [row5-end]
-      [row6-start] "main main" auto [row6-end]
+      [row1-start] "main main" auto [row1-end]
+      [row2-start] "main main" auto [row2-end]
+      [row3-start] "main main" 100px [row3-end]
+      [row10-start] "main main" auto [row10-end]
+      [row11-start] "main main" 20px [row11-end]
+      [row4-start] "edu     .  " 100px [row4-end]
+      [row5-start] "school1 school2" auto [row5-end]
+      [row6-start] "school3 school4" 20px [row6-end]
       [row7-start] ". ." 50px [row7-end]
       [row8-start] "tools tools" auto [row8-end]
       [row9-start] "tools tools" auto [row9-end]
@@ -122,6 +138,29 @@
       justify-content: flex-start;
       margin:4rem 3rem 0 3rem;
    }
+   .main{
+      grid-template: auto / auto ;
+      gap:1rem;
+      padding:1rem;
+      margin: 1rem;
+   }
+   .box-1 {
+      grid-column: 1;
+      grid-row:1;
+   }
+   .box-2 {
+      grid-column: 1;
+      grid-row: 2;
+   }
+   .box-3 {
+      grid-column: 1;
+      grid-row: 3 / 4;
+      padding:1rem;
+   }
+   .box-3 > p{
+      font-size: 16px;
+
+   }
 }    
 /* ----------------------------------------- */
 @media only screen and (max-width: 500px){
@@ -130,16 +169,14 @@
        
         gap: 0;
         grid-template: 
-        [row1-start] "aside1" auto [row1-end]
-        [row2-start] "aside2" auto [row2-end]
+        [row1-start] "main" auto [row1-end]
+        [row2-start] "main" auto [row2-end]
         [row3-start] "  .  " 50px [row3-end]
         [row4-start] "edu" auto [row4-end]
         [row5-start] "school1" auto [row5-end]
         [row6-start] "school2" auto [row6-end]
         [row7-start] "school3" 10px [row7-end]
         [row8-start] "school4" 10px [row8-end]
-        [row9-start] "   .   " auto [row9-end]
-        [row10-start] "main" auto [row10-end]
         [row11-start] "  .  " auto [row11-end]
         [ro12-start] "tools" auto [row12-end]
         [row13-start] "  .  " 50px [row13-end]
@@ -150,12 +187,16 @@
     padding:0 .5rem;
    }
    .main{
-    padding:0 .5rem;
+    padding:.5rem .5rem;
    }
    .edu-title{
     margin:2rem 0 0 2rem;
    }
    .div-1{
     justify-self: center;
+   }
+   #portrait {
+      margin: .5rem auto;
+      width: 200px;
    }
 }
