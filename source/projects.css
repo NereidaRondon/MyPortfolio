@@ -1,135 +1,156 @@
 /* --------------Project cards--------------*/
 
-.projects-section{
-  padding-top:0px;
-  margin:0 2rem;
+.projects-section {
+  padding-top: 0px;
+  margin: 0 2rem;
 }
-.card-container{
-  display:grid;
+.card-container {
+  display: grid;
   grid-gap: 1rem;
-  margin:auto;
+  margin: auto;
   max-width: 1300px;
   grid-template-columns: repeat(3, 1fr);
   height: auto;
 }
 
-.card-box{
-  display:flex;
+.card-box {
+  display: flex;
   flex-direction: column;
-  margin:1.25rem 1rem;
+  margin: 1.25rem 1rem;
   justify-self: center;
   min-width: 200px;
   max-width: 500px;
   background-color: rgb(1, 20, 49);
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   transition-timing-function: ease;
   border-radius: 15px;
-  border:1px solid rgba(180, 255, 255, .5);
-  filter:drop-shadow(5px 5px 2px rgba(0, 0, 0, .6));
+  border: 1px solid rgba(180, 255, 255, 0.5);
+  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.6));
 }
-.card-box:hover{
-  transform: scale(1.05); 
-  filter:drop-shadow(7px 7px 3px rgb(0, 0, 0, 0.7));
+.card-box:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(7px 7px 3px rgb(0, 0, 0, 0.7));
 }
-.card-scrolly{
+.card-scrolly {
   justify-items: end;
   justify-content: end;
   justify-self: end;
-  display:none;
+  display: none;
 }
-.card-img{
-  margin: 0 0 0.5rem 0;
-  align-self: center; 
-}
-.card-link:hover{
+.card-img {
   margin: 0 0 0.5rem 0;
   align-self: center;
-  filter:1px 1px 1px white;
-  
 }
-.ratio{
+.card-link:hover {
+  margin: 0 0 0.5rem 0;
+  align-self: center;
+  filter: 1px 1px 1px white;
+}
+.ratio {
   aspect-ratio: 3/2;
   height: auto;
   border-top-left-radius: 15px;
-  border-top-right-radius: 15px;  
+  border-top-right-radius: 15px;
 }
 
-.card-title{
+.card-title {
   margin: 0 auto;
   text-align: center;
-  color:rgb(180, 255, 255);
+  color: rgb(180, 255, 255);
 }
-.card-p{
+.card-p {
   margin: 1rem;
 }
-.card-ul{
+.card-ul {
   display: flex;
   flex-direction: column;
-  color:rgb(180, 255, 255);
-  list-style:disc;
+  color: rgb(180, 255, 255);
+  list-style: disc;
   border: 0;
   margin: 0 2.5rem;
   padding: 0px 0px 10px 0px;
   font-size: 16px;
-  font-family:'Century Gothic','Segoe UI', Geneva, sans-serif; 
+  font-family: 'Century Gothic', 'Segoe UI', Geneva, sans-serif;
   text-align: left;
 }
-@media only screen and (max-width: 1200px){
-  .card-container{
+@media only screen and (max-width: 1200px) {
+  .card-container {
     grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
     height: auto;
   }
 }
-@media only screen and (max-width: 900px){
-  .card-container{
-    display:grid;
+@media only screen and (max-width: 900px) {
+  .card-container {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     height: auto;
     justify-items: center;
   }
-  .card-box{
+  .card-box {
     padding: 0;
     margin: 1rem auto;
   }
 }
-@media only screen and (max-width:600px){
-  .card-box{
+@media only screen and (max-width: 600px) {
+  .ratio {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .card-box {
     overflow: hidden;
     overflow-y: scroll;
-    height:330px;
+    height: 330px;
     width: 400px;
+    scrollbar-gutter: stable;
+    border-radius: 10px;
   }
-  .card-box:hover{
+  .card-box:hover {
     transform: none;
   }
-  .projects-section{
-    margin:auto;
+  .projects-section {
+    margin: auto;
   }
-
-
-
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0 rgb(114, 112, 114);
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, #8203b4 0%, #041397 99%);
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(0deg, #8203b4 0%, #041397 99%);
+  }
 }
-@media only screen and (max-width:400px){
-  .card-container{
+@media only screen and (max-width: 400px) {
+  .card-container {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  .card-box{
-    height:230px;
+  .card-box {
+    height: 230px;
     width: 250px;
   }
-  .card-title{
+  .card-title {
     font-size: 20px;
   }
 }
 /*-------------- PROJECT PAGES --------------*/
-.project-page{
+.project-page {
   margin: 0px 50px 100px 50px;
 }
-video{
-  display:flex;
+video {
+  display: flex;
   max-width: 900px;
   aspect-ratio: 3/2;
   height: auto;
-  margin:auto;
+  margin: auto;
 }

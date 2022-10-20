@@ -4,7 +4,6 @@ html {
 }
 .gradient {
   width: 100%;
-  scroll-behavior: smooth;
   background: linear-gradient(
     300deg,
     rgb(2, 42, 105),
