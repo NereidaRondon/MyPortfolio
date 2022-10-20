@@ -1,202 +1,280 @@
-.layout-container{
-    display:grid;
-    grid-template: 
-    [row1-start] ". . . " 50px [row1-end]
-    [row2-start] "main main main" auto [row2-end]
-    [row3-start] "main main main" 50px [row3-end]
-    [row4-start] "main main main" 100px [row4-end]
-    [row5-start] ".    .    .   " 50px [row5-end]
-    [row6-start] "edu      tools tools " 50px [row6-end]
-    [row7-start] "school1  tools tools" auto [row7-end]
-    [row8-start] "school1  tools tools" 50px [row8-end]
-    [row9-start] ".        tools tools" 20px [row9-end]
-    [row11-start] "school2  tools tools" auto [row11-end]
-    [row12-start] "school2  tools tools" 50px [row12-end]
-    [row13-start] ".        tools tools" 10px [row13-end]
-    [row14-start] "school3  tools tools" 10px [row14-end]
-    [row15-start] "school4  tools tools" 10px [row15-end]
-    [row16-start] ".  .  ." 10px [row16-end]
-    [row18-start] "div-4 div-4 div-4" auto [row18-end]
-    / 400px auto auto;
+.layout-container {
+  display: grid;
+  margin: auto;
+  grid-template:
+    [row1-start] '.  .  . ' 20px [row1-end]
+    [row2-start] 'main main main' auto [row2-end]
+    [row3-start] 'main main main' auto [row3-end]
+    [row4-start] 'main main main' auto [row4-end]
+    [row5-start] '. . .' 50px [row5-end]
+    [row6-start] 'train-title train-title train-title' auto [row6-end]
+    [row7-start] 'school1 school2 school3' auto [row7-end]
+    [row8-start] 'school4 . .' 50px [row8-end]
+    [row9-start] '. tools-title .' 50px [row9-end]
+    [row10-start] 'tools tools tools' auto [row10-end]
+    [row11-start] 'tools tools tools' auto [row11-end]
+    [row12-start] '.   .   .  ' 100px [row12-end]
+    [row13-start] 'footer footer footer' auto [row13-end]
+    / 1fr 1fr 1fr;
 }
-.edu-title{
-   grid-area:edu;
-   justify-content: center;
-   margin:1rem auto;
+.main-box {
+  display: grid;
+  grid-template: auto / 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 0 2rem 2rem 2rem;
+  margin: 0 4rem;
+  max-width: 1000px;
+  background-color: rgb(1, 20, 49);
+  color: rgb(74, 213, 252);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  filter: drop-shadow(7px 7px 4px rgb(0, 0, 0, 0.8));
+  z-index: 10;
 }
-.school1{
-   grid-area: school1;   
+.main {
+  margin: auto;
+  grid-area: main;
+  z-index: 10;
 }
-.school2{
-   grid-area: school2;   
-}
-.school3{
-   grid-area: school3;   
-}
-.school4{
-   grid-area: school4;   
-}
-.main{
-    grid-area: main;
-    display:grid;
-    grid-template: auto / 300px auto ;
-    gap:1rem;
-    padding:2rem;
-    margin:auto;
-    max-width:1000px;
-    background-color: rgb(1, 20, 49);
-    color: rgb(74, 213, 252);
-    border-radius: 15px;
-    filter:drop-shadow(5px 4px 3px rgb(0, 0, 0, 0.8));
+.window-bar {
+  background: linear-gradient(
+    270deg,
+    #a8a8a8,
+    #b6b6b6,
+    #c4c4c4,
+    #d3d3d3,
+    #e1e1e1,
+    #f0f0f0,
+    #ffffff
+  );
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px;
+  z-index: 10;
+  margin: 0 4rem;
+  filter: drop-shadow(7px 9px 4px rgb(0, 0, 0, 0.8));
 }
 .box-1 {
   grid-column: 1 / 2;
-  grid-row:1 / 2;
+  grid-row: 2;
 }
 .box-2 {
   grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
 }
 .box-3 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 4;
+  grid-column: 2 / 5;
+  grid-row: 2 / 5;
 }
-.main > h2, p {
-    color:rgb(180, 255, 255);
-    
+.train-title {
+  grid-area: train-title;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 36px;
+  background: -webkit-linear-gradient(rgb(2, 16, 95), rgb(178, 39, 233));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 1px black);
 }
-.div-1{
-    grid-area:div-1;
-    justify-content: left;
-    justify-self: left;
+.school1 {
+  grid-area: school1;
+  padding: 1rem;
 }
-.tools{
-    grid-area:tools;
-    padding:0 4rem;
-    max-width:1000px;
+.school2 {
+  grid-area: school2;
+  padding: 1rem;
 }
-.div-3{
-    grid-area:div-3;
+.school3 {
+  grid-area: school3;
+  padding: 1rem;
 }
-.div-4{
-    grid-area:div-4;
+.school4 {
+  grid-area: school4;
+  padding: 1rem;
+}
+.main > p {
+  color: rgb(180, 255, 255);
+}
+.window-title {
+  background: -webkit-linear-gradient(rgb(73, 100, 255), rgb(217, 39, 233));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 1px black);
 }
 
+.tools {
+  grid-area: tools;
+  margin: 0 25rem;
+}
+.tools-title {
+  grid-area: tools-title;
+  text-align: center;
+  padding: 1rem 0 3.5rem 0;
+  font-size: 36px;
+  background: -webkit-linear-gradient(rgb(2, 16, 95), rgb(178, 39, 233));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 1px black);
+}
+.footer-div {
+  grid-area: footer;
+}
+@media only screen and (max-width: 1800px) {
+  .tools {
+    margin: 0 18rem;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .tools {
+    margin: 0 10rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .tools {
+    margin: 0 5rem;
+  }
+}
 /* ---------------------------- */
-@media only screen and (max-width: 900px){
-   .layout-container{
-      display:grid;
-      grid-template: 
-      [row1-start] ".      .    . " 50px [row1-end]
-      [row2-start] "main main main" auto [row2-end]
-      [row3-start] "main main main" auto [row3-end]
-      [row4-start] "main main main" 120px [row4-end]
-      [row5-start] ".      edu      .  " 50px [row5-end]
-      [row6-start] "school1  . school2 " auto [row6-end]
-      [row7-start] "school1  . school2" 100px [row7-end]
-      [row8-start] ".        .      . " 50px [row8-end]
-      [row9-start] "school3  . school4" 10px [row9-end]
-      [row10-start] "school3 . school4" 10px [row10-end]
-      [row11-start] ".       .      . " 50px [row11-end]
-      [row12-start] "tools tools tools" 10px [row12-end]
-      [row13-start] "tools tools tools" 10px [row13-end]
-      [row14-start] "tools tools tools" 50px [row14-end]
-      [row15-start] "tools tools tools" auto [row15-end]
-      [row16-start] "tools tools tools" 50px [row16-end]
-      [row17-start] "div-4 div-4 div-4" auto [row17-end]
-      / 300px auto auto;
-   }
-   .tools{
-    padding:0 2rem;
-   }
-   .main{
-    padding:2rem;
-   }
-}   
-/* ---------------------------------------- */ 
-@media only screen and (max-width: 700px){
-
-    .layout-container{
-      display:grid;   
-      gap: 0;
-      grid-template: 
-      [row1-start] "main main" auto [row1-end]
-      [row2-start] "main main" auto [row2-end]
-      [row3-start] "main main" 100px [row3-end]
-      [row10-start] "main main" auto [row10-end]
-      [row11-start] "main main" 20px [row11-end]
-      [row4-start] "edu     .  " 100px [row4-end]
-      [row5-start] "school1 school2" auto [row5-end]
-      [row6-start] "school3 school4" 20px [row6-end]
-      [row7-start] ". ." 50px [row7-end]
-      [row8-start] "tools tools" auto [row8-end]
-      [row9-start] "tools tools" auto [row9-end]
-      [row12-start] "div-4 div-4" auto [row12-end]
+@media only screen and (max-width: 900px) {
+  .layout-container {
+    display: grid;
+    grid-template:
+      [row1-start] '.  .  . ' 20px [row1-end]
+      [row2-start] 'main main main' auto [row2-end]
+      [row3-start] 'main main main' auto [row3-end]
+      [row4-start] 'train-title train-title train-title' auto [row4-end]
+      [row5-start] 'school1 school2 school3' auto [row5-end]
+      [row6-start] 'school4    .     . ' 20px [row6-end]
+      [row7-start] 'tools-title  tools-title  tools-title' 50px [row7-end]
+      [row8-start] 'tools tools tools' auto [row8-end]
+      [row9-start] 'tools tools tools' auto [row9-end]
+      [row10-start] '. . .' 100px [row10-end]
+      [row11-start] 'footer footer footer' auto [row11-end]
+      / auto auto auto;
+  }
+  .tools {
+    margin: 0 5rem;
+  }
+}
+/* ---------------------------------------- */
+@media only screen and (max-width: 700px) {
+  .layout-container {
+    display: grid;
+    gap: 0;
+    grid-template:
+      [row1-start] '.  .  . ' 20px [row1-end]
+      [row2-start] 'main main' auto [row2-end]
+      [row10-start] 'main main' auto [row10-end]
+      [row10-start] 'train-title train-title' 50px [row10-end]
+      [row10-start] 'school1 school2' auto [row10-end]
+      [row10-start] 'school3 school3' auto [row10-end]
+      [row10-start] 'school4 school4' auto [row10-end]
+      [row7-start] 'tools-title tools-title' 50px [row7-end]
+      [row8-start] 'tools tools' auto [row8-end]
+      [row9-start] 'tools tools' auto [row9-end]
+      [row12-start] 'footer footer' auto [row12-end]
       / auto auto;
-   }
-   .edu-title{
-      justify-content: flex-start;
-      margin:4rem 3rem 0 3rem;
-   }
-   .main{
-      grid-template: auto / auto ;
-      gap:1rem;
-      padding:1rem;
-      margin: 1rem;
-   }
-   .box-1 {
-      grid-column: 1;
-      grid-row:1;
-   }
-   .box-2 {
-      grid-column: 1;
-      grid-row: 2;
-   }
-   .box-3 {
-      grid-column: 1;
-      grid-row: 3 / 4;
-      padding:1rem;
-   }
-   .box-3 > p{
-      font-size: 16px;
+  }
 
-   }
-}    
+  .main-box {
+    display: grid;
+    grid-template: auto / 1fr;
+    gap: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    margin: 0 2rem;
+    max-width: 1000px;
+    background-color: rgb(1, 20, 49);
+    color: rgb(74, 213, 252);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    filter: drop-shadow(7px 7px 4px rgb(0, 0, 0, 0.8));
+    z-index: 10;
+  }
+  .window-bar {
+    padding: 10px;
+    margin: 0 2rem;
+  }
+  #portrait {
+    margin: 1rem auto 0 auto;
+    padding: 0;
+    width: 200px;
+    height: auto;
+  }
+  .box-1 {
+    grid-column: 1;
+    grid-row: 1/2;
+  }
+  .box-2 {
+    grid-column: 1;
+    grid-row: 2 / 3;
+  }
+  .box-3 {
+    grid-column: 1;
+    grid-row: 3 / 4;
+  }
+  .box-3 > p {
+    font-size: 16px;
+  }
+  .tools {
+    margin: 0 2rem 2rem 2rem;
+  }
+}
 /* ----------------------------------------- */
-@media only screen and (max-width: 500px){
-
-    .layout-container{
-       
-        gap: 0;
-        grid-template: 
-        [row1-start] "main" auto [row1-end]
-        [row2-start] "main" auto [row2-end]
-        [row3-start] "  .  " 50px [row3-end]
-        [row4-start] "edu" auto [row4-end]
-        [row5-start] "school1" auto [row5-end]
-        [row6-start] "school2" auto [row6-end]
-        [row7-start] "school3" 10px [row7-end]
-        [row8-start] "school4" 10px [row8-end]
-        [row11-start] "  .  " auto [row11-end]
-        [ro12-start] "tools" auto [row12-end]
-        [row13-start] "  .  " 50px [row13-end]
-        [row14-start] "div-4" auto [row14-end]
-        / auto ;
-   }
-   .tools{
-    padding:0 .5rem;
-   }
-   .main{
-    padding:.5rem .5rem;
-   }
-   .edu-title{
-    margin:2rem 0 0 2rem;
-   }
-   .div-1{
-    justify-self: center;
-   }
-   #portrait {
-      margin: .5rem auto;
-      width: 200px;
-   }
+@media only screen and (max-width: 500px) {
+  .layout-container {
+    gap: 0;
+    grid-template:
+      [row1-start] '  .  ' 20px [row1-end]
+      [row2-start] 'main' auto [row2-end]
+      [row3-start] 'main' auto [row3-end]
+      [row4-start] ' .  ' 10px [row4-end]
+      [row4-start] '  train-title  ' 50px [row4-end]
+      [row4-start] ' school1  ' auto [row4-end]
+      [row4-start] ' school2  ' auto [row4-end]
+      [row4-start] ' school3  ' auto [row4-end]
+      [row4-start] ' school4  ' 20px [row4-end]
+      [row5-start] 'tools' auto [row5-end]
+      [row6-start] '  .  ' 50px [row6-end]
+      [row7-start] 'footer' auto [row7-end]
+      / auto;
+  }
+  .tools {
+    margin: 0 1rem 1rem 1rem;
+  }
+  .main {
+    padding: 0.5rem 0;
+  }
+  #portrait {
+    margin: 1.5rem auto 0 auto;
+    width: 200px;
+  }
+  .window-bar {
+    display: none;
+  }
+  .main-box {
+    background-color: rgb(1, 20, 49);
+    filter: drop-shadow(7px 7px 4px rgb(0, 0, 0, 0));
+    border-radius: 15px;
+    margin: 10px;
+    font-size: 14px;
+  }
+  .train-title {
+    padding: 1rem 0;
+    font-size: 28px;
+    background: -webkit-linear-gradient(rgb(2, 16, 95), rgb(178, 39, 233));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 2px 1px black);
+  }
+  .tools-title {
+    padding: 1rem 0 1.5rem 0;
+    font-size: 28px;
+    background: -webkit-linear-gradient(rgb(2, 16, 95), rgb(178, 39, 233));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 2px 1px black);
+  }
+  .box-3 > p {
+    font-size: 14px;
+  }
 }

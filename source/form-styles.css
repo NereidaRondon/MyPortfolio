@@ -59,7 +59,7 @@ input[type="email"] {
 }
 
 ::placeholder{
-  font-family: monospace, "Century Gothic", serif;
+  font-family: 'Century Gothic','Segoe UI', Geneva, sans-serif;
   font-size: large;
   padding-left: 3px;
 }
