@@ -154,3 +154,46 @@ video {
   height: auto;
   margin: auto;
 }
+/*----------INSTRUCTIONAL DESIGN -------------*/
+.id-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+ 
+  justify-content: center;
+  max-width: 90%;
+}
+.course{
+  margin: 1rem;
+  border-radius: 10px;
+}
+.view{
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 25px;
+  margin: 0;
+  padding: 10px 0;
+}
+div.view > a {
+  color: rgb(180, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+  font-family: 'Century Gothic', 'Segoe UI', Geneva, sans-serif;
+}
+
+div.view > a:hover {
+  color: rgb(9, 240, 93);
+  text-shadow: 2px 2px 0px rgb(157, 100, 255);
+  filter: drop-shadow(4px 2px 2px #01143d);
+}
+.frame{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.id-box{
+  background-color:  rgb(1, 20, 49);
+  border-radius: 15px;
+}
