@@ -219,7 +219,7 @@ div.view > a:hover {
   margin: auto;
   width: 800px;
   justify-content: center;
-  align-items: flex-start;
+  align-content: flex-start;
   margin: 2rem 0 4rem 0;
 }
 .video-title{
