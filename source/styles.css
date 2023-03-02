@@ -1,24 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;600&family=Patrick+Hand&family=Shadows+Into+Light&family=Urbanist:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Patrick+Hand&family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bad+Script&family=Neucha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300;700&display=swap');
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Urbanist', sans-serif;
+font-family: 'Encode Sans Condensed', sans-serif;
+
+font-family: 'Architects Daughter', cursive;
+font-family: 'Bad Script', cursive;
+font-family: 'Neucha', cursive;
+
+*/
+
 html {
   scroll-behavior: smooth;
-  font-family: 'Century Gothic', 'Segoe UI', Geneva, sans-serif;
+  font-family: 'Encode Sans Semi Condensed', 'Century Gothic', 'Segoe UI', Geneva, sans-serif;
+  font-weight: 300;
 }
 .gradient {
   width: 100%;
-  background: linear-gradient(
-    300deg,
-    rgb(2, 42, 105),
-    rgb(11, 90, 128),
-    rgb(0, 114, 145),
-    rgb(0, 156, 163),
-    rgb(57, 199, 162),
-    #48d29c,
-    rgb(134, 243, 122),
-    rgb(186, 252, 101)
-  );
+  background-color:rgb(200, 219, 245);
 }
 body {
   margin: 0px;
-  padding: 70px 0px 0px 0px;
+  padding: 90px 0px 0px 0px;
 }
 video {
   margin: 0px;
@@ -32,7 +42,7 @@ a {
   cursor: pointer;
 }
 .link {
-  color: rgb(2, 20, 68);
+  color: rgb(1, 20, 49);
   transition: 0.2s ease-in-out;
 }
 .link:hover {
@@ -49,7 +59,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 50px;
+  height: 75px;
   padding: 10px 10px 0px 10px;
   margin: 0px;
   z-index: 11;
@@ -57,7 +67,7 @@ header {
 .banner-container {
   display: grid;
   grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 40px;
+  grid-template-rows: 70px;
   grid-auto-flow: column;
   background-color: rgb(1, 20, 49);
 }
@@ -68,8 +78,8 @@ header {
   padding: 0px;
   display: grid;
   z-index: 11;
-  top: 60px;
-  height: 10px;
+  top: 80px;
+  height: 15px;
   background: linear-gradient(
     70deg,
     rgb(157, 100, 255),
@@ -78,8 +88,7 @@ header {
     rgb(6, 134, 185),
     rgb(114, 252, 245),
     rgb(50, 231, 183),
-    rgb(157, 243, 76),
-    rgb(167, 240, 159)
+    rgb(157, 243, 76)
   );
 }
 .item1 {
@@ -105,37 +114,22 @@ header {
   --fa-animation-duration: 7s;
 }
 .homeLink {
-  width: 200px;
   transition: 100ms ease-in-out;
 }
 .homeLink:hover {
-  filter: drop-shadow(2px 2px 1px rgb(157, 100, 255));
+  filter: drop-shadow(1px 1px 1px rgb(157, 100, 255));
 }
 .signature {
-  width: 180px;
+  width: 75px;
   height: auto;
-  aspect-ratio: 7/2;
   z-index: 10;
 }
-.signature-backup {
-  width: 35px;
-  height: auto;
-  aspect-ratio: 2/2;
-  z-index: 10;
-  display: none;
-}
-@media only screen and (max-width: 500px) {
-  .signature {
-    width: 160px;
-  }
-}
+
 @media only screen and (max-width: 350px) {
   .signature {
     display: none;
   }
-  .signature-backup {
-    display: inline;
-  }
+ 
 }
 div ul {
   display: flex;
@@ -148,30 +142,32 @@ div ul {
 
 div ul li a {
   padding: 0px 15px;
-  color: rgb(74, 213, 252);
+  color: rgb(180, 255, 255);
 }
 /* End of banner styles */
 
+/*--------------- Navigation Menu----------------- */
 nav {
   width: auto;
   font-weight: bold;
-  font-family: 'Barlow Condensed', 'Century Gothic', 'Segoe UI', Geneva,
-    sans-serif;
+  font-family: 'Neucha', 'Century Gothic', 'Segoe UI', Geneva,
+  sans-serif;
+  font-size: 30px;
 }
 
-/*--------------- Navigation Menu----------------- */
 nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 30px;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 24px;
   margin: 0px 100px;
-  padding: 10px;
+  padding: 10px 0 0 0;
   list-style: none;
   text-align: center;
 }
 nav ul li a {
-  color: rgb(2, 20, 68);
+  color: rgb(1, 20, 49);
   text-decoration: none;
 }
 
@@ -237,7 +233,7 @@ nav ul li a {
   padding-top: 37px;
 }
 figcaption {
-  color: rgb(2, 20, 68);
+  color: rgb(1, 20, 49);
   font-size: 18px;
   font-weight: 800;
   margin-top: 10px;
@@ -287,16 +283,16 @@ figcaption {
 .typewriter {
   font-size: 24px;
   font-weight: bold;
-  font-family: 'Century Gothic', 'Segoe UI', Geneva, sans-serif;
+  font-family: 'Encode Sans Condensed', 'Century Gothic', 'Segoe UI', Geneva, sans-serif;
   color: rgb(180, 255, 255);
   padding: 5px 0;
   overflow: hidden;
-  max-width: 202px;
+  max-width: 160px;
   border-right: 0.08em solid rgb(1, 20, 49); /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.03em; /* Adjust as needed */
-  animation: typing 5s steps(30, end), blink-caret 1s step-end infinite;
+  animation: typing 4s steps(30, end), blink-caret 1s step-end infinite;
 }
 
 /*-------------- Section 3---------------------------- */
@@ -317,7 +313,7 @@ figcaption {
 .tool-icon {
   margin: auto;
   font-size: 60px;
-  color: rgb(1, 20, 49);
+  color: rgb(1, 20, 49); 
   filter: drop-shadow(8px 8px 2px rgba(3, 41, 58, 0.6));
   transition-timing-function: ease;
 }
@@ -343,7 +339,7 @@ figcaption {
   font-family: 'Barlow Condensed', 'Century Gothic', 'Segoe UI', Geneva,
     sans-serif;
   text-align: center;
-  color: rgb(2, 20, 68);
+  color: rgb(1, 20, 49);
 }
 @media only screen and (max-width: 600px) {
   .tool-icon {
@@ -381,15 +377,15 @@ h2,
 h3 {
   margin: 0px;
   padding: 10px 0px 10px 0px;
-  font-family: 'Barlow Condensed', 'Century Gothic', 'Segoe UI', Geneva,
+  font-family: 'Architects Daughter', 'Century Gothic', 'Segoe UI', Geneva,
     sans-serif;
   text-align: left;
-  color: rgb(2, 20, 68);
+  color: rgb(1, 20, 49);
 }
 .intro-txt {
   padding: 0px;
   font-size: 24px;
-  font-family: 'Barlow Condensed', 'Century Gothic', 'Segoe UI', Geneva,
+  font-family: 'Neucha', 'Century Gothic', 'Segoe UI', Geneva,
     sans-serif;
   text-align: center;
   /* color: rgb(180, 255, 255); */
@@ -403,14 +399,14 @@ p {
   border: 0;
   margin: auto;
   padding: 0px 0px 10px 0px;
-  font-family: 'Century Gothic', 'Segoe UI', Geneva, sans-serif;
   text-align: left;
+  font-size: 20px;
 }
 .box-3 > h1 {
   color: rgb(180, 255, 255);
 }
 figcaption {
-  color: rgb(2, 20, 68);
+  color: rgb(1, 20, 49);
   padding: 0px;
   font-family: 'Barlow Condensed', 'Century Gothic', 'Segoe UI', Geneva,
     sans-serif;
@@ -425,7 +421,7 @@ img {
   margin: auto;
   padding: 50px 0px 10px 0px;
   text-align: center;
-  background: -webkit-linear-gradient(rgb(2, 16, 95), rgb(178, 39, 233));
+  background: -webkit-linear-gradient(rgb(1, 20, 49);, rgb(178, 39, 233));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(2px 2px 1px black);
@@ -437,7 +433,7 @@ img {
   margin: auto;
   font-size: 15px;
   font-weight: bold;
-  color: rgb(3, 43, 119);
+  color: rgb(1, 20, 49);
   background-size: 300% auto;
   transition: 0.5s;
   border: 1px solid rgb(180, 255, 255);
@@ -455,7 +451,7 @@ img {
     rgb(131, 243, 119) 0%,
     rgb(114, 252, 245) 20%,
     rgb(43, 211, 253) 60%,
-    rgb(37, 2, 100) 100%
+    rgb(37, 2, 100) 80ssssssssssssssssssssssssssssssss%
   );
 }
 .gradient-button-1:hover {
@@ -506,7 +502,7 @@ footer {
   color: rgb(167, 240, 159);
 }
 .footer {
-  background-color: #011431;
+  background-color: rgb(1, 20, 49);
   width: 100%;
   height: 200px;
 }
