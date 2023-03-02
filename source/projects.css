@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200&display=swap');
+
 /* --------------Project cards--------------*/
 
 .projects-section {
@@ -72,11 +74,9 @@
   font-size: 20px;
   font-family:'Encode Sans Condensed', 'Century Gothic', 'Segoe UI', Geneva, sans-serif;
   text-align: left;
-  font-weight: 200;
+  font-weight: 100;
 }
-.card-ul li::marker{
-  filter: invert(97%) sepia(24%) saturate(2142%) hue-rotate(162deg) brightness(107%) contrast(101%);
-}
+
 @media only screen and (max-width: 1200px) {
   .card-container {
     grid-gap: 2rem;
