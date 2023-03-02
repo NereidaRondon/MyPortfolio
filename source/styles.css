@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bad+Script&family=Neucha&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200&display=swap');
 /*
 font-family: 'Dosis', sans-serif;
 font-family: 'Patrick Hand', cursive;
@@ -113,11 +113,11 @@ header {
 .fa-beat {
   --fa-animation-duration: 7s;
 }
-.homeLink {
+.home-link {
   transition: 100ms ease-in-out;
 }
-.homeLink:hover {
-  filter: drop-shadow(1px 1px 1px rgb(157, 100, 255));
+.home-link:hover {
+  filter: drop-shadow(2px 1px 1px rgb(157, 100, 255));
 }
 .signature {
   width: 75px;
@@ -401,6 +401,7 @@ p {
   padding: 0px 0px 10px 0px;
   text-align: left;
   font-size: 20px;
+  font-weight: 200;
 }
 .box-3 > h1 {
   color: rgb(180, 255, 255);
@@ -408,7 +409,7 @@ p {
 figcaption {
   color: rgb(1, 20, 49);
   padding: 0px;
-  font-family: 'Barlow Condensed', 'Century Gothic', 'Segoe UI', Geneva,
+  font-family: 'Encode Sans Condensed', 'Century Gothic', 'Segoe UI', Geneva,
     sans-serif;
   text-align: center;
 }

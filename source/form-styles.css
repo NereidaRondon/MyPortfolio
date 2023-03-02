@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200&display=swap');
+
 .contact-form{
   display:flex;
   justify-content: center;
@@ -59,7 +61,7 @@ input[type="email"] {
 }
 
 ::placeholder{
-  font-family: 'Century Gothic','Segoe UI', Geneva, sans-serif;
+  font-family: 'Encode Sans Condensed','Century Gothic','Segoe UI', Geneva, sans-serif;
   font-size: large;
   padding-left: 3px;
 }
@@ -68,7 +70,7 @@ input[type="email"] {
 /* ----------------BUTTONS----------------- */
 
 .form-btn {
-  font-family: "Barlow Condensed", "Century Gothic", serif;
+  font-family: 'Encode Sans Condensed', "Century Gothic", serif;
   font-size: 20px;
   font-weight:bold;
   color: rgb(3, 43, 119);
