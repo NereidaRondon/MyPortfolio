@@ -1,25 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;600&family=Patrick+Hand&family=Shadows+Into+Light&family=Urbanist:wght@200;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Patrick+Hand&family=Shadows+Into+Light&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bad+Script&family=Neucha&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Encode+Sans+Semi+Condensed:wght@200;300&display=swap');
 /*
-font-family: 'Dosis', sans-serif;
-font-family: 'Patrick Hand', cursive;
-font-family: 'Shadows Into Light', cursive;
-font-family: 'Urbanist', sans-serif;
-font-family: 'Encode Sans Condensed', sans-serif;
 
-font-family: 'Architects Daughter', cursive;
-font-family: 'Bad Script', cursive;
-font-family: 'Neucha', cursive;
+font-family: 'Covered By Your Grace', 'Century Gothic', sans-serif;
+font-family: 'Encode Sans Semi Condensed', 'Century Gothic', sans-serif;
 
 */
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Encode Sans Semi Condensed', 'Century Gothic', 'Segoe UI', Geneva, sans-serif;
+  font-family: 'Encode Sans Semi Condensed','Century Gothic', sans-serif;
   font-weight: 300;
 }
 .gradient {
@@ -47,7 +36,7 @@ a {
 }
 .link:hover {
   color: rgb(9, 240, 93);
-  text-shadow: 3px 2px 0px rgb(157, 100, 255);
+  text-shadow: 3px 2px 0px #9d64ff;
   filter: drop-shadow(4px 2px 2px #03205e);
 }
 .disabeled {
@@ -125,12 +114,6 @@ header {
   z-index: 10;
 }
 
-@media only screen and (max-width: 350px) {
-  .signature {
-    display: none;
-  }
- 
-}
 div ul {
   display: flex;
   margin: 0 10px;
@@ -148,26 +131,26 @@ div ul li a {
 
 /*--------------- Navigation Menu----------------- */
 nav {
-  width: auto;
-  font-weight: bold;
-  font-family: 'Neucha', 'Century Gothic', 'Segoe UI', Geneva,
-  sans-serif;
-  font-size: 30px;
+  font-family: 'Covered By Your Grace', 'Century Gothic', sans-serif;
+  width:auto;
 }
 
 nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 30px;
+  grid-template-rows: 40px;
   justify-content: space-between;
-  font-size: 24px;
   margin: 0px 100px;
   padding: 10px 0 0 0;
   list-style: none;
   text-align: center;
 }
-nav ul li a {
+nav ul li {
+  font-size: 30px;
   color: rgb(1, 20, 49);
+  
+}
+nav ul li a {
   text-decoration: none;
 }
 
@@ -175,10 +158,11 @@ nav ul li a {
   nav ul {
     gap: 0.5rem;
     grid-template-columns: 1fr;
-    margin: auto;
+    grid-template-rows: 54px;
+    margin: auto 5px;
   }
   nav ul li {
-    font-size: 25px;
+    font-size: 24px;
     padding: 10px 50px;
     margin: 0px 20x;
     border: 1px solid rgba(1, 20, 49, 0.5);
@@ -283,7 +267,7 @@ figcaption {
 .typewriter {
   font-size: 24px;
   font-weight: bold;
-  font-family: 'Encode Sans Condensed', 'Century Gothic', 'Segoe UI', Geneva, sans-serif;
+  font-family: 'Encode Sans Semi Condensed', 'Century Gothic', sans-serif;
   color: rgb(180, 255, 255);
   padding: 5px 0;
   overflow: hidden;
@@ -336,8 +320,7 @@ figcaption {
   margin: 0 auto;
   padding: 0;
   font-size: 18px;
-  font-family: 'Barlow Condensed', 'Century Gothic', 'Segoe UI', Geneva,
-    sans-serif;
+  font-family: 'Encode Sans Semi Condensed', 'Century Gothic', sans-serif;
   text-align: center;
   color: rgb(1, 20, 49);
 }
@@ -377,18 +360,15 @@ h2,
 h3 {
   margin: 0px;
   padding: 10px 0px 10px 0px;
-  font-family: 'Architects Daughter', 'Century Gothic', 'Segoe UI', Geneva,
-    sans-serif;
+  font-family: 'Covered by your Grace','Century Gothic', sans-serif;
   text-align: left;
   color: rgb(1, 20, 49);
 }
 .intro-txt {
   padding: 0px;
   font-size: 24px;
-  font-family: 'Neucha', 'Century Gothic', 'Segoe UI', Geneva,
-    sans-serif;
+  font-family: 'Encode Sans Semi Condensed', 'Century Gothic', sans-serif;
   text-align: center;
-  /* color: rgb(180, 255, 255); */
   background: -webkit-linear-gradient(rgb(73, 100, 255), rgb(217, 39, 233));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -409,8 +389,7 @@ p {
 figcaption {
   color: rgb(1, 20, 49);
   padding: 0px;
-  font-family: 'Encode Sans Condensed', 'Century Gothic', 'Segoe UI', Geneva,
-    sans-serif;
+  font-family: 'Encode Sans Semi Condensed', 'Century Gothic', sans-serif;
   text-align: center;
 }
 img {
@@ -432,7 +411,7 @@ img {
 .gradient-button {
   padding: 15px 20px;
   margin: auto;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   color: rgb(1, 20, 49);
   background-size: 300% auto;
@@ -452,7 +431,7 @@ img {
     rgb(131, 243, 119) 0%,
     rgb(114, 252, 245) 20%,
     rgb(43, 211, 253) 60%,
-    rgb(37, 2, 100) 80ssssssssssssssssssssssssssssssss%
+    rgb(37, 2, 100) 80%
   );
 }
 .gradient-button-1:hover {
