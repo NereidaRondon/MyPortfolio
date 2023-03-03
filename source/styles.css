@@ -271,7 +271,7 @@ figcaption {
   color: rgb(180, 255, 255);
   padding: 5px 0;
   overflow: hidden;
-  max-width: 160px;
+  max-width: 170px;
   border-right: 0.08em solid rgb(1, 20, 49); /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
@@ -366,8 +366,8 @@ h3 {
 }
 .intro-txt {
   padding: 0px;
-  font-size: 24px;
-  font-family: 'Encode Sans Semi Condensed', 'Century Gothic', sans-serif;
+  font-size: 30px;
+  font-family: 'Covered By Your Grace', 'Century Gothic', sans-serif;
   text-align: center;
   background: -webkit-linear-gradient(rgb(73, 100, 255), rgb(217, 39, 233));
   -webkit-background-clip: text;
