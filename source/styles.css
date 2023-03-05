@@ -35,9 +35,9 @@ a {
   transition: 0.2s ease-in-out;
 }
 .link:hover {
-  color: rgb(9, 240, 93);
-  text-shadow: 3px 2px 0px #9d64ff;
-  filter: drop-shadow(4px 2px 2px #03205e);
+  
+  text-shadow: 3px 1px 1px rgb(157, 100, 255);
+  filter: drop-shadow(2px 1px 2px rgb(3, 32, 94));
 }
 .disabeled {
   pointer-events: none;
@@ -106,7 +106,7 @@ header {
   transition: 100ms ease-in-out;
 }
 .home-link:hover {
-  filter: drop-shadow(2px 1px 1px rgb(157, 100, 255));
+  filter: drop-shadow(2px 2px 1px rgb(157, 100, 255));
 }
 .signature {
   width: 75px;
@@ -265,20 +265,54 @@ figcaption {
   }
 }
 .typewriter {
+  visibility: hidden;
   font-size: 24px;
   font-weight: bold;
   font-family: 'Encode Sans Semi Condensed', 'Century Gothic', sans-serif;
   color: rgb(180, 255, 255);
   padding: 5px 0;
   overflow: hidden;
-  max-width: 170px;
+  max-width: 180px;
   border-right: 0.08em solid rgb(1, 20, 49); /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.03em; /* Adjust as needed */
-  animation: typing 4s steps(30, end), blink-caret 1s step-end infinite;
+  letter-spacing: 0.04em; /* Adjust as needed */
+  animation: typing 5.75s steps(26, end), blink-caret 1.5s step-end infinite;
+  animation-delay: 2s;
 }
 
+/* The typing effect */
+@keyframes typing1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typewriter1 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Encode Sans Semi Condensed', 'Century Gothic', sans-serif;
+  color: rgb(180, 255, 255);
+  padding: 5px 0;
+  overflow: hidden;
+  max-width: 75px;
+  border-right: 0.08em solid rgb(1, 20, 49); /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.01em; /* Adjust as needed */
+  animation: typing1 5s steps(20, end) forwards, blink-caret 1.5s step-end infinite;
+}
+@media screen and (max-width: 800px) {
+  .typewriter1 {
+    animation: typing 4.5s steps(20, end), blink-caret 1.5s step-end infinite;
+  }
+  .typewriter {
+    animation: typing 6s steps(26, end), blink-caret 1.5s step-end infinite;
+  }
+}
 /*-------------- Section 3---------------------------- */
 
 .tool-container {
@@ -363,6 +397,7 @@ h3 {
   font-family: 'Covered by your Grace','Century Gothic', sans-serif;
   text-align: left;
   color: rgb(1, 20, 49);
+  font-weight: 200;
 }
 .intro-txt {
   padding: 0px;

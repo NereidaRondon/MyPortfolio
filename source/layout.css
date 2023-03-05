@@ -80,7 +80,7 @@ font-family: 'Encode Sans Semi Condensed', sans-serif;
   background: -webkit-linear-gradient(rgb(2, 16, 95), rgb(178, 39, 233));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(2px 2px 1px black);
+  filter: drop-shadow(1px 0px 1px black);
 }
 .school1 {
   grid-area: school1;
@@ -105,7 +105,7 @@ font-family: 'Encode Sans Semi Condensed', sans-serif;
   background: -webkit-linear-gradient(rgb(73, 100, 255), rgb(217, 39, 233));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(2px 2px 1px black);
+  filter: drop-shadow(1px 0px 1px black);
 }
 
 .tools {
@@ -120,7 +120,7 @@ font-family: 'Encode Sans Semi Condensed', sans-serif;
   background: -webkit-linear-gradient(rgb(2, 16, 95), rgb(178, 39, 233));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(2px 2px 1px black);
+  filter: drop-shadow(1px 0px 1px black);
 }
 .footer-div {
   grid-area: footer;
@@ -262,7 +262,7 @@ font-family: 'Encode Sans Semi Condensed', sans-serif;
     filter: drop-shadow(7px 7px 4px rgb(0, 0, 0, 0));
     border-radius: 15px;
     margin: 10px;
-    font-size: 14px;
+    font-size: 20px;
   }
   .train-title {
     padding: 1rem 0;
@@ -281,6 +281,6 @@ font-family: 'Encode Sans Semi Condensed', sans-serif;
     filter: drop-shadow(1px 2px 1px black);
   }
   .box-3 > p {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
