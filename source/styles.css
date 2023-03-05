@@ -278,7 +278,7 @@ figcaption {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.04em; /* Adjust as needed */
   animation: typing 5.75s steps(26, end), blink-caret 1.5s step-end infinite;
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 
 /* The typing effect */
@@ -307,7 +307,7 @@ figcaption {
 }
 @media screen and (max-width: 800px) {
   .typewriter1 {
-    animation: typing 4.5s steps(20, end), blink-caret 1.5s step-end infinite;
+    animation: typing 3s steps(20, end), blink-caret 1.5s step-end infinite;
   }
   .typewriter {
     animation: typing 6s steps(26, end), blink-caret 1.5s step-end infinite;
