@@ -254,16 +254,7 @@ figcaption {
     width: 100%;
   }
 }
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: rgb(2, 56, 92);
-  }
-}
+
 .typewriter {
   visibility: hidden;
   font-size: 24px;
@@ -278,41 +269,8 @@ figcaption {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.04em; /* Adjust as needed */
   animation: typing 5.75s steps(26, end), blink-caret 1.5s step-end infinite;
-  animation-delay: 2.5s;
 }
 
-/* The typing effect */
-@keyframes typing1 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.typewriter1 {
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Encode Sans Semi Condensed', 'Century Gothic', sans-serif;
-  color: rgb(180, 255, 255);
-  padding: 5px 0;
-  overflow: hidden;
-  max-width: 75px;
-  border-right: 0.08em solid rgb(1, 20, 49); /* The typewriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.01em; /* Adjust as needed */
-  animation: typing1 5s steps(20, end) forwards, blink-caret 1.5s step-end infinite;
-}
-@media screen and (max-width: 800px) {
-  .typewriter1 {
-    animation: typing 3s steps(20, end), blink-caret 1.5s step-end infinite;
-  }
-  .typewriter {
-    animation: typing 6s steps(26, end), blink-caret 1.5s step-end infinite;
-  }
-}
 /*-------------- Section 3---------------------------- */
 
 .tool-container {
