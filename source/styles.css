@@ -392,9 +392,9 @@ img {
 /* For h1 on other pages */
 .title {
   margin: auto;
-  padding: 50px 0px 10px 0px;
+  padding: 2rem 0 1rem 0;
   text-align: center;
-  background: -webkit-linear-gradient(rgb(1, 20, 49);, rgb(178, 39, 233));
+  background: -webkit-linear-gradient(rgb(1, 20, 49), rgb(178, 39, 233));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(2px 2px 1px black);
@@ -480,3 +480,15 @@ footer {
   height: 200px;
 }
 /* --------------------------------------- */
+.chrome-vid-container{
+  margin: 2rem;
+}
+.project-page{
+  display: flex;
+  margin: 1rem auto;
+  justify-content: center;
+}
+.chrome-vid{
+  max-width: 1200px;
+  margin:0rem 2rem 3rem 2rem;
+}
