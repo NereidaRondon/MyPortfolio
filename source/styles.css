@@ -8,12 +8,12 @@ font-family: 'Encode Sans Semi Condensed', 'Century Gothic', sans-serif;
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Encode Sans Semi Condensed','Century Gothic', sans-serif;
+  font-family: 'Encode Sans Semi Condensed', 'Century Gothic', sans-serif;
   font-weight: 300;
 }
 .gradient {
   width: 100%;
-  background-color:rgb(200, 219, 245);
+  background-color: rgb(200, 219, 245);
 }
 body {
   margin: 0px;
@@ -35,7 +35,6 @@ a {
   transition: 0.2s ease-in-out;
 }
 .link:hover {
-  
   text-shadow: 3px 1px 1px rgb(157, 100, 255);
   filter: drop-shadow(2px 1px 2px rgb(3, 32, 94));
 }
@@ -132,7 +131,7 @@ div ul li a {
 /*--------------- Navigation Menu----------------- */
 nav {
   font-family: 'Covered By Your Grace', 'Century Gothic', sans-serif;
-  width:auto;
+  width: auto;
 }
 
 nav ul {
@@ -148,7 +147,6 @@ nav ul {
 nav ul li {
   font-size: 30px;
   color: rgb(1, 20, 49);
-  
 }
 nav ul li a {
   text-decoration: none;
@@ -213,7 +211,7 @@ nav ul li a {
 .shecodes {
   padding-top: 28px;
 }
-.coursera{
+.coursera {
   padding-top: 37px;
 }
 figcaption {
@@ -256,7 +254,6 @@ figcaption {
 }
 
 .typewriter {
-  visibility: hidden;
   font-size: 24px;
   font-weight: bold;
   font-family: 'Encode Sans Semi Condensed', 'Century Gothic', sans-serif;
@@ -289,7 +286,7 @@ figcaption {
 .tool-icon {
   margin: auto;
   font-size: 60px;
-  color: rgb(1, 20, 49); 
+  color: rgb(1, 20, 49);
   filter: drop-shadow(8px 8px 2px rgba(3, 41, 58, 0.6));
   transition-timing-function: ease;
 }
@@ -299,14 +296,12 @@ figcaption {
 .tool-svg-icon {
   margin: auto;
   font-size: 60px;
-  filter: brightness(0) saturate(100%) invert(6%) sepia(53%) saturate(4037%)
-    hue-rotate(214deg) brightness(83%) contrast(101%)
-    drop-shadow(6px 6px 2px rgba(3, 41, 58, 0.6));
+  filter: brightness(0) saturate(100%) invert(6%) sepia(53%) saturate(4037%) hue-rotate(214deg)
+    brightness(83%) contrast(101%) drop-shadow(6px 6px 2px rgba(3, 41, 58, 0.6));
 }
 .tool-svg-icon:hover {
-  filter: brightness(0) saturate(100%) invert(84%) sepia(52%) saturate(296%)
-    hue-rotate(146deg) brightness(106%) contrast(104%)
-    drop-shadow(6px 6px 2px rgba(3, 41, 58, 0.6));
+  filter: brightness(0) saturate(100%) invert(84%) sepia(52%) saturate(296%) hue-rotate(146deg)
+    brightness(106%) contrast(104%) drop-shadow(6px 6px 2px rgba(3, 41, 58, 0.6));
 }
 .tool-label {
   margin: 0 auto;
@@ -352,7 +347,7 @@ h2,
 h3 {
   margin: 0px;
   padding: 10px 0px 10px 0px;
-  font-family: 'Covered by your Grace','Century Gothic', sans-serif;
+  font-family: 'Covered by your Grace', 'Century Gothic', sans-serif;
   text-align: left;
   color: rgb(1, 20, 49);
   font-weight: 200;
@@ -444,12 +439,7 @@ img {
   padding: 10px 0;
   background-size: 200% auto;
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
-  background-image: linear-gradient(
-    to right,
-    #a7f09f 8%,
-    #2bd3fd 51%,
-    #250264 100%
-  );
+  background-image: linear-gradient(to right, #a7f09f 8%, #2bd3fd 51%, #250264 100%);
 }
 .scrolly:hover {
   background-position: right center;
@@ -459,8 +449,7 @@ img {
 .to-top {
   padding: 0;
   margin: 0;
-  filter: invert(15%) sepia(36%) saturate(4353%) hue-rotate(210deg)
-    brightness(93%) contrast(107%);
+  filter: invert(15%) sepia(36%) saturate(4353%) hue-rotate(210deg) brightness(93%) contrast(107%);
 }
 .scrolly > button {
   background-color: transparent;
@@ -480,15 +469,15 @@ footer {
   height: 200px;
 }
 /* --------------------------------------- */
-.chrome-vid-container{
+.chrome-vid-container {
   margin: 2rem;
 }
-.project-page{
+.project-page {
   display: flex;
   margin: 1rem auto;
   justify-content: center;
 }
-.chrome-vid{
+.chrome-vid {
   max-width: 1200px;
-  margin:0rem 2rem 3rem 2rem;
+  margin: 0rem 2rem 3rem 2rem;
 }
